@@ -1,0 +1,790 @@
+{
+  "schema": "prototype-cleanup-1",
+  "rule_reference": "knowledge/registry_rule_reference.json",
+  "removed_files": [
+    {
+      "path": "standardizer_pkg/kg.py",
+      "sha256": "1601ff9eda8b57e0981ce5bd6e7888fb2d3d9789f019d3285552efb39025ad3d"
+    },
+    {
+      "path": "standardizer_pkg/semantics.py",
+      "sha256": "b84f8f1e0b3d27e65da92f2a646f6cf397df52c33723898e010ac61c1abf39e1"
+    },
+    {
+      "path": "standardizer_pkg/lm.py",
+      "sha256": "259be062baba18ffe363d575b5bb950a70f192465d3b562178f7ca151b84d125"
+    },
+    {
+      "path": "standardizer_pkg/standardizer.py",
+      "sha256": "e5fe1d87d804cacd6103649fd83b78eeb00c00f8e0a5c45764c45f9e88b38055"
+    },
+    {
+      "path": "standardizer_pkg/registry.py",
+      "sha256": "9e158dedbf292e83d161803187b73873b3a45f4e04a419e0515e3753ff6ee088"
+    },
+    {
+      "path": "standardizer_pkg/file.py",
+      "sha256": "925936e9d7b8bf038a95f59b13a87aa12bb36481382a70f34fb6b027cf6feab4"
+    },
+    {
+      "path": "standardizer_pkg/process.py",
+      "sha256": "1856d4ec89684350bc21b6c5678f9353b06880c12528ed965d09cd8c9b3fdcdf"
+    },
+    {
+      "path": "standardizer_pkg/network.py",
+      "sha256": "56f473689d7ffcd8234ba5cc22645e34b15aaa8854ed5208f64af538a6e0189b"
+    },
+    {
+      "path": "tests/test_normalization_trace.py",
+      "sha256": "ef2154ed5b8881763b19804692a33a34b700c451e2c19dee6819495e220a2695"
+    },
+    {
+      "path": "tests/test_kg.py",
+      "sha256": "b3c079598aaca9402f56b9200829d3af95b930bd1c7a03a28403ab434657684d"
+    },
+    {
+      "path": "tests/test_path_integration.py",
+      "sha256": "7b180a3e0ec7d947561b3769a387445c5172977aff1fbc61d9167dc662a71fa9"
+    },
+    {
+      "path": "tests/test_export.py",
+      "sha256": "936f934f3a8bc69f3acc21e762c0a2145f5ea6783c198c5058bb7302fac4811b"
+    },
+    {
+      "path": "tests/test_zettelkasten.py",
+      "sha256": "6bb32a164c721ae1becc1fadcee5225cde884e8a89e0607c80ee0c201e9dd682"
+    },
+    {
+      "path": "tests/test_lm.py",
+      "sha256": "b4ec5eb9b4fdd6d3faa23488b257a6f653b31fc6a22c6526154c8c907285a6c6"
+    },
+    {
+      "path": "tests/test_cli.py",
+      "sha256": "c66190a007ff11f141f57aa77bbc88a8646f29d23f741be72d5ded5497e2764e"
+    },
+    {
+      "path": "tests/test_semantics.py",
+      "sha256": "3d0d4cb75278ac473b6a624edffb65c77f5f9ed74ad2df8acde633870a14debd"
+    },
+    {
+      "path": "examples/audit_events.jsonl",
+      "sha256": "bc52da329dbf273b0387fb994dd077edb523e3de348b17666ada4f1ecaf4475d"
+    },
+    {
+      "path": "examples/lm_requests.jsonl",
+      "sha256": "9a4135d8f9e2c144257d5a59cabb12fffc3d01328e60774f248645420c5a53a6"
+    },
+    {
+      "path": "docs/EVENT_TRACE_LEGACY.md",
+      "sha256": "6b397d7f1118cb54e15dcabd71cb053b32b9e638fcc6fc37dd858202a4582bce"
+    },
+    {
+      "path": "docs/SEMANTICS.md",
+      "sha256": "f2e61a331076c3f5079ab8410c8a7150470187f85d54a6c7e1b1103a34105fdc"
+    },
+    {
+      "path": "docs/ZETTELKASTEN.md",
+      "sha256": "3c4e42833fa9541314a102c4b635ba3a38de1b55d5b45400d388d02c66ad50f1"
+    },
+    {
+      "path": "artifacts/registry-trace.dot",
+      "sha256": "af072eabd04cabaae4af8e245646363ce436e0ca2138ad70ea833b9d15055f69"
+    },
+    {
+      "path": "artifacts/build-audit.json",
+      "sha256": "e8495879ec9fa317441f3faec0cdc586b71aab77abaff99943ec80aab8271e6a"
+    },
+    {
+      "path": "artifacts/example-kg.json",
+      "sha256": "96ab167bd484344cbc42746a015acda67e16f4d0080bbfaba5ba172b68573dce"
+    },
+    {
+      "path": "artifacts/zettelkasten-audit.json",
+      "sha256": "05c2c1bd65688d6c3c8d646f17c8623e0c369dfe6b67cb7c4b6b4d8edfa8822c"
+    },
+    {
+      "path": "artifacts/registry-trace.json",
+      "sha256": "b381580d7d91a7219c840322703cf2bc69f090a1852a1bf8562192c6fc736546"
+    },
+    {
+      "path": "artifacts/shared-knowledge.json",
+      "sha256": "541c486f5ee43d69d7bea9b98b4a719a14523fbe3915472785d3d26fa2ece009"
+    },
+    {
+      "path": "artifacts/shared-knowledge.md",
+      "sha256": "0d241cb925b8f13496c617215a17dc5fe2e951c532a5e00eb8c825401ecd6d43"
+    },
+    {
+      "path": "artifacts/session-manager-lookup.json",
+      "sha256": "23613d5b67230c8ef4ccb65927c7d285d5d2b0022e0d7a56bafe345355ccacc1"
+    },
+    {
+      "path": "artifacts/obsidian-vault/INDEX.md",
+      "sha256": "c2be05a403703d742c71a16a55cb9f0dcde5dcc07428cb1f200dc5ace93a4119"
+    },
+    {
+      "path": "artifacts/obsidian-vault/kg.json",
+      "sha256": "d9c271022c6d6dd8271a627215cdb8c1a4de6bcd44f2011e2b35b124ef4217a7"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/02d590c73b8c814715bc6cf821896dc527ccca563bd1620c453fbe619514477a.md",
+      "sha256": "9511aa485e7242e6b91c181892e344b57691c259f8fe10ae0088cf0b7b3b7525"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/0b3ec5ca73561aeab829d5138792f42f247828253f98191a2cec8e8b0503e88f.md",
+      "sha256": "315c09fde924692ac893c25cfba68f5bb03f53183b599b0635f5a6cf8021ea09"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/0e17bd0cd4e711625ff40a225a6266e355f42e371f1855c18abdb1235362bd3e.md",
+      "sha256": "c57e60fab29fe48f71610d87a0a0102c1c675c7c4e39fd4c652a6663481c38ea"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/0ee4e92b4edfffe0701755c0baa15a5f0eafb4f2405b697988cac9d44b011c41.md",
+      "sha256": "14315abca0b4977ca8bdbacc626e2f442749d8ae505af4b3e3ceae4cd4b91563"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/11a275c71d67e615a2120d603bf5f12442f47bbd6778fb779f6d8aec46623059.md",
+      "sha256": "abaa9f18d8031087eeadbd061a0c607d79b18817728c54438094fe7ae7107e28"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/11bff25e5a183a179a5a5ecaa45c594c2871b23935fcd799b040c762400ffede.md",
+      "sha256": "ccddf2e45ccbf4db876d007362b5e14b65464c2ba48a0784825dcd50d221de02"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/12854f05fb380f0a874e62c70c1bd9b4cf3a4a34335cac8690cd52c67d358c49.md",
+      "sha256": "9d6c91c6112b862a480ba9276d62072c87781a0e50a1cc17791f1835619efe3f"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/17235e91731ee22e5c24f7fe685a81f71bee632860796353741064d375bfb747.md",
+      "sha256": "2cfe1bda7c51d357f49bc68640ed135fc48084d0bebfd8b5e696c01324867bb4"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/180ceecae201890943d3e3142d4eea5fa5d6656295877332e0d87f81c3b2e755.md",
+      "sha256": "5090ca208e0d4a5e1c8b710eba0a8487c357fe961bc3a7aacff5a4b48ccad5a8"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/1a959ee23788f8301745a06f376d8492f04f22c3e62e922c068124a7b034a399.md",
+      "sha256": "a44caba2f40c391a36c4613c98656cfe7d7e3a66e642832713cca55af362fccc"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/1b28f21d6b15caaf5f16ecd0d7db1d36189a289b1c68c85030c407421263fc63.md",
+      "sha256": "4e8e3502b3d2fa1419c0fdc5a8760fc5fed16f18deba59660c311208b49f52fd"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/1f6b725b513b592a69c9284a2cbf5a1bdae73340185c20bf42139ef841662d33.md",
+      "sha256": "e60d09a7f45e6584613b386c4d90b2392600432394f9cf899672bef7c351c952"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/1fe6f8161501004205152969fe0257b3125f8f468c77f5a088c87647e8c6c88c.md",
+      "sha256": "4676d811989bbfe8ea3ee4a874f033c2ee105dec8beaddc78c36400b6f411837"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/22e80d84c23195a1e590e6ec6479c310c1f81b26e197807bb7411d1efda7639f.md",
+      "sha256": "68adf1d37d0358c257bc0620263982fbc3dcdb211f5cd1a5505561c73fa37a03"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/230d7e3c9bd709f8adc497bc8779800171fa504f3ea913bbe98abf241c986133.md",
+      "sha256": "c81834350f89a770cc9a6d78eafb8c9fbf08749257fcc682bb4267a19c5d91c2"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/23ea454a23ad7ddb73d204d37ce7d1e493ce75ddbe2b717db1981efc486d960c.md",
+      "sha256": "521c8f8dd35c74a1e191ff040ab510b0f0d2f1368a2d2b2a3fd52dd8009b319d"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/24dcfa4db16a749549a1dee5f5b608481373a8a3ee9e2341cd4ae6d655f37cc5.md",
+      "sha256": "a0fe49d5cff5079616e3808d2b2e275187afe65a6e7b492b8cfb1f502a7a0e8d"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/28c4207b8dc2d0cf3576170eb17f2d447fa666a765e4e2e37e1c946b628a4289.md",
+      "sha256": "279d11a11d040383a8f9b7b4c9211cc14da1527c968917d33ae8a32d4032c6d2"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/29b6429b52862d7dbbec99c536ec24b00f770297f677f744d9d478f83adda007.md",
+      "sha256": "0e66404edcc5ad3905160ddc2b012128cc5d367684b35528b2931e12024e9b00"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/2a1bc1f51d57e4527f62d4a0421e85bb0b3b2320ce83e0135d351dac9e08fda6.md",
+      "sha256": "38cb7cc8437300ba77ebc568ced269aa884f7e6d8c5c60a36a68bf8fd5dbbe1d"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/2a5f2f6f79d6aa423ec35318a0e5fe2a51a9ff77359a69a87a0c559022f5f4e8.md",
+      "sha256": "59b3510dd2643e5f481897feb54907a12c654dce0b9a61c0af417e7d60a3bf0f"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/2cfed3421f1d095aff5cc5a8f9d420bbcf852428b03eb0f69156880ba953ff38.md",
+      "sha256": "e634f275ac9eea12c8bd190ce79a0ba0f4519da1764dd3d0fbe7e761f3344b3b"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/2d1488b57b0e74efc8ae7d74dba47f36ee39c42600b035e2643a5b60bed16140.md",
+      "sha256": "30227c1e69388919bebffe64dc9903fa5632e34a05d47428c678046b6c8c4ce3"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/2de7afdcb56e5882e5648b7295e00f1284b7306957e2f5a3710c523fce521bcd.md",
+      "sha256": "20bc88bf08f5d7c64f0b06401855894dc6cedc073456a3b54033361db2f40438"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/309ee40412d6e9d86137553e4e21b7ca0df96e53224e4dc30a8a4e9e6d05a73d.md",
+      "sha256": "7d5386ba65ae75b051ea5e4d42813caa00f3b296dbfa8a60cce8b3770cc1f636"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/31ed8866aa12d278f9f22fa1e7080856bf852652c7aa977f31e53ee74ea4b9df.md",
+      "sha256": "e542792a856b2eefdae856022fa1c9dd43c3d982843891f7496c9e7f19dbe76e"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/335141d3b1456efe9614672913e50689c3984dcdd7b5c8b2a411a1bbf45f3282.md",
+      "sha256": "913593e368e25bb44198f4975cba1d3bfa2864e4d60a3b334f268f16524387d7"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/33e935fc2c5c2423628c9a53c001db40be9e19efaa4e4fdbedc54c9035aceefe.md",
+      "sha256": "f2afe4dd55ac518aa52ee437a4af1ace1d5a059cf72d05677ff0e6b6accb26e3"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/3b56ab2945d2b96ead883b757d1791ec05adec1915ce333b28c276f37aa0ce81.md",
+      "sha256": "d39b06b8908e2b68af1e4370ab2e12130e99a92bbeb9c19063630469b6c6a8f3"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/3c4798049ee0cb4e26b8e150cb49a61eb8ebb21591ce5fa3bcdb906e435d901c.md",
+      "sha256": "81b261e04dd104442ddb099ed0b6766a69f585636040d6370d2dd261a4008b9b"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/3dd257a48a0abdf6fde4868742c49b9b4e39b65e1122f10eabc00c43ed672ce7.md",
+      "sha256": "c7da6db88569933da16c007b05fe8c2bc44228a47d5c54698f6cd435b5953058"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/3e37127ce4fd74235035c9ee3264fb15599ed80e17d15ac81cefa5f008fc7581.md",
+      "sha256": "541037bd56057c57d6716f54b506e3d77e782733b5f4b3a41970458021490d54"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/3f88d876fc117342a3f19931cb4b20d0725faeb5eb8ffb7c05540ecfe858f529.md",
+      "sha256": "31c347209d0e1a32fe07dc865434357cb40b6d38ddb950b40c9cb0a983fcd34a"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/3fa07faf2f31c4089d073d001ef555ca7889b30ea78654f3fabc30bc85fac245.md",
+      "sha256": "d0a53fe2b482bfa89ad409c5464b483c9d927e9a2bd36964d459eb1c2a173b14"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/40207e5ec8c3eb694060ad78eb81e6e068776f14e9df4bbd33830fea526a277a.md",
+      "sha256": "1dd0afce5f48becc0cc61ddabe0734143afdbaba844674e02ac3d9878831a983"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/411f5f0858151e64bef00519e8409c06a52653929f4134fa9228300026f05a2d.md",
+      "sha256": "8e85d57fa92d12f4bab3cb6a42b7f1e27777d7b1b8321757cd99b0ebaf3e0792"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/417528401088cd7af8de8865093e06a4c7a9eded69db621cfbed65e3cb3c0cb4.md",
+      "sha256": "191a1dfaf902dea2d6901553713cbd1a21c63e9a491bf1d85f07a4e1fc4a02bc"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/4370fd95b990e11387a1c8950ee0faca5617ecd0b12b8334a83533b6062b1584.md",
+      "sha256": "3161e4dc4bf8d91f23fdd3f5ad97046e52fba06d3855b6d0f38e95e7e1bc6692"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/4600db9af6b62218a6a11ea3826ee6b03430b54de7dda7561c58a56d31b92aec.md",
+      "sha256": "65ceacaae2971879324f19fdeff6a9ebf139b4d71aa4276d3ed92cb991ae851b"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/48af1aa83dcce3945ee378bad4e7e06d32ad8c465eb68fdcdec6265d1455326b.md",
+      "sha256": "c1047a8ae092b2a6a45612f1ab254e5f1387690f813e49f6e12235183439e773"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/49ac8aee540c72428ee93ec1d154145c2eff810cb8e9ca377d603968db61d6f8.md",
+      "sha256": "eb69896748d5f29ec1d17838174980e4e461751ab92d0398c92fc86c7ec2358e"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/4b56a29c592c37b77847d1b940d817904761bde6bb65c13480aa1d4a2a64aa4a.md",
+      "sha256": "95c9abd5d7bfe4f59dc56ffe71767018d70ed468b86ca42fede923650d3a8389"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/4c4f8ae94607b0615db3afca3861239d3bee09def9c8f10da4ba4a41a6c0d6db.md",
+      "sha256": "d001df824818353398e29012cfdb7a0cd4649f116b4a5ea6c4f8fa7b2b23fd09"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/4d1f9dbf38dfda38b07a10a11f0a954f68361258c956eaed4f1818d5d0cff2bc.md",
+      "sha256": "0bbc199453c97ee20b8ec9f88e0459415a16ccab0f00381c096f0e6747529ca8"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/4d466b648249232d1702b20cc66f1dfabb2b0a0fc4169b018f73108c6f06dc71.md",
+      "sha256": "6c25506702a80b35de053f1c721e96620082bf39a5eb7322ec4a44d36f63efae"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/4ebffc8d5fa88969094f6e0c75bbb70e03bc1767533dc6e78d6b9ca3711f5469.md",
+      "sha256": "e5f115b59f7b34a573ac5d3985bef3fcb12a5143fed33e7e708c84b080cbd6a4"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/5339bbd5db3dc6ba8b53325d2f5dfe57b0b71e03c64e38153e9062e20231cf40.md",
+      "sha256": "ea236102a2136c5c30ed58203db7086a5e9917ff215fc64bda6c0947056c1e03"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/53fa32603dab52e2cc1175c0d4c7ea1756aa3ac8a320a0440c47d04c42efd326.md",
+      "sha256": "4a85952d376397f2e1b4e3ff92dbd65714ea0e4e33755f34657effabe817b657"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/548ca4d40853ffc544f47002d03c201357ca5dcadcb83a81ab69c0331e71af21.md",
+      "sha256": "029111baf934f40f21ad9cfcfc6bb2bd549a2321f9438cc7a8c3a524b7dfa1c7"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/5721abb544fae0c88da8aac11b7e836e27a7e4f285c476e696e03158ece54026.md",
+      "sha256": "580192b0b97506dd5f56886b8d5e090c9f729f077ee8ab47993a545c089d81ee"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/581d18d127b9770ceb28b36ca04212a10a38e83c39c48229fddfe82697c41c3f.md",
+      "sha256": "6b126ce8d8c0e05afcc1bf857dac8c6acad3bd61e77ee8a68408e3b5ab3ec23b"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/58901eda7caf1bd2ecf559ba6ab620ace8d7bd14abe5fe5526c36e0376e063c5.md",
+      "sha256": "0c2f75196c1f14d965c119d670853e116523485e5b5be5fb2b5923d6b658b993"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/5991e2b0a3a42fd6f661d24da9b256e1998bd4433da1b4c8fc8e4c98e2d12f95.md",
+      "sha256": "3eab6b79070effe227e26dfcf87edb84f7d286612863c8fd75fb451e84df8db7"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/5a6103696626b082bed871de9e568e54cbd89ef7ed0b86f2f19673a2564e7ddc.md",
+      "sha256": "c063309dbedab43668eba1efc5d75970862ced47fac269e4e32e503ffd3549e4"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/5b4c98740b9a8b30b7fc1325b301ab1b3e64f511348a339d97db0e8d91f3597c.md",
+      "sha256": "7d5985f49cb695335f7a08856460b9154f5cfffc45c3860753ac0e22778bb74a"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/5c5a70ac6bca26e69cfae0a012757191483fac04cc985eb7d32ec47a44c25b53.md",
+      "sha256": "fd046dfb077e1b1137a36af6aaacec628deb596a986a1935ece36dec6402cdba"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/629a53d6dca8e5281f3c277b582b7d6c92bdb2a4e99cd07da496525d0e79b026.md",
+      "sha256": "66befad948501f09f03ff12187eb4396c8e3e6cbd46485a3f4626525ddda0855"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/62c4d61848b0b74c91468f5c3a02436eeeb088aca3bb429fda7a23c2495da9cf.md",
+      "sha256": "6e733579d8ac882e2bb186c224a4ca98f551e2815642bd35034e6ef842db0128"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/63ec87c529f2ce9bb01f0472fb92b8eb9b9e998446500a9e9e4dcad8bbbd1d7c.md",
+      "sha256": "613c0cd0d71e30f50fa8e873562e50e2d4d52cb483bc7706797e4d0540c95cfe"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/65bd55581a744d1a643de4d841bbe9bd487bf1303f1259c57ece89935e0fcee9.md",
+      "sha256": "bcd6e4fd308f34e5e16a345a30e8fe770ea76942441ff2886a5c861bf3f37c2e"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/65f8d9c7b102e9fd1c9a84270a127569e0cc9445a36d0301ff9bb3cce6baa64e.md",
+      "sha256": "8170da2e32465290969d80faecb8e33886158a962a0ed0f4b2ac646418989460"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/66eefc322a6c4fdff35b6af3d6e1b1e6524f223c4e21ba6b8f5632c4817f9f41.md",
+      "sha256": "0b627231db0b4e38e426eacd68b644d132470187b5d1915fa09c989dab0c0168"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/67387b07ea39fe2546de8486502f185fb687f61211f87578c6076a9e7c6ff054.md",
+      "sha256": "2ea8d21fc57b2fbade235d95c1035a4345e939092e99ed7420c8c81eedeee1cf"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/67eb513f70903b1e9b9c4888cb87ec31a780f6ca1caa8406bef0471f1b27decd.md",
+      "sha256": "cba651351a6869895dd22dd66629482daffa14b96695f1020b9601fce38a8445"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/68213b148a96ea8bfa054e5883a365a43a627b52e44a5072e6751f6756e460f3.md",
+      "sha256": "ff6d4a1b4988f11e21ebee8eebc180ccac5022bed935d62a5e59b38ca5015234"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/690a8f49fde32346c832e52c2462825e0bcfdab96758065644d3fce9e0842d3e.md",
+      "sha256": "057fef74b9668ac6d809a379eba9ba8d8b0e3af48a68cf2710ee9c005678cfc1"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/6b95b398edba578119ffbb96c132ffd5f3a3a56581eb88b661b78e94bd97fbce.md",
+      "sha256": "7f53138db1cb100468b1e994f579fe2269a433658b38a40906e2ffd86b333adc"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/6be386fea7201eaf05ef2176508762bd35d6f270314c01cbf7b7185fe395614e.md",
+      "sha256": "9e1928ec225149399e908de17feb454e41d9671b573fd89f25bdd4d3ab516289"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/732f7a99a09ab2e96ee4d740f283bb19fdc01370487d63fbfca5397d8c000da4.md",
+      "sha256": "97b3e1828a01b28e66861bd4bbb29c576fc874a9b3ada4327685645f55a8590c"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/73eeac66d2403bff7d1b17a115bbf5b23d5b3cccb482601c9a5c01970e76c34a.md",
+      "sha256": "68a7230d501491d630690ab11b85ec60040f0de03a662e0dd41f8225980900c7"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/77ceadafe0066716d8def496ec97bd8c3f0aac48226116337b6d61db135eaf0d.md",
+      "sha256": "2cdc8c4564f7251569666f3f69e64002a59100043e869bc42c7093b5d8aaf354"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/78e4560fe8a569fbdfd854b548631ba2b35ae471ea88d581477a2a04ddf53f25.md",
+      "sha256": "96e9d3568170e440006cc756623a2d676578dea4f7b9af699879a07fe41405f5"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/7b9c9a19a5b2ffd361dbd92717ab4716b5a3147cf39c6a20eaeba9da1ded2c90.md",
+      "sha256": "a3aff15231103cdd9089b4d5ec7669e0488fac06774a99f921cafc46994ce0ec"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/7bd557259d21fefcf2d9cf53b1a1fa9b390892d85aa594500e5901556327f6ca.md",
+      "sha256": "040fe3e46fa657f9d2700fbff7849493a57a766455b94cce3483cff3649d12d5"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/7c305317c4b9892de348ec1d5169a62fecbd5f0e0e8218055ea1c0fb9bc3d2da.md",
+      "sha256": "ca13c8c9d63c2606cc048445e85b1afeebcd9cf49208f53f6c49fda69a4fda73"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/7eacc9ef16d7271ef1d498171c0962454b396731bfe9484c6bea81642a019f67.md",
+      "sha256": "d52f94088dfcb343fb0b8a783ba0347a6a5b37a219cb7293e562afc07a2cada1"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/7f4089e75f141b74f2814632abed0771d6cf9f3b931c0a9b71598cbd90ae69f2.md",
+      "sha256": "da7e73179447a0ae18162dc9e63ed2dd3d4562f17dbd4c60ed493d2c21146def"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/82fee733b203945ba274fe10245bb217d76e9f4101849c5d7ed7e1c69af79450.md",
+      "sha256": "e6837bb03bf829d4c95fc6eef27dd20532ee866d4f5bc4c5b9a31865bfe4edd9"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/837bb93b6cab77580489ca42379824794406db7b55e16dde2f815f1ecd5dfd4f.md",
+      "sha256": "6b0604353361ae2a809c160b8cd89918937e933912f94e6ad6e3ef8d0d43c8c6"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/8a1b2b46824c6ae3549f157ba7494666c4e216f375b129139307f0c62ca2940a.md",
+      "sha256": "29c958ffdcdcabf6d8e4d96ed3699318cb1e764e14c51664450be8f981344af7"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/8a3ae3e7d356d914987f177d1bdc0b448273b2732ec1a533bd58ace47458ead2.md",
+      "sha256": "f46354b6998d780e4646483970856181839274a97f00a42d0755507e82030b8b"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/8cd140833cbc9f9d573d8eea6db5ba89fb9f94323a7a84409e500aeeef7324b1.md",
+      "sha256": "927ad0ed5447111a6eb63b9237ea8133c3998f7e2239718bfc1188f50a0eafe8"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/8d05a4d55c71c7ce085a4d7b4899df2a3ca007a5e96a0092896eb6b910548dbd.md",
+      "sha256": "c20834afb708d0b9bb14262a646d4048c308c969a2d7d7b2c884b096952b13f1"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/8e4dee231d30a3eaaf9fb4d842e2762555a6e3f76d780c67aa204fb2eaac5350.md",
+      "sha256": "552be1c318881596ee010c451e91de6fe562a17be1043233ea36064f28139ef4"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/90cbf1c798921e4d1e1af8333cfb1a37ef71b78de47a87d8627a16ccd2742708.md",
+      "sha256": "d25524f3d12b30ebd2f59779a7950f4780c281152ab7b1e97713edf4c2df426f"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/9171444557fcd15299d36f21a4c8de27e712c32eb4c7cb66e4dfb035025ca895.md",
+      "sha256": "acc03c4bbd7ef7f1b27a0b265b1a705345f71ee9ed1ed76f656c5f39c3beb1ad"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/94380569a1619888f8aaeb2cd2033bbdfbc313c0be9d769a281af9ef3fce5f2e.md",
+      "sha256": "531c84f29f17f6346efc7e4d2ed829d02dd54430db17cfbf7c8c4c2b62353d53"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/9477ca390672cc92539094a2477f4158fdfac8a4fcac00054d87bb0e38c18edf.md",
+      "sha256": "27748c8449bc92bfe476278c461fa13867e0546609fb5afb1805d79146961cd1"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/978b2257f50b785da13198141272c70cec1d63a2d8102a5ceb08bb8112cab713.md",
+      "sha256": "c65624893423208e2b7c03c2d7617c15d93bbade10696fc13842f7e431e8e86f"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/9a7cc60aab9da5176333018e9088da2ee08bbd37e99ba99f35df1b53cc6ebb7f.md",
+      "sha256": "3c655dc8c08babe20e046018b30a03051b5fc8bb44194df9064cfe8773f8229c"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/9bf9e90838c8ee1399d7ef03a2085808082992a50e5c2ca24a971cb2bc0f6186.md",
+      "sha256": "65f3fde42d74b9a139dd674ea1007d4f93019cc84c9882f2f49722af376ed40d"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/9f997afbf11dfdc230fffc1b0f4d77d22c0067c79d18561a50f82648643b89c4.md",
+      "sha256": "8f3181958d946ed34179e28ebf10255428a681b7eb3be63c909c18a561778db0"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/9fd696ef4c811b4a050d1c4704961ab9b92a9a7088bad1aa4f259931f380add6.md",
+      "sha256": "d073e1619dd65bb282368f278dbf31215a1088b5e4dfb85fa4d12397dfc2308a"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/a1421391a8385c8472200bebdd4aa2ea327c48073713a385b2e906e43da4c640.md",
+      "sha256": "c0f9966c91f56202f7dc82d0a67203b8a88faa530ac45d30d3d875630adbae5a"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/a170954edd0f0737a97315a3a8104c474854a7305f2331e91062743b39c9bb05.md",
+      "sha256": "2540094704d3c27605e266f7979adabfa8a297e0a062be4450d28c7bec2fc294"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/a619454c1bfecbca6a830bb326add96ac7ea0452efe9b7408cb9c14b910ff857.md",
+      "sha256": "5cb2f2c23906fe102b4b033e613f3ab2e3029e56a36e906c6984c7d70a93a274"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/a9e7e40affcfd9bc969be86f876cd7d2a894b21b780755f3347233bdcffb25a4.md",
+      "sha256": "eab4c77d6438db0ec5ec900ea785eb770c8676211ec99ae44b7bb9854dbd39b6"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/ac9ec5ba2b7b9a46c6c3091a3fdb3cf47177f5785d62453dbf145b0c1eb35bb1.md",
+      "sha256": "e7d2131956963f3f4e877cd8f2bb1c3798224d8851af9f94ef27c58644fe8842"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/b160c14fc3dfa7bec65fd512bd532780e80fe531e66f0def107ad35a507f966e.md",
+      "sha256": "1f7a325228c97e287c401fe6c6f295d7338507ac11175264a49b74a9ba2fb9fa"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/b4f0d656c8ce8ea8cba64d66f2a199f22455305faad061600b247783c38db188.md",
+      "sha256": "cc023a07a211b14a7e796f1a825a4c65d54df11f4139db817d7a8a4eaf149bd8"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/b60195100f7909e187c7c2b21cd47be32018139f8ee00e9bf6c149379800b24b.md",
+      "sha256": "ea3d5ee72441435a7e04543d4ec1f3b61a032a0c65d2b231b834281e311c0b2a"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/b60217c9d4478d91d21e0455c3656dcc4610e049d617e762f7d6111ab4cf059c.md",
+      "sha256": "8fbb329f3baf5324bd096935ed609e6252ac716285f1964f3b5434e3e6fc56a6"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/b7749ed2f9d554fd75fd9b30cdf5ff15b30c4b69283ed4866e0e4da6a41861ec.md",
+      "sha256": "b385e859e8a74e60530c692ee7842789cf0d3d55435a612be97fa82652967c22"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/b7ccceabf18ae5e1e65539f860997391e076e668e00d8c9f6f96349c53aea09c.md",
+      "sha256": "d3726424f1da51a6f9ff2fc89880f0527f5de4a569a76eeb296330bf29df8d7b"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/b9be9d48d7ef36d6dbaefbb918eda03a3975fc18f2d1a470d30053f0ab4b0685.md",
+      "sha256": "a6c1d9b4aa51c59a05e61d7b7fd620ab25af5a6bb41be5cb92978a71049f990b"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/bc2160d5cd2e7be2d0abf9357bd4f2fc657ae0f482e3ff9daf9eb51eca469c90.md",
+      "sha256": "acfc1876e8d49890e27e0d323e8e56601e2b850c641b1ec55e7a692b4ec5d0a0"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/be744f4b499d17f67ef550be051c3c86fa9ac477a8a023b4da48fd741afd8294.md",
+      "sha256": "133577bf03ec45f5a24c64cb9297d33fcc7a5f35d86377ccdf40aff196c45ce3"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/c08c4d5bc3ce9a72eb50363e6b755bdfa2990dbcf65a14a7a18ee1cd8b6773da.md",
+      "sha256": "8d70bc2b61a477396cb2b7bbd816a511e24e811644189bc3c9623823b7172e14"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/c0e2897256122574f129dde42407f721bc5906daffeb924b0391e7696f13b341.md",
+      "sha256": "4be4d151bbb5caf173099368359519a12e1221ecc864da263b5f919512cfd4d6"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/c0e917727448369c9b98a9392a2471e596f239749a853d22c048b50c65a594a8.md",
+      "sha256": "9d805f6771801d5ee6e16607aeee43d6b83cebd767f4a2635d22cbdf859c8fdf"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/c11982adb9aaccb52ce939dff1670473daeef9a36df5d29179368e390df1c35b.md",
+      "sha256": "8592747303be606442c51983607efe0545c1839a5eaec88a78d5226f0b092278"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/c25da8e80b13a82bc8b0ecb18240c391c103d3db650db37d45107f282d78f7de.md",
+      "sha256": "8d7b0d49f70849042eb40f6786aa4df1942ab13ea14c9ca9a973704e4f840e76"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/c40a7ffc2db2356a291476707ff30f45184c3aa000c3804dbae7535e23ee09b4.md",
+      "sha256": "497ba66e55cab7035201f54443e8c78fe40fb5349e828e34d9994b24f18ebf50"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/c516dfcd07227af533bfa3818a2467ca9774b4ef04581f570d9c3314154ae63a.md",
+      "sha256": "f6f75ab6c8ff859d21e869518d0ee98b95248f914da955cce28cfc27c6e5789b"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/c5ff98b5fc85dadc62e9b839ddcd04b660893465bd9a9427f2c625a7c96158ac.md",
+      "sha256": "339cd6cc4384e487649d9f5684b34ee7647bcf2254e43452131cb1a01e3c11c1"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/c661e2de84a1cd3cb13c67141b2b6fa67752c8d97a433ff82f11765d93aa5107.md",
+      "sha256": "8e0946737dcb99e2d33971a7e047bffce974a9efeb109c56a8be648d370c6885"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/c82318a7b9d6b3312e60675d63beaaa0c05e2953a6171129e1245d591dc12a3f.md",
+      "sha256": "a8d597e0a485e704e2d3566baed2f89a9f434e07a0963ba684688b85ff4b743e"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/cae5d6b7db694f531629d71c7791c4f125cbdec4b4c4a1a393f9ddb1237ee51a.md",
+      "sha256": "cd5b39516028f56be4dfdff556868fed1c17de832e12490a508039e024df01f8"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/ce268648963393ee48920a3180bbea0a1ed56a2ef0a62a0a5dd3984e2d10233a.md",
+      "sha256": "ed70a510031e8cb5ecd9e04f4956c36938d32c5c246df60ac7b39270570c1bce"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/d0600099499751ae63db2cd39dcade817577dcfe46188cdea71229d1c0cb78e2.md",
+      "sha256": "74ebd04be8cd36c8443abf57e275d0bcf98f515b1dc1632946db7f8df3be9f71"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/d0fe2e5ebb15dd2f7325f2f47c6588933c745a47cc097a86f565db03e632e7bb.md",
+      "sha256": "23d097a092f300b901b35bc81ec1af8a50ad6b7cda093d341d2c3c7d0d9d4dcd"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/d1912c6f65e42d35b38fe5f957b21d5f78aa8a91d28f8797689adfbb29013cb8.md",
+      "sha256": "fca8cb7473a566afec69a98d34cbab08e14a1e6bc196144c984094bfdd58592f"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/d38401824bfb4a127adb18c3f3238a845c13cf7df7e28267b9625f024b9220bd.md",
+      "sha256": "fdd5c4d8884f42b4cd4332f81c28d99147bedb78ca28c6632c5d1c4221bdd77b"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/d40895e8f0328591ade91528a3b46d5b3642bb8878bf0b8026be75330bbcf3fd.md",
+      "sha256": "135d2ee656c54beef98c7390182bed27e0034d31585fa26518f4af53c039fc81"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/d6ec01c9bb265076a3e920dfc3f2ffc68a3a85c166cda8a30a8b04c82143ebe1.md",
+      "sha256": "4b53a5c5f0d5acb7d756995591d8c5234d1c5767b8aea7169d09f7316dd15feb"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/d6f16bacdeaed9ad3d730734ec3ebcb17e7fe81ae7f21b0e5eb280726b4103c5.md",
+      "sha256": "1d0e648ca1b6bd1087495ccbaac122a6a293ea3ce13003d3b50fcc0ca5ce4a96"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/dabc4681fdb16685bb87294166a5dc0c237ae919076d4bf69cc246ea255a4443.md",
+      "sha256": "05731f862e06cfefb10667ef5be6525053ff90fb723219cc64fe790d1a16a773"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/de97551c37ba6cdef93dfe68e4d7d38733c48fcbeb5a23328d8bf1d4a60eba16.md",
+      "sha256": "70cb85e399718840a8133db8a5ba447bd451ec59f72559550e2d27e58bdb1e37"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/df55c9ae9c474da47758e02244fd5201fb8e8ec3e5fea9208634d2c62c59c4ff.md",
+      "sha256": "46766b9b320f0916dc57074ff78a26a24a1ec66f1e9efb9f742e5702a00cc249"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/e01c905602044ce9ebf8ad6d7392fd4309849e72833bc530ffed21de1ad87c48.md",
+      "sha256": "d566eeeb43bd2ee37fbfcc1af743428eb73829d3ad5ebce961c5c09ec0f48051"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/e1750ce6335fe64d2be64436f852847852c87914945f5d010337bd63165c29b4.md",
+      "sha256": "d893138d140b8cf9bc1e1c2af0f88818a47e51ba181b8d225cf1cd47c1996154"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/e55375876576f43314c007acf727c4d1392e2c5b3190f97565cbe1b88fea00b5.md",
+      "sha256": "a39d9d69903bbdd13e78bf4ebddd9e68855440962fe4c4ee408c06c7d8c4abaf"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/ea91bc4a07e2d00196958691b59f7bd08ecbc2e5e5c72e1750520e1949ca7a6d.md",
+      "sha256": "995c839df1a764f2c729f181436efc2c50e5c0bbadc48552ad40e7604969310e"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/ed677aa82df0f212bb27793332162f44ca7b58179588975132653286d455a596.md",
+      "sha256": "c627a6a3825e4567e7b94decdb66a86cb11859b43ac35a7af89639273020b3aa"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/eeae0d1e7178e392c8e59dd1fd9425e72185e1c23bdebcdddef3fb5ec075e03c.md",
+      "sha256": "7966d238bfc531cc4c5c170b551fee933d5144dbec983147cdb696ccbf476fa0"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/f29d5b5759590e37eb5bed3a1f725884796d57d3291c9e41a1219ee883c8f514.md",
+      "sha256": "5de580b5f930e19790f90e266b6bb1a0523263bb6eceb8a607685312f07d8954"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/f4bbc9535dc927c8927a4335d30a179da24c4329730fb525663595b869536575.md",
+      "sha256": "00896ac0861c2955f6b204a8a7f06fe639d938d74964c348e7571a32c04e81c8"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/f5ca47d430456e1661d2ebcd7e2da30007489927dd66a9411291e69a90dc0fef.md",
+      "sha256": "86c94598acd9c32ca93f90ff6be1182055d3de501c56d821d223426b6885ee3f"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/f6ff2bb7b846ec4f4f9b8904eb62cc701eca606ee9477ddd7d0c2df028f958f6.md",
+      "sha256": "3cbb4a80e4b77ca536e63931e6dc570b0f6b47ca9dd3d40228759353554305ff"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/fb1390a3d4af40ad9e3499b251b9357564403b31b272e3dbc9d0513c501ca576.md",
+      "sha256": "6bbffea2600239661e7f4a7013dc839c698df856cb24b0482e0266cbe853dee7"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/fb4b33997b431ed8572e18e466079140cb1b492770cb20726fd245721ed3ef3d.md",
+      "sha256": "a3fc7fb31174a301577081dfbd23bd9c80bd9ae2f55a4823625ea6138dae15ca"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/fc494de19e31665a717c95d9afde9d6f6937ce8c6a0f1c16742399876fc5b11f.md",
+      "sha256": "323283bdb37c30ef76997dbf7c35f28fbb7f0f61d4b04e34eed856f9d2c2329f"
+    },
+    {
+      "path": "artifacts/obsidian-vault/notes/fe080154d6337d3fcdf36046796beaf192f964355110aa9c33c39a3fb917f828.md",
+      "sha256": "00116fafe74a6bb6939b430cfe6fdbd85a29cebbab1e7d7bbcd22c7921bd85e1"
+    },
+    {
+      "path": "artifacts/obsidian-vault/manifest.json",
+      "sha256": "a7664374cab9965d25ff330a8d38a6d2e5012101da8638e94a93c4188ec236d7"
+    },
+    {
+      "path": "standardizer_pkg/__pycache__/file.cpython-311.pyc",
+      "sha256": "7215fb942c5951a09b2e810d872e002ee52b25332a63ecbc9391f72390f58907"
+    },
+    {
+      "path": "standardizer_pkg/__pycache__/file.cpython-312.pyc",
+      "sha256": "9fbd1f091e1040f5cb7f6c574fcb9f677df3c7ed618e09658f3c0f05415d0c63"
+    },
+    {
+      "path": "standardizer_pkg/__pycache__/kg.cpython-312.pyc",
+      "sha256": "447e4567971d649978638d38a05ec691ff7059f0f3b19471adca3057871a2d98"
+    },
+    {
+      "path": "standardizer_pkg/__pycache__/lm.cpython-312.pyc",
+      "sha256": "057c9a4cbfbc15b22b27c72b7eac7dc31c800628e3f400decbb6649ea6c267ef"
+    },
+    {
+      "path": "standardizer_pkg/__pycache__/network.cpython-311.pyc",
+      "sha256": "24528a351d4cc9c8f11bc818965d4259205fc34ff22f6f1f84af8195f27a2ec0"
+    },
+    {
+      "path": "standardizer_pkg/__pycache__/network.cpython-312.pyc",
+      "sha256": "7b73671714401c452dc6b7bce85c3f1f30d4e9279e22de89e203ac7e2dc0624c"
+    },
+    {
+      "path": "standardizer_pkg/__pycache__/process.cpython-311.pyc",
+      "sha256": "5acd09b99dccfb3dc2f97edd93b95adff96f876ad4b34a560bcd85190645fdea"
+    },
+    {
+      "path": "standardizer_pkg/__pycache__/process.cpython-312.pyc",
+      "sha256": "94132a37160ee867b14a5bde3b0e3d587ad01971844b4b93d7e12070d39cc396"
+    },
+    {
+      "path": "standardizer_pkg/__pycache__/registry.cpython-311.pyc",
+      "sha256": "51580f583c8d25f305a9f4c4ba0a54c87d4ce862fb89dea4fa4e2309a26daac0"
+    },
+    {
+      "path": "standardizer_pkg/__pycache__/registry.cpython-312.pyc",
+      "sha256": "8ed283cfe943d0c20952351b48b3f2f616d32554e0f404a50867f1270cd82398"
+    },
+    {
+      "path": "standardizer_pkg/__pycache__/semantics.cpython-312.pyc",
+      "sha256": "f52a665c446d6ef268363db917f6a38900c6eb25b2a142798ad60f719a814732"
+    },
+    {
+      "path": "standardizer_pkg/__pycache__/standardizer.cpython-311.pyc",
+      "sha256": "bfe5624da06a8d62da394a597d5f1191049d3b40c2c2b0f5b26f456559761a41"
+    },
+    {
+      "path": "standardizer_pkg/__pycache__/standardizer.cpython-312.pyc",
+      "sha256": "36a05be4e44a26c46a84364da0164251c1a81e96e8e026a5f73e2007e0379918"
+    },
+    {
+      "path": "tests/__pycache__/test_cli.cpython-312.pyc",
+      "sha256": "4ca85ff054bc08a3181deac9cc443a129019ec80e2c60ed79a96c52e728c9c84"
+    },
+    {
+      "path": "tests/__pycache__/test_export.cpython-312.pyc",
+      "sha256": "132b1e2fde23ad8aee57794246a3d17ac35f3a5a202510e40bed304ca9c03e43"
+    },
+    {
+      "path": "tests/__pycache__/test_kg.cpython-312.pyc",
+      "sha256": "c9ec4c6bcae31f79272ecae0512ca5bb5f4710e28be3f2216444a6bed1db12f5"
+    },
+    {
+      "path": "tests/__pycache__/test_lm.cpython-312.pyc",
+      "sha256": "25a3389b5fc493629514414a6fa814529d43b745f8961482e050e0579178f656"
+    },
+    {
+      "path": "tests/__pycache__/test_normalization_trace.cpython-312.pyc",
+      "sha256": "2f5d6bcdac96d6a0dec334fb20679e2416454876b4f513ca99d2fdfaaa4dc5d1"
+    },
+    {
+      "path": "tests/__pycache__/test_path_integration.cpython-312.pyc",
+      "sha256": "5e4d5098f09a4545592a84b0232884ae5e0656baa8891708237473e9aff1d81f"
+    },
+    {
+      "path": "tests/__pycache__/test_semantics.cpython-312.pyc",
+      "sha256": "9de1480129641a717b34076beffd7e299d348dec8f4886c3282a0b70e29d51f7"
+    },
+    {
+      "path": "tests/__pycache__/test_zettelkasten.cpython-312.pyc",
+      "sha256": "f65cc11bf0ac69a210387bae11cdc96e1130962694a938f8d9cc48d05d256244"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "hierarchy_edges": 192,
+  "nodes": 197,
+  "note": "Schema/content checks only; factual correctness requires the separate source and editorial review.",
+  "problems": [],
+  "semantic_edges": 46,
+  "status_counts": {
+    "documented": 145,
+    "structural": 52
+  },
+  "valid": true
+}

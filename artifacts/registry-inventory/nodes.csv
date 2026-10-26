@@ -1,0 +1,198 @@
+depth,path,parent_path,template_dependent,is_placeholder,explicitly_listed
+1,HKCC,,False,False,True
+1,HKCR,,False,False,True
+1,HKCU,,False,False,True
+2,HKCU\Software,HKCU,False,False,False
+3,HKCU\Software\Classes,HKCU\Software,False,False,True
+3,HKCU\Software\Microsoft,HKCU\Software,False,False,True
+4,HKCU\Software\Microsoft\SystemCertificates,HKCU\Software\Microsoft,False,False,True
+4,HKCU\Software\Microsoft\Windows,HKCU\Software\Microsoft,False,False,False
+5,HKCU\Software\Microsoft\Windows\CurrentVersion,HKCU\Software\Microsoft\Windows,False,False,False
+6,HKCU\Software\Microsoft\Windows\CurrentVersion\Policies,HKCU\Software\Microsoft\Windows\CurrentVersion,False,False,False
+7,HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Comdlg32,HKCU\Software\Microsoft\Windows\CurrentVersion\Policies,False,False,True
+8,HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\comdlg32\Placesbar,HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\comdlg32,False,False,True
+7,HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer,HKCU\Software\Microsoft\Windows\CurrentVersion\Policies,False,False,True
+7,HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Network,HKCU\Software\Microsoft\Windows\CurrentVersion\Policies,False,False,True
+7,HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\System,HKCU\Software\Microsoft\Windows\CurrentVersion\Policies,False,False,True
+6,HKCU\Software\Microsoft\Windows\CurrentVersion\Run,HKCU\Software\Microsoft\Windows\CurrentVersion,False,False,True
+6,HKCU\Software\Microsoft\Windows\CurrentVersion\RunOnce,HKCU\Software\Microsoft\Windows\CurrentVersion,False,False,True
+4,HKCU\Software\Microsoft\Windows NT,HKCU\Software\Microsoft,False,False,False
+5,HKCU\Software\Microsoft\Windows NT\CurrentVersion,HKCU\Software\Microsoft\Windows NT,False,False,False
+6,HKCU\Software\Microsoft\Windows NT\CurrentVersion\Windows,HKCU\Software\Microsoft\Windows NT\CurrentVersion,False,False,True
+3,HKCU\Software\Policies,HKCU\Software,False,False,False
+4,HKCU\Software\Policies\Microsoft,HKCU\Software\Policies,False,False,False
+5,HKCU\Software\Policies\Microsoft\SystemCertificates,HKCU\Software\Policies\Microsoft,False,False,True
+5,HKCU\Software\Policies\Microsoft\Windows,HKCU\Software\Policies\Microsoft,False,False,False
+6,HKCU\Software\Policies\Microsoft\Windows\AppCompat,HKCU\Software\Policies\Microsoft\Windows,False,False,True
+6,HKCU\Software\Policies\Microsoft\Windows\CurrentVersion,HKCU\Software\Policies\Microsoft\Windows,False,False,False
+7,HKCU\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings,HKCU\Software\Policies\Microsoft\Windows\CurrentVersion,False,False,False
+8,HKCU\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Lockdown_Zones,HKCU\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings,False,False,False
+9,HKCU\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Lockdown_Zones\0,HKCU\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Lockdown_Zones,False,False,True
+9,HKCU\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Lockdown_Zones\1,HKCU\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Lockdown_Zones,False,False,True
+9,HKCU\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Lockdown_Zones\2,HKCU\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Lockdown_Zones,False,False,True
+9,HKCU\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Lockdown_Zones\3,HKCU\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Lockdown_Zones,False,False,True
+9,HKCU\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Lockdown_Zones\4,HKCU\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Lockdown_Zones,False,False,True
+8,HKCU\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones,HKCU\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings,False,False,False
+9,HKCU\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\0,HKCU\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones,False,False,True
+9,HKCU\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\1,HKCU\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones,False,False,True
+9,HKCU\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\2,HKCU\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones,False,False,True
+9,HKCU\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3,HKCU\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones,False,False,True
+9,HKCU\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\4,HKCU\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones,False,False,True
+6,HKCU\SOFTWARE\Policies\Microsoft\Windows\Explorer,HKCU\SOFTWARE\Policies\Microsoft\Windows,False,False,True
+6,HKCU\Software\Policies\Microsoft\Windows\Network Connections,HKCU\Software\Policies\Microsoft\Windows,False,False,True
+6,HKCU\Software\Policies\Microsoft\Windows\RemovableStorageDevices,HKCU\Software\Policies\Microsoft\Windows,False,False,True
+7,HKCU\Software\Policies\Microsoft\Windows\RemovableStorageDevices\Custom,HKCU\Software\Policies\Microsoft\Windows\RemovableStorageDevices,False,False,False
+8,HKCU\Software\Policies\Microsoft\Windows\RemovableStorageDevices\Custom\Deny_Read,HKCU\Software\Policies\Microsoft\Windows\RemovableStorageDevices\Custom,False,False,True
+8,HKCU\Software\Policies\Microsoft\Windows\RemovableStorageDevices\Custom\Deny_Write,HKCU\Software\Policies\Microsoft\Windows\RemovableStorageDevices\Custom,False,False,True
+6,HKCU\Software\Policies\Microsoft\Windows\System,HKCU\Software\Policies\Microsoft\Windows,False,False,True
+5,HKCU\SOFTWARE\Policies\Microsoft\Windows NT,HKCU\SOFTWARE\Policies\Microsoft,False,False,False
+6,HKCU\Software\Policies\Microsoft\Windows NT\Printers,HKCU\Software\Policies\Microsoft\Windows NT,False,False,False
+7,HKCU\Software\Policies\Microsoft\Windows NT\Printers\PackagePointAndPrint,HKCU\Software\Policies\Microsoft\Windows NT\Printers,False,False,True
+7,HKCU\Software\Policies\Microsoft\Windows NT\Printers\Wizard,HKCU\Software\Policies\Microsoft\Windows NT\Printers,False,False,True
+6,HKCU\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services,HKCU\SOFTWARE\Policies\Microsoft\Windows NT,False,False,True
+5,HKCU\SOFTWARE\Policies\Microsoft\Workspaces,HKCU\SOFTWARE\Policies\Microsoft,False,False,True
+1,HKLM,,False,False,True
+2,HKLM\HARDWARE,HKLM,False,False,True
+3,HKLM\HARDWARE\DESCRIPTION,HKLM\HARDWARE,False,False,True
+3,HKLM\HARDWARE\DEVICEMAP,HKLM\HARDWARE,False,False,True
+4,HKLM\HARDWARE\DEVICEMAP\VIDEO,HKLM\HARDWARE\DEVICEMAP,False,False,True
+3,HKLM\HARDWARE\RESOURCEMAP,HKLM\HARDWARE,False,False,True
+2,HKLM\SAM,HKLM,False,False,True
+2,HKLM\SECURITY,HKLM,False,False,True
+2,HKLM\Software,HKLM,False,False,True
+3,HKLM\SOFTWARE\Classes,HKLM\SOFTWARE,False,False,False
+4,HKLM\SOFTWARE\Classes\<FileExtension>,HKLM\SOFTWARE\Classes,True,True,True
+4,HKLM\SOFTWARE\Classes\<ProgID>,HKLM\SOFTWARE\Classes,True,True,True
+4,HKLM\SOFTWARE\Classes\AppID,HKLM\SOFTWARE\Classes,False,False,False
+5,HKLM\SOFTWARE\Classes\AppID\<AppID_GUID>,HKLM\SOFTWARE\Classes\AppID,True,True,True
+4,HKLM\SOFTWARE\Classes\CLSID,HKLM\SOFTWARE\Classes,False,False,False
+5,HKLM\SOFTWARE\Classes\CLSID\<CLSID>,HKLM\SOFTWARE\Classes\CLSID,True,True,True
+6,HKLM\SOFTWARE\Classes\CLSID\<CLSID>\InprocServer32,HKLM\SOFTWARE\Classes\CLSID\<CLSID>,True,False,True
+6,HKLM\SOFTWARE\Classes\CLSID\<CLSID>\LocalServer32,HKLM\SOFTWARE\Classes\CLSID\<CLSID>,True,False,True
+4,HKLM\SOFTWARE\Classes\Interface,HKLM\SOFTWARE\Classes,False,False,False
+5,HKLM\SOFTWARE\Classes\Interface\<IID>,HKLM\SOFTWARE\Classes\Interface,True,True,True
+3,HKLM\Software\Microsoft,HKLM\Software,False,False,False
+4,HKLM\Software\Microsoft\Cryptography,HKLM\Software\Microsoft,False,False,False
+5,HKLM\Software\Microsoft\Cryptography\Services,HKLM\Software\Microsoft\Cryptography,False,False,False
+6,HKLM\Software\Microsoft\Cryptography\Services\<ServiceName>,HKLM\Software\Microsoft\Cryptography\Services,True,True,False
+7,HKLM\Software\Microsoft\Cryptography\Services\<ServiceName>\SystemCertificates,HKLM\Software\Microsoft\Cryptography\Services\<ServiceName>,True,False,True
+4,HKLM\Software\Microsoft\SystemCertificates,HKLM\Software\Microsoft,False,False,True
+4,HKLM\Software\Microsoft\Windows,HKLM\Software\Microsoft,False,False,False
+5,HKLM\Software\Microsoft\Windows\CurrentVersion,HKLM\Software\Microsoft\Windows,False,False,False
+6,HKLM\Software\Microsoft\Windows\CurrentVersion\Policies,HKLM\Software\Microsoft\Windows\CurrentVersion,False,False,False
+7,HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer,HKLM\Software\Microsoft\Windows\CurrentVersion\Policies,False,False,True
+7,HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\System,HKLM\Software\Microsoft\Windows\CurrentVersion\Policies,False,False,True
+8,HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\System\Audit,HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\System,False,False,True
+8,HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\System\Kerberos,HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\System,False,False,True
+9,HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\System\Kerberos\Parameters,HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\System\Kerberos,False,False,True
+6,HKLM\Software\Microsoft\Windows\CurrentVersion\Run,HKLM\Software\Microsoft\Windows\CurrentVersion,False,False,True
+6,HKLM\Software\Microsoft\Windows\CurrentVersion\RunOnce,HKLM\Software\Microsoft\Windows\CurrentVersion,False,False,True
+6,HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall,HKLM\Software\Microsoft\Windows\CurrentVersion,False,False,True
+7,HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\<ProductCodeGUID>,HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall,True,True,True
+3,HKLM\Software\Policies,HKLM\Software,False,False,False
+4,HKLM\Software\Policies\Microsoft,HKLM\Software\Policies,False,False,False
+5,HKLM\Software\Policies\Microsoft\Netlogon,HKLM\Software\Policies\Microsoft,False,False,False
+6,HKLM\Software\Policies\Microsoft\Netlogon\Parameters,HKLM\Software\Policies\Microsoft\Netlogon,False,False,True
+5,HKLM\Software\Policies\Microsoft\System,HKLM\Software\Policies\Microsoft,False,False,False
+6,HKLM\Software\Policies\Microsoft\System\DNSClient,HKLM\Software\Policies\Microsoft\System,False,False,True
+5,HKLM\Software\Policies\Microsoft\SystemCertificates,HKLM\Software\Policies\Microsoft,False,False,True
+5,HKLM\Software\Policies\Microsoft\W32Time,HKLM\Software\Policies\Microsoft,False,False,False
+6,HKLM\Software\Policies\Microsoft\W32Time\Config,HKLM\Software\Policies\Microsoft\W32Time,False,False,True
+6,HKLM\Software\Policies\Microsoft\W32time\TimeProviders,HKLM\Software\Policies\Microsoft\W32time,False,False,False
+7,HKLM\Software\Policies\Microsoft\W32time\TimeProviders\NtpClient,HKLM\Software\Policies\Microsoft\W32time\TimeProviders,False,False,True
+7,HKLM\Software\Policies\Microsoft\W32Time\TimeProviders\NtpServer,HKLM\Software\Policies\Microsoft\W32Time\TimeProviders,False,False,True
+5,HKLM\Software\Policies\Microsoft\Windows,HKLM\Software\Policies\Microsoft,False,False,False
+6,HKLM\Software\Policies\Microsoft\Windows\AppCompat,HKLM\Software\Policies\Microsoft\Windows,False,False,True
+6,HKLM\Software\Policies\Microsoft\Windows\CurrentVersion,HKLM\Software\Policies\Microsoft\Windows,False,False,False
+7,HKLM\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings,HKLM\Software\Policies\Microsoft\Windows\CurrentVersion,False,False,False
+8,HKLM\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Lockdown_Zones,HKLM\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings,False,False,False
+9,HKLM\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Lockdown_Zones\0,HKLM\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Lockdown_Zones,False,False,True
+9,HKLM\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Lockdown_Zones\1,HKLM\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Lockdown_Zones,False,False,True
+9,HKLM\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Lockdown_Zones\2,HKLM\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Lockdown_Zones,False,False,True
+9,HKLM\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Lockdown_Zones\3,HKLM\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Lockdown_Zones,False,False,True
+9,HKLM\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Lockdown_Zones\4,HKLM\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Lockdown_Zones,False,False,True
+8,HKLM\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones,HKLM\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings,False,False,False
+9,HKLM\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\0,HKLM\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones,False,False,True
+9,HKLM\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\1,HKLM\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones,False,False,True
+9,HKLM\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\2,HKLM\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones,False,False,True
+9,HKLM\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3,HKLM\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones,False,False,True
+9,HKLM\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\4,HKLM\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones,False,False,True
+6,HKLM\SOFTWARE\Policies\Microsoft\Windows\DeviceGuard,HKLM\SOFTWARE\Policies\Microsoft\Windows,False,False,True
+6,HKLM\Software\Policies\Microsoft\Windows\DeviceInstall,HKLM\Software\Policies\Microsoft\Windows,False,False,False
+7,HKLM\Software\Policies\Microsoft\Windows\DeviceInstall\Restrictions,HKLM\Software\Policies\Microsoft\Windows\DeviceInstall,False,False,True
+8,HKLM\Software\Policies\Microsoft\Windows\DeviceInstall\Restrictions\DeniedPolicy,HKLM\Software\Policies\Microsoft\Windows\DeviceInstall\Restrictions,False,False,True
+7,HKLM\Software\Policies\Microsoft\Windows\DeviceInstall\Settings,HKLM\Software\Policies\Microsoft\Windows\DeviceInstall,False,False,True
+6,HKLM\Software\Policies\Microsoft\Windows\DriverInstall,HKLM\Software\Policies\Microsoft\Windows,False,False,False
+7,HKLM\Software\Policies\Microsoft\Windows\DriverInstall\Restrictions,HKLM\Software\Policies\Microsoft\Windows\DriverInstall,False,False,True
+6,HKLM\Software\Policies\Microsoft\Windows\EventLog,HKLM\Software\Policies\Microsoft\Windows,False,False,False
+7,HKLM\Software\Policies\Microsoft\Windows\EventLog\Application,HKLM\Software\Policies\Microsoft\Windows\EventLog,False,False,True
+7,HKLM\Software\Policies\Microsoft\Windows\EventLog\Security,HKLM\Software\Policies\Microsoft\Windows\EventLog,False,False,True
+7,HKLM\Software\Policies\Microsoft\Windows\EventLog\Setup,HKLM\Software\Policies\Microsoft\Windows\EventLog,False,False,True
+7,HKLM\Software\Policies\Microsoft\Windows\EventLog\System,HKLM\Software\Policies\Microsoft\Windows\EventLog,False,False,True
+6,HKLM\Software\Policies\Microsoft\Windows\Explorer,HKLM\Software\Policies\Microsoft\Windows,False,False,True
+6,HKLM\Software\Policies\Microsoft\Windows\Filesystems,HKLM\Software\Policies\Microsoft\Windows,False,False,False
+7,HKLM\Software\Policies\Microsoft\Windows\Filesystems\NTFS,HKLM\Software\Policies\Microsoft\Windows\Filesystems,False,False,True
+6,HKLM\Software\Policies\Microsoft\Windows\LanmanServer,HKLM\Software\Policies\Microsoft\Windows,False,False,True
+6,HKLM\Software\Policies\Microsoft\Windows\LanmanWorkstation,HKLM\Software\Policies\Microsoft\Windows,False,False,True
+6,HKLM\Software\Policies\Microsoft\Windows\Network Connections,HKLM\Software\Policies\Microsoft\Windows,False,False,True
+6,HKLM\Software\Policies\Microsoft\Windows\RemovableStorageDevices,HKLM\Software\Policies\Microsoft\Windows,False,False,True
+7,HKLM\Software\Policies\Microsoft\Windows\RemovableStorageDevices\Custom,HKLM\Software\Policies\Microsoft\Windows\RemovableStorageDevices,False,False,False
+8,HKLM\Software\Policies\Microsoft\Windows\RemovableStorageDevices\Custom\Deny_Read,HKLM\Software\Policies\Microsoft\Windows\RemovableStorageDevices\Custom,False,False,True
+8,HKLM\Software\Policies\Microsoft\Windows\RemovableStorageDevices\Custom\Deny_Write,HKLM\Software\Policies\Microsoft\Windows\RemovableStorageDevices\Custom,False,False,True
+6,HKLM\Software\Policies\Microsoft\Windows\System,HKLM\Software\Policies\Microsoft\Windows,False,False,True
+6,HKLM\Software\Policies\Microsoft\Windows\TCPIP,HKLM\Software\Policies\Microsoft\Windows,False,False,False
+7,HKLM\Software\Policies\Microsoft\Windows\TCPIP\v6Transition,HKLM\Software\Policies\Microsoft\Windows\TCPIP,False,False,True
+6,HKLM\Software\Policies\Microsoft\Windows\WinRM,HKLM\Software\Policies\Microsoft\Windows,False,False,False
+7,HKLM\Software\Policies\Microsoft\Windows\WinRM\Client,HKLM\Software\Policies\Microsoft\Windows\WinRM,False,False,True
+7,HKLM\Software\Policies\Microsoft\Windows\WinRM\Service,HKLM\Software\Policies\Microsoft\Windows\WinRM,False,False,True
+5,HKLM\SOFTWARE\Policies\Microsoft\Windows Defender,HKLM\SOFTWARE\Policies\Microsoft,False,False,False
+6,HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\MpEngine,HKLM\SOFTWARE\Policies\Microsoft\Windows Defender,False,False,True
+5,HKLM\Software\Policies\Microsoft\Windows NT,HKLM\Software\Policies\Microsoft,False,False,False
+6,HKLM\Software\Policies\Microsoft\Windows NT\CurrentVersion,HKLM\Software\Policies\Microsoft\Windows NT,False,False,False
+7,HKLM\Software\Policies\Microsoft\Windows NT\CurrentVersion\Winlogon,HKLM\Software\Policies\Microsoft\Windows NT\CurrentVersion,False,False,True
+6,HKLM\Software\Policies\Microsoft\Windows NT\DNSClient,HKLM\Software\Policies\Microsoft\Windows NT,False,False,True
+6,HKLM\Software\Policies\Microsoft\Windows NT\Printers,HKLM\Software\Policies\Microsoft\Windows NT,False,False,True
+7,HKLM\Software\Policies\Microsoft\Windows NT\Printers\PackagePointAndPrint,HKLM\Software\Policies\Microsoft\Windows NT\Printers,False,False,True
+7,HKLM\Software\Policies\Microsoft\Windows NT\Printers\Wizard,HKLM\Software\Policies\Microsoft\Windows NT\Printers,False,False,True
+6,HKLM\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services,HKLM\SOFTWARE\Policies\Microsoft\Windows NT,False,False,True
+7,HKLM\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services\AllUserInstallAgent,HKLM\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services,False,False,True
+7,HKLM\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services\Client,HKLM\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services,False,False,True
+2,HKLM\System,HKLM,False,False,True
+3,HKLM\System\CurrentControlSet,HKLM\System,False,False,False
+4,HKLM\System\CurrentControlSet\Control,HKLM\System\CurrentControlSet,False,False,False
+5,HKLM\SYSTEM\CurrentControlSet\Control\Class,HKLM\SYSTEM\CurrentControlSet\Control,False,False,True
+6,HKLM\SYSTEM\CurrentControlSet\Control\Class\<SetupClassGUID>,HKLM\SYSTEM\CurrentControlSet\Control\Class,True,True,True
+5,HKLM\SYSTEM\CurrentControlSet\Control\CoDeviceInstallers,HKLM\SYSTEM\CurrentControlSet\Control,False,False,True
+5,HKLM\SYSTEM\CurrentControlSet\Control\DeviceClasses,HKLM\SYSTEM\CurrentControlSet\Control,False,False,True
+6,HKLM\SYSTEM\CurrentControlSet\Control\DeviceClasses\<InterfaceClassGUID>,HKLM\SYSTEM\CurrentControlSet\Control\DeviceClasses,True,True,True
+5,HKLM\System\CurrentControlSet\Control\FileSystem,HKLM\System\CurrentControlSet\Control,False,False,True
+5,HKLM\SYSTEM\CurrentControlSet\Control\Lsa,HKLM\SYSTEM\CurrentControlSet\Control,False,False,True
+5,HKLM\SYSTEM\CurrentControlSet\Control\NetworkProvider,HKLM\SYSTEM\CurrentControlSet\Control,False,False,False
+6,HKLM\SYSTEM\CurrentControlSet\Control\NetworkProvider\Notifyees,HKLM\SYSTEM\CurrentControlSet\Control\NetworkProvider,False,False,True
+6,HKLM\SYSTEM\CurrentControlSet\Control\NetworkProvider\Order,HKLM\SYSTEM\CurrentControlSet\Control\NetworkProvider,False,False,True
+5,HKLM\SYSTEM\CurrentControlSet\Control\Session Manager,HKLM\SYSTEM\CurrentControlSet\Control,False,False,True
+6,HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Environment,HKLM\SYSTEM\CurrentControlSet\Control\Session Manager,False,False,True
+4,HKLM\SYSTEM\CurrentControlSet\Enum,HKLM\SYSTEM\CurrentControlSet,False,False,True
+4,HKLM\SYSTEM\CurrentControlSet\Hardware Profiles,HKLM\SYSTEM\CurrentControlSet,False,False,False
+5,HKLM\SYSTEM\CurrentControlSet\Hardware Profiles\Current,HKLM\SYSTEM\CurrentControlSet\Hardware Profiles,False,False,True
+4,HKLM\System\CurrentControlSet\Policies,HKLM\System\CurrentControlSet,False,False,True
+4,HKLM\System\CurrentControlSet\Services,HKLM\System\CurrentControlSet,False,False,True
+5,HKLM\SYSTEM\CurrentControlSet\Services\<ServiceName>,HKLM\SYSTEM\CurrentControlSet\Services,True,True,True
+6,HKLM\SYSTEM\CurrentControlSet\Services\<ServiceName>\NetworkProvider,HKLM\SYSTEM\CurrentControlSet\Services\<ServiceName>,True,False,True
+6,HKLM\SYSTEM\CurrentControlSet\Services\<ServiceName>\Parameters,HKLM\SYSTEM\CurrentControlSet\Services\<ServiceName>,True,False,True
+6,HKLM\SYSTEM\CurrentControlSet\Services\<ServiceName>\Performance,HKLM\SYSTEM\CurrentControlSet\Services\<ServiceName>,True,False,True
+5,HKLM\System\CurrentControlSet\Services\EventLog,HKLM\System\CurrentControlSet\Services,False,False,False
+6,HKLM\SYSTEM\CurrentControlSet\Services\EventLog\<LogName>,HKLM\SYSTEM\CurrentControlSet\Services\EventLog,True,True,True
+6,HKLM\System\CurrentControlSet\Services\EventLog\Application,HKLM\System\CurrentControlSet\Services\EventLog,False,False,True
+6,HKLM\System\CurrentControlSet\Services\EventLog\Security,HKLM\System\CurrentControlSet\Services\EventLog,False,False,True
+6,HKLM\System\CurrentControlSet\Services\EventLog\Setup,HKLM\System\CurrentControlSet\Services\EventLog,False,False,True
+6,HKLM\System\CurrentControlSet\Services\EventLog\System,HKLM\System\CurrentControlSet\Services\EventLog,False,False,True
+5,HKLM\SYSTEM\CurrentControlSet\Services\Tcpip6,HKLM\SYSTEM\CurrentControlSet\Services,False,False,False
+6,HKLM\SYSTEM\CurrentControlSet\Services\Tcpip6\Parameters,HKLM\SYSTEM\CurrentControlSet\Services\Tcpip6,False,False,True
+1,HKU,,False,False,True
+2,HKU\.DEFAULT,HKU,False,False,True
+2,HKU\<UserHive>,HKU,True,True,True
+3,HKU\<UserHive>\Environment,HKU\<UserHive>,True,False,True
+3,HKU\<UserHive>\Software,HKU\<UserHive>,True,False,False
+4,HKU\<UserHive>\Software\Microsoft,HKU\<UserHive>\Software,True,False,False
+5,HKU\<UserHive>\Software\Microsoft\SystemCertificates,HKU\<UserHive>\Software\Microsoft,True,False,True

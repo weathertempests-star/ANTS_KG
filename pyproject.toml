@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ants-semantic-kg"
+version = "0.2.0"
+description = "Shared Registry prefix knowledge and reproducible Markdown vaults"
+requires-python = ">=3.9"
+dependencies = []
+
+[project.scripts]
+ants-kg = "standardizer_pkg.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["standardizer_pkg*"]

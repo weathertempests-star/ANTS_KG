@@ -1,0 +1,47 @@
+{
+  "example_counts": {
+    "test": 58,
+    "train": 302,
+    "validation": 34
+  },
+  "families": {
+    "antimalware_configuration": "validation",
+    "application_compatibility": "train",
+    "authentication": "train",
+    "autorun": "test",
+    "certificates": "train",
+    "code_integrity": "test",
+    "com_and_associations": "train",
+    "device_installation": "test",
+    "environment_and_initialization": "train",
+    "event_logging": "test",
+    "file_sharing": "train",
+    "filesystem_configuration": "train",
+    "hardware_configuration": "train",
+    "internet_zones": "train",
+    "name_resolution": "train",
+    "network_configuration": "validation",
+    "network_providers": "train",
+    "printing": "train",
+    "registry_roots": "train",
+    "remote_desktop": "train",
+    "remote_management": "train",
+    "removable_storage": "validation",
+    "service_configuration": "train",
+    "software_installation": "train",
+    "structural_namespaces": "train",
+    "time_service": "train",
+    "user_interface": "train"
+  },
+  "limitations": [
+    "Related concepts, ancestor knowledge and documentation may still overlap across families.",
+    "Full graph exports are transductive; train-edge-index excludes validation/test endpoints.",
+    "This split supports a small pilot, not a claim of independent real-log generalization."
+  ],
+  "node_counts": {
+    "test": 29,
+    "train": 151,
+    "validation": 17
+  },
+  "strategy": "registry-learning-split-v1"
+}

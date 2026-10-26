@@ -1,0 +1,142 @@
+path
+HKCC
+HKCR
+HKCU
+HKCU\Software\Classes
+HKCU\Software\Microsoft
+HKCU\Software\Microsoft\SystemCertificates
+HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Comdlg32
+HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\comdlg32\Placesbar
+HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer
+HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Network
+HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\System
+HKCU\Software\Microsoft\Windows\CurrentVersion\Run
+HKCU\Software\Microsoft\Windows\CurrentVersion\RunOnce
+HKCU\Software\Microsoft\Windows NT\CurrentVersion\Windows
+HKCU\Software\Policies\Microsoft\SystemCertificates
+HKCU\Software\Policies\Microsoft\Windows\AppCompat
+HKCU\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Lockdown_Zones\0
+HKCU\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Lockdown_Zones\1
+HKCU\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Lockdown_Zones\2
+HKCU\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Lockdown_Zones\3
+HKCU\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Lockdown_Zones\4
+HKCU\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\0
+HKCU\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\1
+HKCU\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\2
+HKCU\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3
+HKCU\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\4
+HKCU\SOFTWARE\Policies\Microsoft\Windows\Explorer
+HKCU\Software\Policies\Microsoft\Windows\Network Connections
+HKCU\Software\Policies\Microsoft\Windows\RemovableStorageDevices
+HKCU\Software\Policies\Microsoft\Windows\RemovableStorageDevices\Custom\Deny_Read
+HKCU\Software\Policies\Microsoft\Windows\RemovableStorageDevices\Custom\Deny_Write
+HKCU\Software\Policies\Microsoft\Windows\System
+HKCU\Software\Policies\Microsoft\Windows NT\Printers\PackagePointAndPrint
+HKCU\Software\Policies\Microsoft\Windows NT\Printers\Wizard
+HKCU\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services
+HKCU\SOFTWARE\Policies\Microsoft\Workspaces
+HKLM
+HKLM\HARDWARE
+HKLM\HARDWARE\DESCRIPTION
+HKLM\HARDWARE\DEVICEMAP
+HKLM\HARDWARE\DEVICEMAP\VIDEO
+HKLM\HARDWARE\RESOURCEMAP
+HKLM\SAM
+HKLM\SECURITY
+HKLM\SOFTWARE
+HKLM\SOFTWARE\Classes\<FileExtension>
+HKLM\SOFTWARE\Classes\<ProgID>
+HKLM\SOFTWARE\Classes\AppID\<AppID_GUID>
+HKLM\SOFTWARE\Classes\CLSID\<CLSID>
+HKLM\SOFTWARE\Classes\CLSID\<CLSID>\InprocServer32
+HKLM\SOFTWARE\Classes\CLSID\<CLSID>\LocalServer32
+HKLM\SOFTWARE\Classes\Interface\<IID>
+HKLM\Software\Microsoft\Cryptography\Services\<ServiceName>\SystemCertificates
+HKLM\Software\Microsoft\SystemCertificates
+HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer
+HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\System
+HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\System\Audit
+HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\System\Kerberos
+HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\System\Kerberos\Parameters
+HKLM\Software\Microsoft\Windows\CurrentVersion\Run
+HKLM\Software\Microsoft\Windows\CurrentVersion\RunOnce
+HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall
+HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\<ProductCodeGUID>
+HKLM\Software\Policies\Microsoft\Netlogon\Parameters
+HKLM\Software\Policies\Microsoft\System\DNSClient
+HKLM\Software\Policies\Microsoft\SystemCertificates
+HKLM\Software\Policies\Microsoft\W32Time\Config
+HKLM\Software\Policies\Microsoft\W32time\TimeProviders\NtpClient
+HKLM\Software\Policies\Microsoft\W32Time\TimeProviders\NtpServer
+HKLM\Software\Policies\Microsoft\Windows\AppCompat
+HKLM\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Lockdown_Zones\0
+HKLM\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Lockdown_Zones\1
+HKLM\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Lockdown_Zones\2
+HKLM\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Lockdown_Zones\3
+HKLM\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Lockdown_Zones\4
+HKLM\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\0
+HKLM\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\1
+HKLM\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\2
+HKLM\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3
+HKLM\Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\4
+HKLM\SOFTWARE\Policies\Microsoft\Windows\DeviceGuard
+HKLM\Software\Policies\Microsoft\Windows\DeviceInstall\Restrictions
+HKLM\Software\Policies\Microsoft\Windows\DeviceInstall\Restrictions\DeniedPolicy
+HKLM\Software\Policies\Microsoft\Windows\DeviceInstall\Settings
+HKLM\Software\Policies\Microsoft\Windows\DriverInstall\Restrictions
+HKLM\Software\Policies\Microsoft\Windows\EventLog\Application
+HKLM\Software\Policies\Microsoft\Windows\EventLog\Security
+HKLM\Software\Policies\Microsoft\Windows\EventLog\Setup
+HKLM\Software\Policies\Microsoft\Windows\EventLog\System
+HKLM\Software\Policies\Microsoft\Windows\Explorer
+HKLM\Software\Policies\Microsoft\Windows\Filesystems\NTFS
+HKLM\Software\Policies\Microsoft\Windows\LanmanServer
+HKLM\Software\Policies\Microsoft\Windows\LanmanWorkstation
+HKLM\Software\Policies\Microsoft\Windows\Network Connections
+HKLM\Software\Policies\Microsoft\Windows\RemovableStorageDevices
+HKLM\Software\Policies\Microsoft\Windows\RemovableStorageDevices\Custom\Deny_Read
+HKLM\Software\Policies\Microsoft\Windows\RemovableStorageDevices\Custom\Deny_Write
+HKLM\Software\Policies\Microsoft\Windows\System
+HKLM\Software\Policies\Microsoft\Windows\TCPIP\v6Transition
+HKLM\Software\Policies\Microsoft\Windows\WinRM\Client
+HKLM\Software\Policies\Microsoft\Windows\WinRM\Service
+HKLM\SOFTWARE\Policies\Microsoft\Windows Defender\MpEngine
+HKLM\Software\Policies\Microsoft\Windows NT\CurrentVersion\Winlogon
+HKLM\Software\Policies\Microsoft\Windows NT\DNSClient
+HKLM\Software\Policies\Microsoft\Windows NT\Printers
+HKLM\Software\Policies\Microsoft\Windows NT\Printers\PackagePointAndPrint
+HKLM\Software\Policies\Microsoft\Windows NT\Printers\Wizard
+HKLM\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services
+HKLM\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services\AllUserInstallAgent
+HKLM\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services\Client
+HKLM\SYSTEM
+HKLM\SYSTEM\CurrentControlSet\Control\Class
+HKLM\SYSTEM\CurrentControlSet\Control\Class\<SetupClassGUID>
+HKLM\SYSTEM\CurrentControlSet\Control\CoDeviceInstallers
+HKLM\SYSTEM\CurrentControlSet\Control\DeviceClasses
+HKLM\SYSTEM\CurrentControlSet\Control\DeviceClasses\<InterfaceClassGUID>
+HKLM\System\CurrentControlSet\Control\FileSystem
+HKLM\SYSTEM\CurrentControlSet\Control\Lsa
+HKLM\SYSTEM\CurrentControlSet\Control\NetworkProvider\Notifyees
+HKLM\SYSTEM\CurrentControlSet\Control\NetworkProvider\Order
+HKLM\SYSTEM\CurrentControlSet\Control\Session Manager
+HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Environment
+HKLM\SYSTEM\CurrentControlSet\Enum
+HKLM\SYSTEM\CurrentControlSet\Hardware Profiles\Current
+HKLM\System\CurrentControlSet\Policies
+HKLM\SYSTEM\CurrentControlSet\Services
+HKLM\SYSTEM\CurrentControlSet\Services\<ServiceName>
+HKLM\SYSTEM\CurrentControlSet\Services\<ServiceName>\NetworkProvider
+HKLM\SYSTEM\CurrentControlSet\Services\<ServiceName>\Parameters
+HKLM\SYSTEM\CurrentControlSet\Services\<ServiceName>\Performance
+HKLM\SYSTEM\CurrentControlSet\Services\EventLog\<LogName>
+HKLM\System\CurrentControlSet\Services\EventLog\Application
+HKLM\System\CurrentControlSet\Services\EventLog\Security
+HKLM\System\CurrentControlSet\Services\EventLog\Setup
+HKLM\System\CurrentControlSet\Services\EventLog\System
+HKLM\SYSTEM\CurrentControlSet\Services\Tcpip6\Parameters
+HKU
+HKU\.DEFAULT
+HKU\<UserHive>
+HKU\<UserHive>\Environment
+HKU\<UserHive>\Software\Microsoft\SystemCertificates

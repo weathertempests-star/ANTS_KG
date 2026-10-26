@@ -1,0 +1,1022 @@
+{
+  "reviewer": "research_user_zones",
+  "review_target": "knowledge/research/batches/core.json",
+  "checked_on": "2026-10-21",
+  "reviewed_sha256": "cc6b8546215af044f952be3046a21cda43e88a8e432dcc3e4b571486aeb59dac",
+  "review_scope": "All 74 definitions and all 9 semantic relations were read, including explanation, scope, applicability, log context, cannot_infer, evidence and value_semantics. Important and doubtful claims were checked against the primary documents listed below. No runtime, catalog, or core batch file was edited by this reviewer.",
+  "reviewed_paths": [
+    "HKCC",
+    "HKCR",
+    "HKCU",
+    "HKLM",
+    "HKLM\\HARDWARE",
+    "HKLM\\HARDWARE\\DESCRIPTION",
+    "HKLM\\HARDWARE\\DEVICEMAP",
+    "HKLM\\HARDWARE\\DEVICEMAP\\VIDEO",
+    "HKLM\\HARDWARE\\RESOURCEMAP",
+    "HKLM\\SAM",
+    "HKLM\\SECURITY",
+    "HKLM\\Software",
+    "HKLM\\SOFTWARE\\Classes",
+    "HKLM\\SOFTWARE\\Classes\\<FileExtension>",
+    "HKLM\\SOFTWARE\\Classes\\<ProgID>",
+    "HKLM\\SOFTWARE\\Classes\\AppID",
+    "HKLM\\SOFTWARE\\Classes\\AppID\\<AppID_GUID>",
+    "HKLM\\SOFTWARE\\Classes\\CLSID",
+    "HKLM\\SOFTWARE\\Classes\\CLSID\\<CLSID>",
+    "HKLM\\SOFTWARE\\Classes\\CLSID\\<CLSID>\\InprocServer32",
+    "HKLM\\SOFTWARE\\Classes\\CLSID\\<CLSID>\\LocalServer32",
+    "HKLM\\SOFTWARE\\Classes\\Interface",
+    "HKLM\\SOFTWARE\\Classes\\Interface\\<IID>",
+    "HKLM\\Software\\Microsoft",
+    "HKLM\\Software\\Microsoft\\Cryptography",
+    "HKLM\\Software\\Microsoft\\Cryptography\\Services",
+    "HKLM\\Software\\Microsoft\\Cryptography\\Services\\<ServiceName>",
+    "HKLM\\Software\\Microsoft\\Cryptography\\Services\\<ServiceName>\\SystemCertificates",
+    "HKLM\\Software\\Microsoft\\SystemCertificates",
+    "HKLM\\Software\\Microsoft\\Windows",
+    "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion",
+    "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run",
+    "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce",
+    "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall",
+    "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\<ProductCodeGUID>",
+    "HKLM\\System",
+    "HKLM\\System\\CurrentControlSet",
+    "HKLM\\System\\CurrentControlSet\\Control",
+    "HKLM\\SYSTEM\\CurrentControlSet\\Control\\Class",
+    "HKLM\\SYSTEM\\CurrentControlSet\\Control\\Class\\<SetupClassGUID>",
+    "HKLM\\SYSTEM\\CurrentControlSet\\Control\\CoDeviceInstallers",
+    "HKLM\\SYSTEM\\CurrentControlSet\\Control\\DeviceClasses",
+    "HKLM\\SYSTEM\\CurrentControlSet\\Control\\DeviceClasses\\<InterfaceClassGUID>",
+    "HKLM\\System\\CurrentControlSet\\Control\\FileSystem",
+    "HKLM\\SYSTEM\\CurrentControlSet\\Control\\Lsa",
+    "HKLM\\SYSTEM\\CurrentControlSet\\Control\\NetworkProvider",
+    "HKLM\\SYSTEM\\CurrentControlSet\\Control\\NetworkProvider\\Notifyees",
+    "HKLM\\SYSTEM\\CurrentControlSet\\Control\\NetworkProvider\\Order",
+    "HKLM\\SYSTEM\\CurrentControlSet\\Control\\Session Manager",
+    "HKLM\\SYSTEM\\CurrentControlSet\\Control\\Session Manager\\Environment",
+    "HKLM\\SYSTEM\\CurrentControlSet\\Enum",
+    "HKLM\\SYSTEM\\CurrentControlSet\\Hardware Profiles",
+    "HKLM\\SYSTEM\\CurrentControlSet\\Hardware Profiles\\Current",
+    "HKLM\\System\\CurrentControlSet\\Policies",
+    "HKLM\\System\\CurrentControlSet\\Services",
+    "HKLM\\SYSTEM\\CurrentControlSet\\Services\\<ServiceName>",
+    "HKLM\\SYSTEM\\CurrentControlSet\\Services\\<ServiceName>\\NetworkProvider",
+    "HKLM\\SYSTEM\\CurrentControlSet\\Services\\<ServiceName>\\Parameters",
+    "HKLM\\SYSTEM\\CurrentControlSet\\Services\\<ServiceName>\\Performance",
+    "HKLM\\System\\CurrentControlSet\\Services\\EventLog",
+    "HKLM\\SYSTEM\\CurrentControlSet\\Services\\EventLog\\<LogName>",
+    "HKLM\\System\\CurrentControlSet\\Services\\EventLog\\Application",
+    "HKLM\\System\\CurrentControlSet\\Services\\EventLog\\Security",
+    "HKLM\\System\\CurrentControlSet\\Services\\EventLog\\Setup",
+    "HKLM\\System\\CurrentControlSet\\Services\\EventLog\\System",
+    "HKLM\\SYSTEM\\CurrentControlSet\\Services\\Tcpip6",
+    "HKLM\\SYSTEM\\CurrentControlSet\\Services\\Tcpip6\\Parameters",
+    "HKU",
+    "HKU\\.DEFAULT",
+    "HKU\\<UserHive>",
+    "HKU\\<UserHive>\\Environment",
+    "HKU\\<UserHive>\\Software",
+    "HKU\\<UserHive>\\Software\\Microsoft",
+    "HKU\\<UserHive>\\Software\\Microsoft\\SystemCertificates"
+  ],
+  "reviewed_path_count": 74,
+  "reviewed_relations": [
+    {
+      "source_path": "HKCC",
+      "target_path": "HKLM\\SYSTEM\\CurrentControlSet\\Hardware Profiles\\Current",
+      "relation": "ALIASES",
+      "result": "no_material_issue_found",
+      "notes": "HKCC is the predefined alias of the current hardware-profile branch."
+    },
+    {
+      "source_path": "HKCR",
+      "target_path": "HKLM\\SOFTWARE\\Classes",
+      "relation": "MERGES_MACHINE_REGISTRATION_FROM",
+      "result": "no_material_issue_found",
+      "notes": "HKCR incorporates machine Classes registrations along with the applicable user Classes registrations."
+    },
+    {
+      "source_path": "HKCU",
+      "target_path": "HKU\\<UserHive>",
+      "relation": "RESOLVES_USER_CONTEXT_TO",
+      "result": "no_material_issue_found",
+      "notes": "HKCU maps to a concrete user branch represented by the UserHive schema; the template is not itself a runtime target."
+    },
+    {
+      "source_path": "HKLM\\SOFTWARE\\Classes\\<FileExtension>",
+      "target_path": "HKLM\\SOFTWARE\\Classes\\<ProgID>",
+      "relation": "ASSOCIATES_EXTENSION_WITH",
+      "result": "no_material_issue_found",
+      "notes": "An extension default value can name the ProgID represented by the ProgID schema."
+    },
+    {
+      "source_path": "HKLM\\SOFTWARE\\Classes\\<ProgID>",
+      "target_path": "HKLM\\SOFTWARE\\Classes\\CLSID\\<CLSID>",
+      "relation": "MAPS_PROGRAMMATIC_NAME_TO_CLASS",
+      "result": "no_material_issue_found",
+      "notes": "When present, a CLSID subkey in a COM-oriented ProgID registration maps that textual identifier to a class; this is not a requirement for every Shell file-association ProgID."
+    },
+    {
+      "source_path": "HKLM\\SOFTWARE\\Classes\\CLSID\\<CLSID>",
+      "target_path": "HKLM\\SOFTWARE\\Classes\\AppID\\<AppID_GUID>",
+      "relation": "ASSOCIATES_WITH_APPLICATION_CONFIGURATION",
+      "result": "no_material_issue_found",
+      "notes": "A concrete class can associate with an AppID registration through its AppID metadata."
+    },
+    {
+      "source_path": "HKLM\\SYSTEM\\CurrentControlSet\\Control\\NetworkProvider\\Order",
+      "target_path": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\<ServiceName>\\NetworkProvider",
+      "relation": "ORDERS_REGISTERED_PROVIDERS",
+      "result": "no_material_issue_found",
+      "notes": "ProviderOrder names resolve to provider-specific registrations beneath Services."
+    },
+    {
+      "source_path": "HKLM\\SYSTEM\\CurrentControlSet\\Control\\Class",
+      "target_path": "HKLM\\SYSTEM\\CurrentControlSet\\Control\\DeviceClasses",
+      "relation": "DISTINGUISHED_FROM",
+      "result": "no_material_issue_found",
+      "notes": "Setup classes group installation configuration; interface classes describe exposed device functionality. These are distinct identities."
+    },
+    {
+      "source_path": "HKLM\\SYSTEM\\CurrentControlSet\\Control\\Session Manager\\Environment",
+      "target_path": "HKU\\<UserHive>\\Environment",
+      "relation": "CONTRASTS_MACHINE_AND_USER_SCOPE",
+      "result": "no_material_issue_found",
+      "notes": "The WMI environment documentation separates system variables from per-user hive variables."
+    }
+  ],
+  "sources_checked": [
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/sysinfo/predefined-keys",
+      "sections": [
+        "HKEY_CURRENT_CONFIG; HKEY_CURRENT_USER"
+      ],
+      "verification": "read_in_this_peer_review",
+      "checked_on": "2026-10-21",
+      "result": "Verified HKCC alias, per-process HKCU mapping, context caveats, and user software convention."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/sysinfo/registry-hives",
+      "sections": [
+        "User profile hives; supporting-file table"
+      ],
+      "verification": "read_in_this_peer_review",
+      "checked_on": "2026-10-21",
+      "result": "Verified user hives beneath HKU and separate SAM/SECURITY/SYSTEM hive identities; historical format claims were not generalized."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/sysinfo/hkey-classes-root-key",
+      "sections": [
+        "Merged user/machine Classes view and write routing"
+      ],
+      "verification": "read_in_this_peer_review",
+      "checked_on": "2026-10-21",
+      "result": "Verified file-association/COM metadata, machine/user backing branches, context-dependent merged view, and elevation caveats."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/sysinfo/structure-of-the-registry",
+      "sections": [
+        "Registry structure example"
+      ],
+      "verification": "read_in_this_peer_review",
+      "checked_on": "2026-10-21",
+      "result": "Verified HARDWARE children and VIDEO as a key while MaxObjectNumber/VgaCompatible are values."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/dotnet/api/microsoft.win32.registry.localmachine",
+      "sections": [
+        "Remarks"
+      ],
+      "verification": "read_in_this_peer_review",
+      "checked_on": "2026-10-21",
+      "result": "Verified machine software, SYSTEM, SAM, SECURITY, and startup-recreated HARDWARE descriptions; source historical terminology is acknowledged in notes."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/seccrypto/system-store-locations",
+      "sections": [
+        "CERT_SYSTEM_STORE_LOCAL_MACHINE; CURRENT_SERVICE; SERVICES; USERS; logical/physical collection introduction"
+      ],
+      "verification": "read_in_this_peer_review",
+      "checked_on": "2026-10-21",
+      "result": "Verified service versus user versus machine paths and aggregation of physical stores. Ancestors remain structural."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/setupapi/run-and-runonce-registry-keys",
+      "sections": [
+        "Run and RunOnce behavior and caveats"
+      ],
+      "verification": "read_in_this_peer_review",
+      "checked_on": "2026-10-21",
+      "result": "Verified HKLM Run/RunOnce logon registration, machine RunOnce administrator-after-reboot condition, deletion timing, prefixes, non-guaranteed ordering and delay."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/com/-file-extension--key",
+      "sections": [
+        "Registry Entry; Remarks"
+      ],
+      "verification": "read_in_this_peer_review",
+      "checked_on": "2026-10-21",
+      "result": "Verified extension unnamed value maps to ProgID, and explicit HKLM Classes path."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/com/-progid--key",
+      "sections": [
+        "Definition; Registry Entry; Remarks"
+      ],
+      "verification": "read_in_this_peer_review",
+      "checked_on": "2026-10-21",
+      "result": "Verified optional COM-class association and non-global uniqueness; supported conditional edge rather than requiring all Shell ProgIDs to map to CLSID."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/shell/fa-progids",
+      "sections": [
+        "Introduction; Programmatic Identifier Elements Used by File Associations"
+      ],
+      "verification": "read_in_this_peer_review",
+      "checked_on": "2026-10-21",
+      "result": "Verified Shell ProgID association role, distinct from a mandatory COM class mapping."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/com/appid-key",
+      "sections": [
+        "Registry Key; Remarks"
+      ],
+      "verification": "read_in_this_peer_review",
+      "checked_on": "2026-10-21",
+      "result": "Verified GUID application configuration, DllSurrogate empty-string system surrogate, LaunchPermission ACL purpose, and class-to-AppID relation."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/com/clsid-key-hklm",
+      "sections": [
+        "Registry Key; Remarks"
+      ],
+      "verification": "read_in_this_peer_review",
+      "checked_on": "2026-10-21",
+      "result": "Verified class GUID location and associated AppID/server/ProgID metadata."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/com/interface-key",
+      "sections": [
+        "Definition; Registry Key"
+      ],
+      "verification": "read_in_this_peer_review",
+      "checked_on": "2026-10-21",
+      "result": "Verified IID identity slot, separation from CLSID, and interface metadata registration."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/com/inprocserver32",
+      "sections": [
+        "Registry Entry; Remarks"
+      ],
+      "verification": "read_in_this_peer_review",
+      "checked_on": "2026-10-21",
+      "result": "Verified unnamed DLL path and ThreadingModel values; registry-view caveat avoids treating 32 suffix as observed process architecture."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/com/localserver32",
+      "sections": [
+        "Registry entry; Remarks"
+      ],
+      "verification": "read_in_this_peer_review",
+      "checked_on": "2026-10-21",
+      "result": "Verified any-architecture executable registration, optional command arguments, ServerExecutable support starting Server 2003, and LocalService override."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/msi/uninstall-registry-key",
+      "sections": [
+        "Product-code registry path; property mapping table"
+      ],
+      "verification": "read_in_this_peer_review",
+      "checked_on": "2026-10-21",
+      "result": "Verified MSI product GUID records and InstallDate being reset by patch/repair servicing."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows-hardware/drivers/install/hklm-system-currentcontrolset-control-registry-tree",
+      "sections": [
+        "Introduction; Class; CoDeviceInstallers; DeviceClasses"
+      ],
+      "verification": "read_in_this_peer_review",
+      "checked_on": "2026-10-21",
+      "result": "Verified exact device setup, coinstaller, and interface-class namespaces; generic coinstaller applicability warranted a deprecation check."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows-hardware/drivers/install/hklm-system-currentcontrolset-services-registry-tree",
+      "sections": [
+        "Introduction; Additional Keys; Common Registry Keys and Values"
+      ],
+      "verification": "read_in_this_peer_review",
+      "checked_on": "2026-10-21",
+      "result": "Verified service/driver child records, Start/ImagePath driver-focused description, Parameters and optional Performance roles."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows-hardware/drivers/install/overview-of-device-setup-classes",
+      "sections": [
+        "Overview"
+      ],
+      "verification": "read_in_this_peer_review",
+      "checked_on": "2026-10-21",
+      "result": "Verified shared installation/configuration grouping and setup-class GUID identity."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows-hardware/drivers/install/overview-of-device-interface-classes",
+      "sections": [
+        "Overview"
+      ],
+      "verification": "read_in_this_peer_review",
+      "checked_on": "2026-10-21",
+      "result": "Verified functionality/I/O-contract classes, persistent registration, and enablement on each enumeration before symbolic link can be used."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows-hardware/drivers/install/hklm-system-currentcontrolset-enum-registry-tree",
+      "sections": [
+        "Introduction"
+      ],
+      "verification": "read_in_this_peer_review",
+      "checked_on": "2026-10-21",
+      "result": "Verified OS-reserved tree, variable layout, and directive to use system APIs rather than direct access."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows-hardware/drivers/install/hklm-system-currentcontrolset-hardwareprofiles-registry-tree",
+      "sections": [
+        "Introduction"
+      ],
+      "verification": "read_in_this_peer_review",
+      "checked_on": "2026-10-21",
+      "result": "Verified deprecation and that the article itself omits the space; exact spaced alias path was independently corroborated in Predefined Keys."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/secauthn/authentication-registry-keys",
+      "sections": [
+        "Provider ordering; provider-specific values; connection notification registration"
+      ],
+      "verification": "read_in_this_peer_review",
+      "checked_on": "2026-10-21",
+      "result": "Verified comma-separated ProviderOrder linkage into Services and application-named REG_EXPAND_SZ Notifyees values versus child keys."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/secauthn/registering-ssp-ap-dlls",
+      "sections": [
+        "Registering SSP/AP DLLs"
+      ],
+      "verification": "read_in_this_peer_review",
+      "checked_on": "2026-10-21",
+      "result": "Verified Security Packages is REG_MULTI_SZ and entries omit the .dll extension; latter precision is recommended in C-02."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-movefileexa",
+      "sections": [
+        "MOVEFILE_DELAY_UNTIL_REBOOT; Remarks"
+      ],
+      "verification": "read_in_this_peer_review",
+      "checked_on": "2026-10-21",
+      "result": "Verified PendingFileRenameOperations as a value, REG_MULTI_SZ deferred-operation encoding, and registration success versus future file-operation success."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-environment",
+      "sections": [
+        "Introduction; Name and SystemVariable properties; Remarks"
+      ],
+      "verification": "read_in_this_peer_review",
+      "checked_on": "2026-10-21",
+      "result": "Verified machine Session Manager Environment versus HKEY_USERS user Environment; property mapping corroborates correctly spaced Session Manager despite introduction typo."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation",
+      "sections": [
+        "Enable long paths; Registry setting; Application manifest updates"
+      ],
+      "verification": "read_in_this_peer_review",
+      "checked_on": "2026-10-21",
+      "result": "Verified Windows 10 1607 start, LongPathsEnabled DWORD=1 plus longPathAware requirement, and per-process caching."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-filesys",
+      "sections": [
+        "DisableCompression; DisableDeleteNotification; DisableEncryption"
+      ],
+      "verification": "read_in_this_peer_review",
+      "checked_on": "2026-10-21",
+      "result": "Verified exact CurrentControlSet Policies value mappings, compression wording, 0/1 deletion-notification semantics, and managed-edition/CSP support scope."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/eventlog/eventlog-key",
+      "sections": [
+        "Standard logs table; per-log registry values; infrastructure note"
+      ],
+      "verification": "read_in_this_peer_review",
+      "checked_on": "2026-10-21",
+      "result": "Verified Application/Security/System purpose, CustomSD as named SDDL value, File as named backing-file value, and Vista redesign caveat."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-eventlog",
+      "sections": [
+        "Channel_Log_FileLogAccess_5/_6/_7/_8"
+      ],
+      "verification": "read_in_this_peer_review",
+      "checked_on": "2026-10-21",
+      "result": "Verified exact Application/Security/Setup/System service-tree mappings and legacy-versus-modern log-access distinction."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/api/winsvc/nf-winsvc-createservicew",
+      "sections": [
+        "Parameters: lpBinaryPathName"
+      ],
+      "verification": "read_in_this_peer_review",
+      "checked_on": "2026-10-21",
+      "result": "Verified service launch configuration may include arguments, motivating C-01; this is a new corroborating source, not a preexisting core citation."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/services/service-entry-point",
+      "sections": [
+        "Introduction"
+      ],
+      "verification": "read_in_this_peer_review",
+      "checked_on": "2026-10-21",
+      "result": "Verified that service main receives arguments from registry ImagePath; new direct corroboration for C-01."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows-hardware/drivers/install/specific-requirements-for-device-property-page-providers--class-instal",
+      "sections": [
+        "Note"
+      ],
+      "verification": "read_in_this_peer_review",
+      "checked_on": "2026-10-21",
+      "result": "Verified Microsoft explicitly deprecates class installers/co-installers; new applicability corroboration for C-03."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/troubleshoot/windows-client/shell-experience/uwp-apps-fails-incorrect-registry-permissions",
+      "sections": [
+        "Cause of registry permission issues"
+      ],
+      "verification": "read_in_this_peer_review",
+      "checked_on": "2026-10-21",
+      "result": "Verified the source explicitly calls CurrentControlSet the active control set used at runtime."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/troubleshoot/windows-server/networking/configure-ipv6-in-windows",
+      "sections": [
+        "Use registry key to configure IPv6; bitmask calculation"
+      ],
+      "verification": "read_in_this_peer_review",
+      "checked_on": "2026-10-21",
+      "result": "Verified DisabledComponents DWORD, 0x20 IPv4 preference, restart requirement, internal loopback retention, and independence from adapter checkbox state."
+    },
+    {
+      "url": "https://devblogs.microsoft.com/oldnewthing/20070302-00/?p=27783/",
+      "sections": [
+        "The .Default user is not the default user"
+      ],
+      "verification": "read_in_this_peer_review",
+      "checked_on": "2026-10-21",
+      "result": "Verified LocalSystem S-1-5-18 alias and distinct new-user template; historical XP file path is not generalized."
+    }
+  ],
+  "sources_not_independently_reopened": [
+    "https://learn.microsoft.com/en-us/windows-hardware/drivers/kernel/plug-and-play-registry-routines"
+  ],
+  "source_check_limit": "Only sources_checked are claimed as read during this peer review. The remaining Plug and Play registry routines URL is a supplemental citation; its claims were checked through the separately read exact Enum/hardware-profile/predefined-key sources rather than reopening that page.",
+  "source_access_attempts": [
+    {
+      "url": "https://learn.microsoft.com/en-us/windows-hardware/drivers/develop/removing-co-installers-from-driver-packages",
+      "result": "inaccessible_via_web_tool",
+      "alternative": "https://learn.microsoft.com/en-us/windows-hardware/drivers/install/specific-requirements-for-device-property-page-providers--class-instal",
+      "consequence": "No specific Windows-version removal claim was made; deprecation alone is established by the readable alternative."
+    }
+  ],
+  "findings": [
+    {
+      "id": "C-01",
+      "severity": "medium",
+      "category": "value_semantics_precision",
+      "paths": [
+        "HKLM\\SYSTEM\\CurrentControlSet\\Services\\<ServiceName>"
+      ],
+      "field": "research.value_semantics[ImagePath].meaning",
+      "issue": "The generic service/driver node describes ImagePath only as a binary path. This is incomplete for Win32 services: the registry value can also carry launch arguments. An external consumer could treat the complete launch string as a literal file path or discard arguments that materially change service configuration. The cited driver-tree description alone does not cover that broader service launch-string interpretation.",
+      "observed_text": "Path to the registered service or driver binary.",
+      "suggested_fix": "Describe the driver binary-path convention separately from Win32 service executable path plus optional command-line arguments; require preservation of the complete raw string and applicable service type when interpreting it. Add Service Entry Point and CreateService primary evidence.",
+      "sources": [
+        "https://learn.microsoft.com/en-us/windows/win32/services/service-entry-point",
+        "https://learn.microsoft.com/en-us/windows/win32/api/winsvc/nf-winsvc-createservicew"
+      ],
+      "source_sections": [
+        "Service Entry Point / introduction",
+        "CreateServiceW / lpBinaryPathName"
+      ],
+      "blocking": false
+    },
+    {
+      "id": "C-02",
+      "severity": "low",
+      "category": "value_encoding_precision",
+      "paths": [
+        "HKLM\\SYSTEM\\CurrentControlSet\\Control\\Lsa"
+      ],
+      "field": "research.value_semantics[Security Packages].meaning",
+      "issue": "The meaning correctly says REG_MULTI_SZ DLL names but omits the source\u2019s explicit detail that these names exclude the .dll extension. This is a precision improvement for future value interpretation, rather than an incorrect key/value classification.",
+      "observed_text": "REG_MULTI_SZ list of registered SSP/AP DLL names.",
+      "suggested_fix": "Specify DLL base names without the .dll extension, separated by NUL characters in REG_MULTI_SZ; retain the current limit that this documentation covers SSP/AP registration rather than every SSP mechanism.",
+      "sources": [
+        "https://learn.microsoft.com/en-us/windows/win32/secauthn/registering-ssp-ap-dlls"
+      ],
+      "source_sections": [
+        "Registering SSP/AP DLLs / introductory registration value description"
+      ],
+      "blocking": false
+    },
+    {
+      "id": "C-03",
+      "severity": "low",
+      "category": "applicability_precision",
+      "paths": [
+        "HKLM\\SYSTEM\\CurrentControlSet\\Control\\CoDeviceInstallers"
+      ],
+      "field": "research.applicability",
+      "issue": "The coinstaller note says applicability depends on package model and mechanism but does not mention explicit Microsoft deprecation of class installers/co-installers. The current wording is cautious and the namespace role is correct, but a training note should expose this lifecycle limit as clearly as the adjacent hardware-profile notes do.",
+      "observed_text": "This is the documented class-coinstaller namespace; applicability depends on the driver package model and installation mechanism in use.",
+      "suggested_fix": "Add the documented deprecation caveat with the new primary source. Do not invent a universal Windows release where the registry key stopped existing or all coinstallers ceased working.",
+      "sources": [
+        "https://learn.microsoft.com/en-us/windows-hardware/drivers/install/specific-requirements-for-device-property-page-providers--class-instal"
+      ],
+      "source_sections": [
+        "Note"
+      ],
+      "blocking": false
+    }
+  ],
+  "resolved_during_review": [
+    {
+      "issue": "The three unnamed registry value records formerly used the display label (Default) as their actual name.",
+      "resolution": "Root corrected them to empty actual names; confirmed in reviewed target version.",
+      "paths": [
+        "HKLM\\SOFTWARE\\Classes\\<FileExtension>",
+        "HKLM\\SOFTWARE\\Classes\\CLSID\\<CLSID>\\InprocServer32",
+        "HKLM\\SOFTWARE\\Classes\\CLSID\\<CLSID>\\LocalServer32"
+      ]
+    },
+    {
+      "issue": "Relation identifiers formerly used lowercase names unlike the integration contract.",
+      "resolution": "Root normalized all nine to UPPER_SNAKE_CASE; confirmed in reviewed target version."
+    }
+  ],
+  "node_reviews": [
+    {
+      "path": "HKCC",
+      "result": "no_material_issue_found",
+      "review_focus": "Logical HKCC alias and exact spaced Hardware Profiles path; no duplicate-store inference.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKCR",
+      "result": "no_material_issue_found",
+      "review_focus": "Merged class-registration view and process/user context; no independent hive claim.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKCU",
+      "result": "no_material_issue_found",
+      "review_focus": "Per-process HKCU mapping and impersonation caveat.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKLM",
+      "result": "no_material_issue_found",
+      "review_focus": "Machine scope without actor or enabled-state inference.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKLM\\HARDWARE",
+      "result": "no_material_issue_found",
+      "review_focus": "Volatile boot-recreated hardware data versus persistent configuration.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKLM\\HARDWARE\\DESCRIPTION",
+      "result": "no_material_issue_found",
+      "review_focus": "Hardware description container without assigning processor/firmware facts.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKLM\\HARDWARE\\DEVICEMAP",
+      "result": "no_material_issue_found",
+      "review_focus": "Driver-class-specific DeviceMap schema.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKLM\\HARDWARE\\DEVICEMAP\\VIDEO",
+      "result": "no_material_issue_found",
+      "review_focus": "VIDEO key versus illustrative MaxObjectNumber/VgaCompatible values; structural status appropriate.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKLM\\HARDWARE\\RESOURCEMAP",
+      "result": "no_material_issue_found",
+      "review_focus": "Driver hardware-resource claims versus conflict or I/O outcome.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKLM\\SAM",
+      "result": "no_material_issue_found",
+      "review_focus": "SAM identity separated from SECURITY and modern credential extraction claims.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKLM\\SECURITY",
+      "result": "no_material_issue_found",
+      "review_focus": "SECURITY policy hive, historically worded overview explicitly qualified.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKLM\\Software",
+      "result": "no_material_issue_found",
+      "review_focus": "Machine software namespace and descendant-specific meaning.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKLM\\SOFTWARE\\Classes",
+      "result": "no_material_issue_found",
+      "review_focus": "Machine Classes contribution versus effective HKCR/user view.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKLM\\SOFTWARE\\Classes\\<FileExtension>",
+      "result": "no_material_issue_found",
+      "review_focus": "Extension template and unnamed ProgID value; root\u2019s empty-name correction verified.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKLM\\SOFTWARE\\Classes\\<ProgID>",
+      "result": "no_material_issue_found",
+      "review_focus": "Shell ProgID versus optional COM CLSID mapping, not universal equivalence.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKLM\\SOFTWARE\\Classes\\AppID",
+      "result": "no_material_issue_found",
+      "review_focus": "AppID structural collection, no assertion every child is GUID or one executable.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKLM\\SOFTWARE\\Classes\\AppID\\<AppID_GUID>",
+      "result": "no_material_issue_found",
+      "review_focus": "AppID GUID template, surrogate and launch ACL values, no activation inference.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKLM\\SOFTWARE\\Classes\\CLSID",
+      "result": "no_material_issue_found",
+      "review_focus": "CLSID collection versus class implementation.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKLM\\SOFTWARE\\Classes\\CLSID\\<CLSID>",
+      "result": "no_material_issue_found",
+      "review_focus": "Concrete class-identity template versus installed instance.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKLM\\SOFTWARE\\Classes\\CLSID\\<CLSID>\\InprocServer32",
+      "result": "no_material_issue_found",
+      "review_focus": "InprocServer32 unnamed path and ThreadingModel values; no execution/architecture inference.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKLM\\SOFTWARE\\Classes\\CLSID\\<CLSID>\\LocalServer32",
+      "result": "no_material_issue_found",
+      "review_focus": "LocalServer32 any-architecture executable/argument input and LocalService caveat.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKLM\\SOFTWARE\\Classes\\Interface",
+      "result": "no_material_issue_found",
+      "review_focus": "Interface IID namespace distinct from CLSID.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKLM\\SOFTWARE\\Classes\\Interface\\<IID>",
+      "result": "no_material_issue_found",
+      "review_focus": "IID template and marshaling registration versus method execution.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKLM\\Software\\Microsoft",
+      "result": "no_material_issue_found",
+      "review_focus": "Microsoft ancestor status structural, backed by documented certificate descendant.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKLM\\Software\\Microsoft\\Cryptography",
+      "result": "no_material_issue_found",
+      "review_focus": "Cryptography ancestor status structural, not universal crypto options.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKLM\\Software\\Microsoft\\Cryptography\\Services",
+      "result": "no_material_issue_found",
+      "review_focus": "Cryptography Services distinct from SYSTEM Services.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKLM\\Software\\Microsoft\\Cryptography\\Services\\<ServiceName>",
+      "result": "no_material_issue_found",
+      "review_focus": "Service certificate identity template does not claim running service.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKLM\\Software\\Microsoft\\Cryptography\\Services\\<ServiceName>\\SystemCertificates",
+      "result": "no_material_issue_found",
+      "review_focus": "Service system-store location and logical/physical aggregation limits.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKLM\\Software\\Microsoft\\SystemCertificates",
+      "result": "no_material_issue_found",
+      "review_focus": "Machine certificate namespace versus one certificate or trust result.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKLM\\Software\\Microsoft\\Windows",
+      "result": "no_material_issue_found",
+      "review_focus": "Windows product ancestor and supported Run/Uninstall examples.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion",
+      "result": "no_material_issue_found",
+      "review_focus": "CurrentVersion facility ancestor not OS version value.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run",
+      "result": "no_material_issue_found",
+      "review_focus": "Machine Run named command values versus process execution.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce",
+      "result": "no_material_issue_found",
+      "review_focus": "HKLM RunOnce administrator/reboot, deletion and Safe Mode details.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall",
+      "result": "no_material_issue_found",
+      "review_focus": "Uninstall namespace versus actual removal; MSI layout not forced on every child.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\<ProductCodeGUID>",
+      "result": "no_material_issue_found",
+      "review_focus": "MSI product GUID and mutable servicing-related InstallDate.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKLM\\System",
+      "result": "no_material_issue_found",
+      "review_focus": "SYSTEM operating-system startup/configuration scope.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKLM\\System\\CurrentControlSet",
+      "result": "no_material_issue_found",
+      "review_focus": "CurrentControlSet active context explicitly confirmed in primary troubleshooting doc.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKLM\\System\\CurrentControlSet\\Control",
+      "result": "no_material_issue_found",
+      "review_focus": "Control startup/device configuration versus runtime service command.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKLM\\SYSTEM\\CurrentControlSet\\Control\\Class",
+      "result": "no_material_issue_found",
+      "review_focus": "Setup-class installation grouping distinct from interfaces.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKLM\\SYSTEM\\CurrentControlSet\\Control\\Class\\<SetupClassGUID>",
+      "result": "no_material_issue_found",
+      "review_focus": "Setup GUID template and shared class configuration versus device presence.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKLM\\SYSTEM\\CurrentControlSet\\Control\\CoDeviceInstallers",
+      "result": "clarification_recommended",
+      "review_focus": "CoDeviceInstallers namespace correct; deprecation clarification C-03.",
+      "finding_ids": [
+        "C-03"
+      ]
+    },
+    {
+      "path": "HKLM\\SYSTEM\\CurrentControlSet\\Control\\DeviceClasses",
+      "result": "no_material_issue_found",
+      "review_focus": "DeviceClasses registration versus interface enablement and present usability.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKLM\\SYSTEM\\CurrentControlSet\\Control\\DeviceClasses\\<InterfaceClassGUID>",
+      "result": "no_material_issue_found",
+      "review_focus": "Interface-class GUID versus a single physical device.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKLM\\System\\CurrentControlSet\\Control\\FileSystem",
+      "result": "no_material_issue_found",
+      "review_focus": "LongPathsEnabled and manifest/API/process-cache conditions.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKLM\\SYSTEM\\CurrentControlSet\\Control\\Lsa",
+      "result": "clarification_recommended",
+      "review_focus": "LSA Security Packages is value; extension-omission precision C-02.",
+      "finding_ids": [
+        "C-02"
+      ]
+    },
+    {
+      "path": "HKLM\\SYSTEM\\CurrentControlSet\\Control\\NetworkProvider",
+      "result": "no_material_issue_found",
+      "review_focus": "NetworkProvider ancestor structural; implementation elsewhere.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKLM\\SYSTEM\\CurrentControlSet\\Control\\NetworkProvider\\Notifyees",
+      "result": "no_material_issue_found",
+      "review_focus": "Notifyees application-named values, REG_EXPAND_SZ DLL paths.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKLM\\SYSTEM\\CurrentControlSet\\Control\\NetworkProvider\\Order",
+      "result": "no_material_issue_found",
+      "review_focus": "ProviderOrder comma-separated names and Services linkage.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKLM\\SYSTEM\\CurrentControlSet\\Control\\Session Manager",
+      "result": "no_material_issue_found",
+      "review_focus": "PendingFileRenameOperations value versus Environment subkey; deferred request versus outcome.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKLM\\SYSTEM\\CurrentControlSet\\Control\\Session Manager\\Environment",
+      "result": "no_material_issue_found",
+      "review_focus": "System environment persistence versus effective process environment.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKLM\\SYSTEM\\CurrentControlSet\\Enum",
+      "result": "no_material_issue_found",
+      "review_focus": "Enum reserved/internal mutable layout and API access guidance.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKLM\\SYSTEM\\CurrentControlSet\\Hardware Profiles",
+      "result": "no_material_issue_found",
+      "review_focus": "Hardware Profiles ancestor structural, deprecation and exact spelling corroborated.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKLM\\SYSTEM\\CurrentControlSet\\Hardware Profiles\\Current",
+      "result": "no_material_issue_found",
+      "review_focus": "Current physical-path configuration versus HKCC logical alias.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKLM\\System\\CurrentControlSet\\Policies",
+      "result": "no_material_issue_found",
+      "review_focus": "Policy values and CSP versions, no universal enabled state.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKLM\\System\\CurrentControlSet\\Services",
+      "result": "no_material_issue_found",
+      "review_focus": "Services parent config separated from runtime state.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\<ServiceName>",
+      "result": "clarification_recommended",
+      "review_focus": "Service/driver template valid; ImagePath launch-argument precision C-01.",
+      "finding_ids": [
+        "C-01"
+      ]
+    },
+    {
+      "path": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\<ServiceName>\\NetworkProvider",
+      "result": "no_material_issue_found",
+      "review_focus": "Provider-specific service implementation vs global ordering.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\<ServiceName>\\Parameters",
+      "result": "no_material_issue_found",
+      "review_focus": "Parameters component-specific with no fabricated universal schema.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\<ServiceName>\\Performance",
+      "result": "no_material_issue_found",
+      "review_focus": "Optional classic Performance registration, not every modern provider model.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKLM\\System\\CurrentControlSet\\Services\\EventLog",
+      "result": "no_material_issue_found",
+      "review_focus": "EventLog service configuration vs policy tree and actual records.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\EventLog\\<LogName>",
+      "result": "no_material_issue_found",
+      "review_focus": "Log template CustomSD/File named values versus sources or records.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKLM\\System\\CurrentControlSet\\Services\\EventLog\\Application",
+      "result": "no_material_issue_found",
+      "review_focus": "Application purpose and exact legacy service-tree access mapping.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKLM\\System\\CurrentControlSet\\Services\\EventLog\\Security",
+      "result": "no_material_issue_found",
+      "review_focus": "Security audit-log purpose and exact legacy mapping.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKLM\\System\\CurrentControlSet\\Services\\EventLog\\Setup",
+      "result": "no_material_issue_found",
+      "review_focus": "Setup conservative role established by exact legacy mapping, no invented content taxonomy.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKLM\\System\\CurrentControlSet\\Services\\EventLog\\System",
+      "result": "no_material_issue_found",
+      "review_focus": "System OS-component log purpose and exact legacy mapping.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\Tcpip6",
+      "result": "no_material_issue_found",
+      "review_focus": "Tcpip6 ancestor structural, not enablement switch.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\Tcpip6\\Parameters",
+      "result": "no_material_issue_found",
+      "review_focus": "DisabledComponents bitmask, IPv4 preference, restart, loopback and checkbox caveats.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKU",
+      "result": "no_material_issue_found",
+      "review_focus": "Loaded HKU contexts distinct from active human users.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKU\\.DEFAULT",
+      "result": "no_material_issue_found",
+      "review_focus": ".DEFAULT is LocalSystem alias, not new-user template; historical source scoped.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKU\\<UserHive>",
+      "result": "no_material_issue_found",
+      "review_focus": "UserHive schema placeholder versus actual SID/account/loaded instance.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKU\\<UserHive>\\Environment",
+      "result": "no_material_issue_found",
+      "review_focus": "Per-hive persistent user Environment versus process environment.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKU\\<UserHive>\\Software",
+      "result": "no_material_issue_found",
+      "review_focus": "User Software ancestor structural, certificate descendant supports ancestry.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKU\\<UserHive>\\Software\\Microsoft",
+      "result": "no_material_issue_found",
+      "review_focus": "User Microsoft vendor ancestor structural, not a certificate store itself.",
+      "finding_ids": []
+    },
+    {
+      "path": "HKU\\<UserHive>\\Software\\Microsoft\\SystemCertificates",
+      "result": "no_material_issue_found",
+      "review_focus": "Selected-user certificate store and trust/physical-store limitations.",
+      "finding_ids": []
+    }
+  ],
+  "summary": {
+    "high_findings": 0,
+    "medium_findings": 1,
+    "low_findings": 2,
+    "blocking_findings": 0,
+    "conclusion": "No false alias, setup/interface-class conflation, key/value category error, policy-enabled inference, or configuration-to-execution inference was found in the reviewed version. Three bounded value/applicability clarifications are recommended."
+  }
+}

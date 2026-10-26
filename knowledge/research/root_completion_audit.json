@@ -1,0 +1,127 @@
+{
+  "schema": "registry-root-completion-audit-1",
+  "checked_on": "2026-10-21",
+  "historical_checkpoint": true,
+  "superseded_by": "research_audit.json",
+  "reviewer": "root",
+  "objective_scope": "Complete the existing 197-node Registry KG for self-contained knowledge reading, source-aware model retrieval, and reproducible learning-data preparation. No claim of trained-model performance.",
+  "requirements": [
+    {
+      "requirement": "Planned delegated research and independent review",
+      "evidence": [
+        "work_manifest.json",
+        "reviews/core_peer.json",
+        "reviews/user_zones_peer.json",
+        "reviews/machine_policy_peer.json"
+      ],
+      "result": "74 + 63 + 60 assigned nodes, exact coverage, every path independently reviewed; bounded findings resolved."
+    },
+    {
+      "requirement": "Every existing node has substantive context and evidence",
+      "evidence": [
+        "../windows_registry.json",
+        "source_reviews.json"
+      ],
+      "result": "197 researched nodes; 145 documented, 52 explicitly structural. Each has atomic claim, explanation, scope, log context, 2+ limits, applicability and claim evidence; no pending entries."
+    },
+    {
+      "requirement": "Zettelkasten-oriented knowledge structure",
+      "evidence": [
+        "../../artifacts/knowledge-vault/INDEX.md",
+        "../../artifacts/knowledge-vault/CONCEPTS.md",
+        "reviews/delivery_peer.json"
+      ],
+      "result": "197 stable-ID notes with full prefix, parent/child context and citations; 46 explained sourced crosslinks supplement 192 hierarchy edges. Atomic unit is a Registry prefix, not an event or arbitrary sentence."
+    },
+    {
+      "requirement": "System-log meaning and inference boundaries",
+      "evidence": [
+        "../registry_log_semantics.json",
+        "../../docs/REGISTRY_LEARNING_DATA.md",
+        "../../evaluation/registry_cases.jsonl"
+      ],
+      "result": "Provider semantics distinguish request, modification, creation and rename; scope/key/value/template and configuration/outcome limits reviewed. Positive supported conclusions and unsupported conclusions are both tested by authored probes."
+    },
+    {
+      "requirement": "External SLM and downstream learning usability",
+      "evidence": [
+        "../../artifacts/model-data/manifest.json",
+        "../../artifacts/model-data/splits.json",
+        "../../docs/REGISTRY_LEARNING_DATA.md"
+      ],
+      "result": "197 complete records, 394 provider-neutral instruction examples, numeric typed edge indexes, full relation evidence and source snapshot, family splits and explicit transductive/inductive limits."
+    },
+    {
+      "requirement": "Integrity, compatibility and reproducibility",
+      "evidence": [
+        "../../tests/test_model_data.py",
+        "../../tests/test_research_artifacts.py",
+        "../../tests/test_knowledge_vault.py"
+      ],
+      "result": "60 tests pass; v2 migration, immutable retrieval, original seven explanations/IDs, exact assembly/re-rendering, generated-file tamper detection and personal-file preservation verified."
+    }
+  ],
+  "metrics": {
+    "nodes": 197,
+    "hierarchy_edges": 192,
+    "semantic_edges": 46,
+    "status_counts": {
+      "documented": 145,
+      "structural": 52
+    },
+    "source_pages": 66,
+    "sft_examples": 394,
+    "evaluation_cases": 16,
+    "template_dependent_nodes": 22
+  },
+  "validation": {
+    "vault": {
+      "valid": true,
+      "nodes": 197,
+      "edges": 192,
+      "graph_sha256": "13c8e66ff3b85e44404ff71416bd59915596c19a02c5971b88bcf8e2bf8aef99",
+      "managed_files": 202
+    },
+    "model_data": {
+      "valid": true,
+      "files": 13,
+      "graph_sha256": "13c8e66ff3b85e44404ff71416bd59915596c19a02c5971b88bcf8e2bf8aef99"
+    },
+    "content": {
+      "valid": true,
+      "problems": [],
+      "nodes": 197,
+      "hierarchy_edges": 192,
+      "semantic_edges": 46,
+      "status_counts": {
+        "documented": 145,
+        "structural": 52
+      },
+      "note": "Schema/content checks only; factual correctness requires the separate source and editorial review."
+    }
+  },
+  "test_command": "python -m unittest discover -s tests",
+  "tests_passed": 60,
+  "syntax_check": "python -m compileall -q standardizer_pkg scripts tests: passed",
+  "root_review_scope": "Root integrated all batches, reviewed source-sensitive claims and all machine-policy explanations/relations, inspected rendered representatives and the complete metadata/evidence contracts, and checked peer findings against corrections. Peer reports record per-node coverage; this is not a claim that root independently reread all 66 source pages.",
+  "remaining_limitations": [
+    "Cross-version documentation inventory, not a complete Windows baseline or live host snapshot.",
+    "Structural inference is distinct from directly documented functionality.",
+    "No concrete template/native-path adapter binding is implemented.",
+    "No tagging or event nodes are created.",
+    "AI-authored and agent-reviewed synthesis, not independent human annotation.",
+    "Learning exports and authored probes are ready for controlled experiments; no external model has been trained or evaluated."
+  ],
+  "open_required_work": [],
+  "result": "superseded_historical_checkpoint",
+  "artifact_sha256": {
+    "knowledge/windows_registry.json": "ba4ec876302337b9ecf236897acb6691700b2824170b36c24611b75be60b26c5",
+    "artifacts/knowledge-vault/kg.json": "13c8e66ff3b85e44404ff71416bd59915596c19a02c5971b88bcf8e2bf8aef99",
+    "artifacts/model-data/manifest.json": "206a9e1793a47668766c55d260f29d79b4cca1c580a82af4aab10ee59cd4c639",
+    "evaluation/registry_cases.jsonl": "67a50c5f30d6d7def6580a2ce535b605b8e6e998f2bbcfdb0d8f572589cfae53",
+    "evaluation/rubric.json": "31f2ce3b38851193269e9f3bc0d72f0e8cef380ab1f6ac9a2292fcbd4343baf8",
+    "docs/REGISTRY_LEARNING_DATA.md": "faeea77a2000e5958efb02718419984bfe679b41a5447cf07dbd930b1d0ba00c",
+    "AGENTS.md": "49a0a05dc1199ed2a35b87471788ac69c44ec0d791b39734e0c6e380700056ae",
+    "artifacts/registry-inventory/inventory.json": "93c8ed2336d7d7ff4587feb899c4b36336ea6b334e05a5bfc23d79e42aa5717d"
+  }
+}

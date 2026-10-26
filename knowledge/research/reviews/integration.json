@@ -1,0 +1,55 @@
+{
+  "reviewer": "research_core",
+  "checked_on": "2026-10-21",
+  "scope": ["standardizer_pkg/knowledge.py", "standardizer_pkg/model_data.py", "standardizer_pkg/zettelkasten.py", "knowledge/registry_log_semantics.json"],
+  "findings": [
+    {
+      "severity": "medium",
+      "file": "standardizer_pkg/knowledge.py",
+      "lines": "129-145, 366-377",
+      "issue": "Unnamed registry values cannot be represented and retrieved using their actual empty name. The core COM entries use the display label '(Default)', but model_context(path, value_name='') returns no value knowledge; '(Default)' returns the record. _research rejects empty name fields, preventing a faithful correction in data. A literal named value '(Default)' is also potentially conflated with the unnamed value by the current convention.",
+      "reproduction": "Construct KnowledgeBase from core batch definitions and call model_context('HKLM\\SOFTWARE\\Classes\\CLSID\\<CLSID>\\LocalServer32', ''). The result has value_knowledge=[], while supplying '(Default)' returns one entry.",
+      "suggested_fix": "Represent an unnamed value with an empty actual name (or an explicit unnamed-value flag), keep a display label separate, and permit value_name='' to match it. Keep None meaning no value supplied. Do not universally rewrite the literal name '(Default)' because a registry value may actually have that name. Add coverage distinguishing unnamed and literal '(Default)' values.",
+      "source": "https://learn.microsoft.com/en-us/windows/win32/api/winreg/nf-winreg-regqueryvalueexa",
+      "source_section": "Parameters: lpValueName"
+    },
+    {
+      "severity": "medium",
+      "file": "standardizer_pkg/model_data.py",
+      "lines": "144-156",
+      "issue": "Model exports lose semantic relation explanations and source URLs. The snapshot records these fields, but exported edge-index JSON and edges.csv preserve only endpoints/type/kind/splits, while node-records contain no semantic relation records. External graph consumers cannot recover why a semantic link exists or its evidence from the exported dataset.",
+      "reproduction": "Render the test graph containing the semantic explanation 'Distinct fixture scopes, not physical-key equivalence.'. This string appears in none of render_model_data(graph()).values(); its semantic edge has only kind/source/target/type.",
+      "suggested_fix": "Export complete semantic edge records including stable endpoint IDs, relation, explanation and source URLs, for example graph/semantic-edges.jsonl. Keep compact edge indexes as a derived representation and include the full relation records in the manifest.",
+      "source": null
+    },
+    {
+      "severity": "medium",
+      "file": "standardizer_pkg/model_data.py",
+      "lines": "185-211",
+      "issue": "A modified old manifest can authorize deletion of arbitrary ordinary files inside the dataset directory. The exporter checks hashes for every manifest entry, accepts names outside its generated file set, then unlinks entries absent from the new render. This bypasses the claimed protection of unmanaged/personal files when the manifest was edited or corrupted.",
+      "reproduction": "Export the test graph into a temporary directory, create personal.txt, add its path and correct SHA-256 to manifest['files'], and export again. The call succeeds and personal.txt is deleted.",
+      "suggested_fix": "Before any write or deletion, reject old manifest names outside the fixed managed dataset paths (or a strictly validated manifest format/version inventory). Detect unexpected manifest changes rather than treating arbitrary manifest keys as deletion authority. Preserve unmanaged files even if they are listed by an untrusted edited manifest.",
+      "source": null
+    }
+  ],
+  "validated_claims": [
+    {"topic": "4656 request versus operation", "result": "Guide is accurate: the event reports requested access and request outcome, not performance of the subsequent operation.", "source": "https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4656", "section": "Event Description"},
+    {"topic": "4657 key/value separation", "result": "Guide is accurate: ObjectName is the key path, ObjectValueName identifies the value, and the event concerns value operations rather than arbitrary key modifications.", "source": "https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4657", "section": "Event Description; Object and Change Information fields"},
+    {"topic": "Sysmon 12-14", "result": "Guide correctly distinguishes object creation/deletion, value setting and rename, and limits the documented captured value-data claim to DWORD/QWORD.", "source": "https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon", "section": "Event IDs 12, 13 and 14"},
+    {"topic": "Audit coverage", "result": "Guide correctly conditions Security registry auditing on matching SACL and audit configuration and distinguishes Sysmon event filtering.", "source": "https://learn.microsoft.com/en-us/windows/security/threat-protection/auditing/audit-registry", "section": "Overview"},
+    {"topic": "Registry views", "result": "Guide correctly distinguishes selected WOW64 redirected areas from shared areas and avoids removing explicit view components.", "source": "https://learn.microsoft.com/en-us/windows/win32/winprog64/registry-redirector", "section": "Introduction and shared keys"}
+  ],
+  "verification": {
+    "suite": "python -m unittest discover -s tests",
+    "result_at_review_time": "54 tests ran; 52 passed. Two failures were existing seed/artifact integration expectations: old 201 versus new 202 managed files, and saved schema2 vault versus newly rendered schema3 graph. Parent confirmed it is updating seed fixtures and final artifact migration.",
+    "focused_checks": ["Model/migration tests passed in the suite.", "Reproduced unnamed-value retrieval mismatch without mutating runtime files.", "Reproduced semantic evidence omission using deterministic in-memory render.", "Reproduced unsafe manifest-authorized deletion solely in a temporary directory."],
+    "split_review": "No undisclosed direct train/test endpoint leakage found in train-edge-index: both endpoints must be train. Full graph is explicitly labeled transductive and split limitations acknowledge ancestor/source overlap. Family assignment is heuristic and should not be presented as independent real-log validation.",
+    "vault_review": "No concrete safe-migration defect found. Existing vault validation reconstructs expected files from its own snapshot; migration checks newly reserved collisions before writes and preserves personal notes outside generated notes."
+  },
+  "core_batch_changes": [
+    "Differentiated Windows product-level grouping from CurrentVersion facility grouping.",
+    "Differentiated per-user Software namespace from Microsoft vendor grouping.",
+    "Expanded ProgID to cover Shell file associations and optional COM mappings; added inspected Shell ProgID source.",
+    "Added sourced Application, Security and System log-purpose distinctions; retained conservative Setup mapping."
+  ]
+}

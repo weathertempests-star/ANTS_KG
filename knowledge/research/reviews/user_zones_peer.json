@@ -1,0 +1,390 @@
+{
+  "reviewer": "research_core",
+  "batch": "user_zones",
+  "checked_on": "2026-10-21",
+  "input_sha256": "995dadb8f6ff53a7c066ebb78b45eec1829979c14167077e1ba2d9a0660d6cbf",
+  "verdict": "pass_with_nonblocking_suggestion",
+  "reviewed_paths": [
+    "HKCU\\Software",
+    "HKCU\\Software\\Classes",
+    "HKCU\\Software\\Microsoft",
+    "HKCU\\Software\\Microsoft\\SystemCertificates",
+    "HKCU\\Software\\Microsoft\\Windows",
+    "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion",
+    "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies",
+    "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\Comdlg32",
+    "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\comdlg32\\Placesbar",
+    "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer",
+    "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\Network",
+    "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System",
+    "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run",
+    "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce",
+    "HKCU\\Software\\Microsoft\\Windows NT",
+    "HKCU\\Software\\Microsoft\\Windows NT\\CurrentVersion",
+    "HKCU\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Windows",
+    "HKCU\\Software\\Policies",
+    "HKCU\\Software\\Policies\\Microsoft",
+    "HKCU\\Software\\Policies\\Microsoft\\SystemCertificates",
+    "HKCU\\Software\\Policies\\Microsoft\\Windows",
+    "HKCU\\Software\\Policies\\Microsoft\\Windows\\AppCompat",
+    "HKCU\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion",
+    "HKCU\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings",
+    "HKCU\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Lockdown_Zones",
+    "HKCU\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Lockdown_Zones\\0",
+    "HKCU\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Lockdown_Zones\\1",
+    "HKCU\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Lockdown_Zones\\2",
+    "HKCU\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Lockdown_Zones\\3",
+    "HKCU\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Lockdown_Zones\\4",
+    "HKCU\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones",
+    "HKCU\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\0",
+    "HKCU\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\1",
+    "HKCU\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\2",
+    "HKCU\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3",
+    "HKCU\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4",
+    "HKCU\\SOFTWARE\\Policies\\Microsoft\\Windows\\Explorer",
+    "HKCU\\Software\\Policies\\Microsoft\\Windows\\Network Connections",
+    "HKCU\\Software\\Policies\\Microsoft\\Windows\\RemovableStorageDevices",
+    "HKCU\\Software\\Policies\\Microsoft\\Windows\\RemovableStorageDevices\\Custom",
+    "HKCU\\Software\\Policies\\Microsoft\\Windows\\RemovableStorageDevices\\Custom\\Deny_Read",
+    "HKCU\\Software\\Policies\\Microsoft\\Windows\\RemovableStorageDevices\\Custom\\Deny_Write",
+    "HKCU\\Software\\Policies\\Microsoft\\Windows\\System",
+    "HKCU\\SOFTWARE\\Policies\\Microsoft\\Windows NT",
+    "HKCU\\Software\\Policies\\Microsoft\\Windows NT\\Printers",
+    "HKCU\\Software\\Policies\\Microsoft\\Windows NT\\Printers\\PackagePointAndPrint",
+    "HKCU\\Software\\Policies\\Microsoft\\Windows NT\\Printers\\Wizard",
+    "HKCU\\SOFTWARE\\Policies\\Microsoft\\Windows NT\\Terminal Services",
+    "HKCU\\SOFTWARE\\Policies\\Microsoft\\Workspaces",
+    "HKLM\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion",
+    "HKLM\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings",
+    "HKLM\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Lockdown_Zones",
+    "HKLM\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Lockdown_Zones\\0",
+    "HKLM\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Lockdown_Zones\\1",
+    "HKLM\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Lockdown_Zones\\2",
+    "HKLM\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Lockdown_Zones\\3",
+    "HKLM\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Lockdown_Zones\\4",
+    "HKLM\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones",
+    "HKLM\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\0",
+    "HKLM\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\1",
+    "HKLM\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\2",
+    "HKLM\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3",
+    "HKLM\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4"
+  ],
+  "reviewed_relations": [
+    {
+      "source_path": "HKCU\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\0",
+      "target_path": "HKLM\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\0",
+      "relation": "SCOPE_COUNTERPART_OF",
+      "result": "supported"
+    },
+    {
+      "source_path": "HKCU\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Lockdown_Zones\\0",
+      "target_path": "HKLM\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Lockdown_Zones\\0",
+      "relation": "SCOPE_COUNTERPART_OF",
+      "result": "supported"
+    },
+    {
+      "source_path": "HKCU\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Lockdown_Zones\\0",
+      "target_path": "HKCU\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\0",
+      "relation": "LOCKDOWN_COUNTERPART_OF",
+      "result": "supported"
+    },
+    {
+      "source_path": "HKLM\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Lockdown_Zones\\0",
+      "target_path": "HKLM\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\0",
+      "relation": "LOCKDOWN_COUNTERPART_OF",
+      "result": "supported"
+    },
+    {
+      "source_path": "HKCU\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\1",
+      "target_path": "HKLM\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\1",
+      "relation": "SCOPE_COUNTERPART_OF",
+      "result": "supported"
+    },
+    {
+      "source_path": "HKCU\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Lockdown_Zones\\1",
+      "target_path": "HKLM\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Lockdown_Zones\\1",
+      "relation": "SCOPE_COUNTERPART_OF",
+      "result": "supported"
+    },
+    {
+      "source_path": "HKCU\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Lockdown_Zones\\1",
+      "target_path": "HKCU\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\1",
+      "relation": "LOCKDOWN_COUNTERPART_OF",
+      "result": "supported"
+    },
+    {
+      "source_path": "HKLM\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Lockdown_Zones\\1",
+      "target_path": "HKLM\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\1",
+      "relation": "LOCKDOWN_COUNTERPART_OF",
+      "result": "supported"
+    },
+    {
+      "source_path": "HKCU\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\2",
+      "target_path": "HKLM\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\2",
+      "relation": "SCOPE_COUNTERPART_OF",
+      "result": "supported"
+    },
+    {
+      "source_path": "HKCU\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Lockdown_Zones\\2",
+      "target_path": "HKLM\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Lockdown_Zones\\2",
+      "relation": "SCOPE_COUNTERPART_OF",
+      "result": "supported"
+    },
+    {
+      "source_path": "HKCU\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Lockdown_Zones\\2",
+      "target_path": "HKCU\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\2",
+      "relation": "LOCKDOWN_COUNTERPART_OF",
+      "result": "supported"
+    },
+    {
+      "source_path": "HKLM\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Lockdown_Zones\\2",
+      "target_path": "HKLM\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\2",
+      "relation": "LOCKDOWN_COUNTERPART_OF",
+      "result": "supported"
+    },
+    {
+      "source_path": "HKCU\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3",
+      "target_path": "HKLM\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3",
+      "relation": "SCOPE_COUNTERPART_OF",
+      "result": "supported"
+    },
+    {
+      "source_path": "HKCU\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Lockdown_Zones\\3",
+      "target_path": "HKLM\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Lockdown_Zones\\3",
+      "relation": "SCOPE_COUNTERPART_OF",
+      "result": "supported"
+    },
+    {
+      "source_path": "HKCU\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Lockdown_Zones\\3",
+      "target_path": "HKCU\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3",
+      "relation": "LOCKDOWN_COUNTERPART_OF",
+      "result": "supported"
+    },
+    {
+      "source_path": "HKLM\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Lockdown_Zones\\3",
+      "target_path": "HKLM\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3",
+      "relation": "LOCKDOWN_COUNTERPART_OF",
+      "result": "supported"
+    },
+    {
+      "source_path": "HKCU\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4",
+      "target_path": "HKLM\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4",
+      "relation": "SCOPE_COUNTERPART_OF",
+      "result": "supported"
+    },
+    {
+      "source_path": "HKCU\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Lockdown_Zones\\4",
+      "target_path": "HKLM\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Lockdown_Zones\\4",
+      "relation": "SCOPE_COUNTERPART_OF",
+      "result": "supported"
+    },
+    {
+      "source_path": "HKCU\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Lockdown_Zones\\4",
+      "target_path": "HKCU\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4",
+      "relation": "LOCKDOWN_COUNTERPART_OF",
+      "result": "supported"
+    },
+    {
+      "source_path": "HKLM\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Lockdown_Zones\\4",
+      "target_path": "HKLM\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4",
+      "relation": "LOCKDOWN_COUNTERPART_OF",
+      "result": "supported"
+    },
+    {
+      "source_path": "HKCU\\Software\\Classes",
+      "target_path": "HKCR",
+      "relation": "CONTRIBUTES_TO_MERGED_VIEW",
+      "result": "supported"
+    },
+    {
+      "source_path": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce",
+      "target_path": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run",
+      "relation": "ONE_TIME_COUNTERPART_OF",
+      "result": "supported"
+    }
+  ],
+  "sources_checked": [
+    {
+      "url": "https://github.com/nsacyber/Windows-Secure-Host-Baseline/blob/master/Windows/Group%20Policy%20Templates/RemovableStorage.admx",
+      "sections": "CustomClasses_DenyRead_Access_1 and CustomClasses_DenyWrite_Access_1",
+      "checked_on": "2026-10-21",
+      "verification": "read",
+      "notes": "Read Microsoft-authored XML in the NSA historical repository: User class, supportedOn WindowsVista, same-named enable values 1/0, additive List children. The batch explicitly limits this historical evidence."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/deployedge/edge-ie-mode",
+      "sections": "What is IE mode?; supported Internet Explorer functionality",
+      "checked_on": "2026-10-21",
+      "verification": "read",
+      "notes": "Security-zone settings and policies are supported by IE mode; Chromium and Trident consumers remain distinct."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/lifecycle/products/internet-explorer-11",
+      "sections": "Important; Support Dates",
+      "checked_on": "2026-10-21",
+      "verification": "read",
+      "notes": "Read the Windows 10 semi-annual-channel desktop retirement scope; it does not establish retirement of all zone consumers."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/previous-versions/troubleshoot/browsers/security-privacy/ie-security-zones-registry-entries",
+      "sections": "Security Zone settings; ZoneMap; Zones",
+      "checked_on": "2026-10-21",
+      "verification": "read",
+      "notes": "Verified exact HKLM policy location and DWORD 1 for Security_HKLM_only, absent/zero distinction, zone IDs and assignment/action separation."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-appcompat",
+      "sections": "AppCompatTurnOffProgramCompatibilityAssistant_1 and _2",
+      "checked_on": "2026-10-21",
+      "verification": "read",
+      "notes": "Verified explicit obsolete user-setting warning, DisablePCA path/value, and separate functional computer setting."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-logon",
+      "sections": "DisableExplorerRunLegacy_1",
+      "checked_on": "2026-10-21",
+      "verification": "read",
+      "notes": "Verified user Explorer mapping and computer-policy precedence; text is explicitly legacy."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-networkconnections",
+      "sections": "NC_AddRemoveComponents; NC_AdvancedSettings",
+      "checked_on": "2026-10-21",
+      "verification": "read",
+      "notes": "Verified user location, administrator-only action restrictions and administrator-prohibitions prerequisite."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-printing",
+      "sections": "PackagePointAndPrintOnly; PackagePointAndPrintServerList; LegacyDefaultPrinterMode",
+      "checked_on": "2026-10-21",
+      "verification": "read",
+      "notes": "Verified user mappings, signed driver package check, non-package fallback distinction, and default-printer preference direction."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-removablestorage",
+      "sections": "AccessRights_RebootTime_1; CustomClasses_DenyRead_Access_1; CustomClasses_DenyWrite_Access_1",
+      "checked_on": "2026-10-21",
+      "verification": "read",
+      "notes": "Verified user paths and state-value mappings; reboot state is distinguished from wait duration."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-shellcommandpromptregedittools",
+      "sections": "DisableCMD; DisableRegedit",
+      "checked_on": "2026-10-21",
+      "verification": "read",
+      "notes": "Verified separate user System paths, command/batch scope, and no fabricated Registry Value Name where mapping omits it."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-terminalserver",
+      "sections": "TS_CLIENT_ALLOW_SIGNED_FILES_1; TS_RADC_DefaultConnection",
+      "checked_on": "2026-10-21",
+      "verification": "read",
+      "notes": "Verified validly signed/default RDP setting meaning and user Workspaces feed mapping and replacement behavior."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-userprofiles",
+      "sections": "LimitSize",
+      "checked_on": "2026-10-21",
+      "verification": "read",
+      "notes": "Verified EnableProfileQuota mapping and documented pre-Vista versus Vista response distinction."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-windowsexplorer",
+      "sections": "IZ_Policy_OpenSearchQuery_*; sampled IZ_Policy_OpenSearchPreview_*; NoBackButton; NoEntireNetwork",
+      "checked_on": "2026-10-21",
+      "verification": "read",
+      "notes": "Read query mappings across zones and lockdown counterparts, sampled preview sections including ordinary/locked-down Restricted and Local Machine/Internet/Trusted, user/device scope, defaults, thumbnail-zone check and logoff caveat. Also checked common-dialog and network-browse limitations."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-winlogon",
+      "sections": "CustomShell",
+      "checked_on": "2026-10-21",
+      "verification": "read",
+      "notes": "Verified alternate interface consumer, user configuration, and exact legacy System policy path."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-internetexplorer",
+      "sections": "AllowLocalMachineZoneTemplate; AllowIntranetZoneTemplate; locked-down template notes",
+      "checked_on": "2026-10-21",
+      "verification": "read",
+      "notes": "Verified ordinary/locked-down equivalent comparison; this does not make key existence an enabling switch."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/seccrypto/system-store-locations",
+      "sections": "CERT_SYSTEM_STORE_CURRENT_USER; current-user Group Policy stores",
+      "checked_on": "2026-10-21",
+      "verification": "read",
+      "notes": "Primary page read during core research in the same review session; verified ordinary and policy certificate-store locations and logical/physical store distinction."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/setupapi/run-and-runonce-registry-keys",
+      "sections": "Run and RunOnce Registry Keys",
+      "checked_on": "2026-10-21",
+      "verification": "read",
+      "notes": "Primary page read during core research in the same session; verified four paths, recurrence, deletion timing/prefixes, Safe Mode behavior and HKLM-only administrator qualifier."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/sysinfo/merged-view-of-hkey-classes-root",
+      "sections": "Merged View of HKEY_CLASSES_ROOT",
+      "checked_on": "2026-10-21",
+      "verification": "read",
+      "notes": "Verified physical HKCU/HKLM contributions, duplicate rules and UAC/admin COM caveat."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/sysinfo/predefined-keys",
+      "sections": "HKEY_CURRENT_USER",
+      "checked_on": "2026-10-21",
+      "verification": "read",
+      "notes": "Primary page read during core research in the same session; verified Microsoft application namespace and current-user context."
+    }
+  ],
+  "method": "Read every node narrative, research context and limitations, representative value semantics and evidence records, and all 22 relations. Independently read primary source sections for high-risk and potentially ambiguous claims. Repeated zone entries were additionally checked for consistent hive scope, zone identity, ordinary/lockdown distinction and source-anchor matching. This is source review, not Windows runtime enforcement testing.",
+  "findings": [
+    {
+      "id": "UZ-01",
+      "severity": "low",
+      "blocking": false,
+      "file": "knowledge/research/batches/user_zones.json",
+      "paths": [
+        "HKCU\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Lockdown_Zones\\0",
+        "HKCU\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Lockdown_Zones\\1",
+        "HKCU\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Lockdown_Zones\\2",
+        "HKCU\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Lockdown_Zones\\3",
+        "HKCU\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Lockdown_Zones\\4",
+        "HKCU\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\0",
+        "HKCU\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\1",
+        "HKCU\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\2",
+        "HKCU\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3",
+        "HKCU\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4",
+        "HKLM\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Lockdown_Zones\\0",
+        "HKLM\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Lockdown_Zones\\1",
+        "HKLM\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Lockdown_Zones\\2",
+        "HKLM\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Lockdown_Zones\\3",
+        "HKLM\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Lockdown_Zones\\4",
+        "HKLM\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\0",
+        "HKLM\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\1",
+        "HKLM\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\2",
+        "HKLM\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\3",
+        "HKLM\\Software\\Policies\\Microsoft\\Windows\\CurrentVersion\\Internet Settings\\Zones\\4"
+      ],
+      "issue": "The 180F preview-policy records omit the documented possibility that a policy change is not applied until the user logs off. Existing limitations correctly avoid claiming immediate enforcement, so this is a concrete log-correlation improvement rather than a false statement.",
+      "suggested_fix": "Add a short sentence to 180F value semantics or applicability that preview/custom-thumbnail changes may require user logoff; include session/logoff timing when correlating a registry write with subsequent preview behavior.",
+      "source": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-windowsexplorer#iz_policy_opensearchpreview_internet",
+      "source_section": "IZ_Policy_OpenSearchPreview_Internet and other preview policy descriptions"
+    }
+  ],
+  "confirmed_boundaries": [
+    "Structural ancestors identify documented descendant families without attributing a descendant enable state to the parent.",
+    "DisablePCA in HKCU is explicitly obsolete; no current disabling effect is asserted.",
+    "Custom Deny_Read/Deny_Write distinguish keys from same-named values and label List schema as historical Microsoft ADMX evidence.",
+    "User/device zone counterparts retain distinct hive scopes; Local Machine zone ID 0 is not mistaken for machine registry scope.",
+    "Ordinary and locked-down zone counterparts do not imply lockdown is enabled, stricter settings, or effective-policy priority.",
+    "180E/180F defaults distinguish Restricted Sites from other zones; policy state is separate from URL mapping and observed activity.",
+    "HKCR contribution and RunOnce recurrence relations express limited semantic relationships, not equivalence or execution."
+  ],
+  "limitations": [
+    "Repeated preview policies were independently sampled across zones and lockdown variants rather than treating every section as a separate new source.",
+    "No Windows build was executed to test policy enforcement; modern CSP exposure and historical ADMX support are kept separate."
+  ],
+  "batch_modified": false
+}

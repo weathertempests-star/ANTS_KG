@@ -1,0 +1,99 @@
+{
+  "schema": "registry-experiment-plan-1",
+  "status": "planned_not_executed",
+  "date": "2026-10-26",
+  "label_provenance": "user_confirmed_event_level_manual",
+  "ordering": "timestamp_is_order_reference_only; equal references unordered; no elapsed features",
+  "target": "dstNode.Type == Registry",
+  "unit": "current_event_manual_label",
+  "primary_protocol": "fixed_model_no_finetuning_paired_ablation",
+  "fallback_protocol": "APT_dependency_group_development_then_frozen_CHT_external_evaluation_if_CHT_not_used_for_method_selection",
+  "apt_minimum_dependency_groups": [
+    [
+      "CobaltGroup",
+      "Higaisa",
+      "Gamaredon"
+    ],
+    [
+      "APT28"
+    ],
+    [
+      "Patchwork"
+    ]
+  ],
+  "known_registry_support": {
+    "CHT": {
+      "positive": 690,
+      "negative": 217843
+    },
+    "APT": {
+      "positive": 38,
+      "negative": 2673891
+    }
+  },
+  "labels": {
+    "negative": "benign",
+    "positive": "explicit observed ATT&CK-prefixed label allowlist, preserve suffix",
+    "unknown": "quarantine"
+  },
+  "forbidden_model_fields": [
+    "label",
+    "label_original",
+    "label_binary",
+    "recording_id",
+    "source_filename",
+    "timestamp_raw",
+    "timestamp_raw_presence",
+    "sample_hash",
+    "APT_name"
+  ],
+  "primary_common_fields": [
+    "relation",
+    "sanitized_actor",
+    "sanitized_target",
+    "strictly_prior_context"
+  ],
+  "context_k": [
+    0,
+    16
+  ],
+  "primary_conditions": [
+    "raw",
+    "normalized",
+    "text",
+    "graph"
+  ],
+  "secondary_conditions": [
+    "unrelated_equal_budget",
+    "same_facts_flat"
+  ],
+  "metric": "balanced_accuracy_mean_class_recall",
+  "single_class_binary_balanced_accuracy": null,
+  "pilot": {
+    "all_positives": true,
+    "random_negatives_per_recording_max": 2000,
+    "sampling_seed": 20261026,
+    "record_inclusion_probability": true
+  },
+  "required_before_inference": [
+    "relation/key/value contract",
+    "white-list prompt serialization",
+    "overlap and split manifest",
+    "coverage report by class and recording",
+    "model/hardware/token/threshold configuration freeze"
+  ],
+  "already_completed": [
+    "11 recording full scan",
+    "source SHA-256",
+    "class/operation counts",
+    "exact cross-record signature overlaps",
+    "checkpoint exclusion verification"
+  ],
+  "not_executed": [
+    "event adaptation",
+    "semantic coverage pipeline",
+    "model inference",
+    "training",
+    "performance evaluation"
+  ]
+}

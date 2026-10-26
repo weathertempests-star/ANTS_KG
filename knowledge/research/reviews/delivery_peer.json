@@ -1,0 +1,189 @@
+{
+  "reviewer": "research_core",
+  "checked_on": "2026-10-21",
+  "review_type": "final_read_only_delivery_review",
+  "verdict": "pass",
+  "graph_sha256": "13c8e66ff3b85e44404ff71416bd59915596c19a02c5971b88bcf8e2bf8aef99",
+  "reviewed_files": [
+    {
+      "path": "README.md",
+      "sha256": "1a0e7a9dd52d13ff4ad3d0ceb79efadf9ac5cc6e8513fd97c0cbb3c550334a14"
+    },
+    {
+      "path": "docs/REGISTRY_LEARNING_DATA.md",
+      "sha256": "96f7de5f7f4388b4bf32e7b22808d49f2879cc81908a7d4dd7ef095af201523f"
+    },
+    {
+      "path": "artifacts/knowledge-vault/CONCEPTS.md",
+      "sha256": "e4055d0de9d4458bbcecd20b6ca05bc4ea972bddef2f03459f9c13dd0cf9c92b"
+    },
+    {
+      "path": "artifacts/knowledge-vault/manifest.json",
+      "sha256": "7f3f6789aca570ed99067edb16361ffa6ee1e0368ea579f54c6ac2424cf02153"
+    },
+    {
+      "path": "artifacts/model-data/manifest.json",
+      "sha256": "206a9e1793a47668766c55d260f29d79b4cca1c580a82af4aab10ee59cd4c639"
+    },
+    {
+      "path": "artifacts/model-data/audit.json",
+      "sha256": "7f265019afbdbbc72e7caf1d0eb1109e03b2574084d3b5bd942e77ddd8326f02"
+    },
+    {
+      "path": "artifacts/model-data/splits.json",
+      "sha256": "596a2e5c316c5386086ee67a2f273e85a8a69ad4985edc96fc9f72a02488f87a"
+    },
+    {
+      "path": "artifacts/model-data/node-records.jsonl",
+      "sha256": "d783e0066ec4ca7a731fbce62ee4c2c403fc0a6890e6ac0fec0865699dbdb6e6"
+    },
+    {
+      "path": "artifacts/model-data/graph/semantic-edges.jsonl",
+      "sha256": "aced6a2f52d84fcb7ab172302c6b2340b5140bedd0bf0ddbcea7ecb2fb4367f8"
+    },
+    {
+      "path": "artifacts/model-data/graph/train-edge-index.json",
+      "sha256": "aeaa2e68847f7a1dcf28493fd9def59a348fb8287f1caa8b64c212d80a47520b"
+    },
+    {
+      "path": "artifacts/model-data/sft/train.jsonl",
+      "sha256": "1bcc2f3e43a55b8230af757dd6bfd8d7b76849d3a90fd7de90b8760fc973cb90"
+    },
+    {
+      "path": "artifacts/knowledge-vault/notes/knowledge-8676a23f044533833c4be696.md",
+      "sha256": "2551c34b5e11b9189ac61395179ec4283f246c3a7691d95337e98a897f7a226e"
+    },
+    {
+      "path": "artifacts/knowledge-vault/notes/knowledge-b72a950f4b2cc13b05ab573f.md",
+      "sha256": "f4c61c9aa4ef36ec72853674355b3028c4d4b56a5d4537d7dba3fa6a78ed1742"
+    },
+    {
+      "path": "artifacts/knowledge-vault/notes/knowledge-25c987ad687d53225fd6004c.md",
+      "sha256": "34dedcf42fdd87f520018f190ae56f11b22f5ad401842ca2aa133c393c43ec58"
+    },
+    {
+      "path": "artifacts/knowledge-vault/notes/knowledge-85f2f0739e1a194cea57e654.md",
+      "sha256": "ce92cfd07efa1495e2d76b70f05a801146f006a732181d7e3dcda7f5214d221d"
+    }
+  ],
+  "representative_notes": [
+    {
+      "path": "HKCR",
+      "file": "artifacts/knowledge-vault/notes/knowledge-8676a23f044533833c4be696.md",
+      "status": "documented",
+      "review_result": "pass"
+    },
+    {
+      "path": "HKCU\\Software\\Policies\\Microsoft\\Windows\\AppCompat",
+      "file": "artifacts/knowledge-vault/notes/knowledge-b72a950f4b2cc13b05ab573f.md",
+      "status": "documented",
+      "review_result": "pass"
+    },
+    {
+      "path": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\<ServiceName>\\NetworkProvider",
+      "file": "artifacts/knowledge-vault/notes/knowledge-25c987ad687d53225fd6004c.md",
+      "status": "documented",
+      "review_result": "pass"
+    },
+    {
+      "path": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion",
+      "file": "artifacts/knowledge-vault/notes/knowledge-85f2f0739e1a194cea57e654.md",
+      "status": "structural",
+      "review_result": "pass"
+    }
+  ],
+  "findings": [],
+  "checks": [
+    {
+      "check": "Documentation and delivered graph counts",
+      "result": "pass",
+      "observed": {
+        "nodes": 197,
+        "hierarchy_edges": 192,
+        "semantic_edges": 46,
+        "status_counts": {
+          "documented": 145,
+          "structural": 52
+        },
+        "placeholder_nodes": 12,
+        "template_dependent_nodes": 22,
+        "depth_counts": [
+          5,
+          8,
+          12,
+          20,
+          30,
+          57,
+          32,
+          12,
+          21
+        ]
+      }
+    },
+    {
+      "check": "Vault consistency validator",
+      "command": "python -m standardizer_pkg knowledge-validate-vault artifacts/knowledge-vault",
+      "result": "pass",
+      "observed": {
+        "valid": true,
+        "nodes": 197,
+        "edges": 192,
+        "managed_files": 202
+      }
+    },
+    {
+      "check": "Model dataset consistency validator",
+      "command": "python -m standardizer_pkg knowledge-validate-model-data artifacts/knowledge-vault/kg.json artifacts/model-data",
+      "result": "pass",
+      "observed": {
+        "valid": true,
+        "files": 13
+      }
+    },
+    {
+      "check": "Model rows, examples and evaluation counts",
+      "result": "pass",
+      "observed": {
+        "node_records": 197,
+        "sft_examples": 394,
+        "split_nodes": {
+          "train": 151,
+          "validation": 17,
+          "test": 29
+        },
+        "split_examples": {
+          "train": 302,
+          "validation": 34,
+          "test": 58
+        },
+        "semantic_edge_records": 46,
+        "evaluation_probes": 16
+      }
+    },
+    {
+      "check": "Training-edge endpoint split isolation",
+      "result": "pass",
+      "observed": "Independently loaded exported node rows and all 182 train-edge-index records; every source and target indexes a training node."
+    },
+    {
+      "check": "Documented Session Manager retrieval",
+      "result": "pass",
+      "observed": "Public API resolved 5 prefix steps with path_complete=true and explanations_complete=true; model_context returned the exact PendingFileRenameOperations value definition and its source."
+    }
+  ],
+  "assessment": {
+    "zettelkasten_atomicity": "The sampled notes organize one complete-prefix role around an explicit Atomic claim. Values and subkeys support that role rather than creating fabricated registry-key nodes. Broad structural prefixes remain namespace claims. This satisfies the agreed one-prefix knowledge-unit design; it is not a claim that each note contains only one independently testable sentence.",
+    "independent_readability": "Each sampled note includes the complete path, scope, explanation, applicability, specific inference limits and citations. A reader need not reconstruct its identity from a final key label or know the research conversation. The obsolete AppCompat policy and the service-dependent NetworkProvider template retain their critical restrictions.",
+    "context_and_connections": "Hierarchy links, explicit relation explanations, direction markers and source links survive export. CONCEPTS provides all 46 separate semantic relations; no equivalence, causation or enabled-state claim is introduced by navigation alone.",
+    "slm_usability": "The guide gives runnable export/validation/context commands, explicit key-versus-value input handling, source metadata locations, split instructions, training-only edge guidance and a separate synthetic evaluation protocol. JSONL rows retain research and evidence; semantic-edges.jsonl retains relation explanations and provenance.",
+    "claim_calibration": "README and learning guide distinguish documented from structural knowledge, path evidence from function evidence, stored configuration from outcomes, AI synthesis from independent human annotation, and supplied teaching data from measured model performance. The scope and limitations are consistent with the artifacts."
+  },
+  "limitations": [
+    "This delivery review sampled four representative rendered notes and model records; it did not repeat the completed node-by-node factual source research or every runtime code review.",
+    "Neither validation command establishes Windows policy enforcement or external model accuracy.",
+    "The source-derived training families and synthetic probes are explicitly not an independent real-log benchmark."
+  ],
+  "files_modified": [
+    "knowledge/research/reviews/delivery_peer.json"
+  ]
+}

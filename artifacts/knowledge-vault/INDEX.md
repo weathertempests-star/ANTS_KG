@@ -1,0 +1,213 @@
+# Registry Shared Knowledge Vault
+
+Generated from inventory paths and authored catalog explanations. Each full prefix has one shared note.
+
+Edit research in the catalog and rebuild. Keep personal notes in `personal/`, outside generated `notes/`.
+
+[Shared snapshot](kg.json) · [Review queue](REVIEW_QUEUE.md)
+
+Nodes: 197. Parent-child edges: 192. Explained: 197. Pending: 0.
+
+## Enter by hive / root
+
+- [HKCR](notes/knowledge-8676a23f044533833c4be696.md) — L1; documented
+- [HKCC](notes/knowledge-1a56d9cce0d016baa90a0134.md) — L1; documented
+- [HKCU](notes/knowledge-d68744f168b6667521bae00c.md) — L1; documented
+  - [Software](notes/knowledge-86ce335845d887ebaaec150e.md) — L2; structural
+    - [Classes](notes/knowledge-8c2fbd0038e47bb1e6537d8e.md) — L3; documented
+    - [Microsoft](notes/knowledge-774c984f5003cbf507526b35.md) — L3; documented
+      - [SystemCertificates](notes/knowledge-9fc16c2f9b1242a4650eb580.md) — L4; documented
+      - [Windows](notes/knowledge-2f55e36525d8e2e6b07a950f.md) — L4; structural
+        - [CurrentVersion](notes/knowledge-85f2f0739e1a194cea57e654.md) — L5; structural
+          - [Policies](notes/knowledge-0c0778e8b36d2e9810ea000d.md) — L6; structural
+            - [Comdlg32](notes/knowledge-1c2208ee30eaf2de937e8b29.md) — L7; documented
+              - [Placesbar](notes/knowledge-099545eb4e77d675ecf0b0df.md) — L8; documented
+            - [Explorer](notes/knowledge-754e0d5a736538dbdaa615d0.md) — L7; documented
+            - [Network](notes/knowledge-3b0ebbbbf03c092bb0f82e6d.md) — L7; documented
+            - [System](notes/knowledge-1b2c863af21022d7d23f771b.md) — L7; documented
+          - [Run](notes/knowledge-133870b9f8825b6703ab5724.md) — L6; documented
+          - [RunOnce](notes/knowledge-a59b3ac84eac68e574106e36.md) — L6; documented
+      - [Windows NT](notes/knowledge-a7449e1ecf4f5e210edf6274.md) — L4; structural
+        - [CurrentVersion](notes/knowledge-175c0719e4dc77467c92b480.md) — L5; structural
+          - [Windows](notes/knowledge-f17f2798a231e069047e243d.md) — L6; documented
+    - [Policies](notes/knowledge-e18ed4ee65cdbf48058af9ed.md) — L3; structural
+      - [Microsoft](notes/knowledge-84a535c5fdfd000f10ca6203.md) — L4; structural
+        - [SystemCertificates](notes/knowledge-e42363b508bdb25cfd5079fd.md) — L5; documented
+        - [Windows](notes/knowledge-43021d03261165f313b86e60.md) — L5; structural
+          - [AppCompat](notes/knowledge-b72a950f4b2cc13b05ab573f.md) — L6; documented
+          - [CurrentVersion](notes/knowledge-44d0d80a160d14491c8aa00d.md) — L6; structural
+            - [Internet Settings](notes/knowledge-984950f3b4e37d8f17b93991.md) — L7; structural
+              - [Lockdown&#95;Zones](notes/knowledge-056ac36fed8c6e9cce9c1170.md) — L8; structural
+                - [0](notes/knowledge-46fe8c892f18f98435077432.md) — L9; documented
+                - [1](notes/knowledge-0b0222c9edebfe348697d5f6.md) — L9; documented
+                - [2](notes/knowledge-85a879912f85e21e02548b39.md) — L9; documented
+                - [3](notes/knowledge-6ebdc1863f0a31c5d9929a09.md) — L9; documented
+                - [4](notes/knowledge-bde751d6f32eef5ae8a13495.md) — L9; documented
+              - [Zones](notes/knowledge-15279213c44544d4bb7ad1d8.md) — L8; structural
+                - [0](notes/knowledge-85d42d49df524531b5826052.md) — L9; documented
+                - [1](notes/knowledge-b70041dd444cd0fea641a258.md) — L9; documented
+                - [2](notes/knowledge-79dd88b3f03d695a6b760acd.md) — L9; documented
+                - [3](notes/knowledge-238be5744689316a5fb63915.md) — L9; documented
+                - [4](notes/knowledge-9bd7e4c73c27ed6760f23280.md) — L9; documented
+          - [Explorer](notes/knowledge-70c77ca6b1c263af38c207d9.md) — L6; documented
+          - [Network Connections](notes/knowledge-4d3be06fe9d86f6a3f4e3a0b.md) — L6; documented
+          - [RemovableStorageDevices](notes/knowledge-40910ff82c4473560eb8de2f.md) — L6; documented
+            - [Custom](notes/knowledge-351acb26602c3d693aa48361.md) — L7; structural
+              - [Deny&#95;Read](notes/knowledge-28fda5308b686196e30aea83.md) — L8; documented
+              - [Deny&#95;Write](notes/knowledge-610b1e1fc93155337c26cf63.md) — L8; documented
+          - [System](notes/knowledge-2c1db0fdec41e742e6756af4.md) — L6; documented
+        - [Windows NT](notes/knowledge-03bafa86f275d0c2b383c588.md) — L5; structural
+          - [Printers](notes/knowledge-199b7b1f8ced6c8b25f2904c.md) — L6; structural
+            - [PackagePointAndPrint](notes/knowledge-20effaab1b56130d0f0a4f4c.md) — L7; documented
+            - [Wizard](notes/knowledge-40cfe2a8f140c981c256d988.md) — L7; documented
+          - [Terminal Services](notes/knowledge-aea99943a0cb44b555a7537f.md) — L6; documented
+        - [Workspaces](notes/knowledge-11d38ff4e752383423bba2ad.md) — L5; documented
+- [HKLM](notes/knowledge-23067446c79f6f808ec9de07.md) — L1; documented
+  - [HARDWARE](notes/knowledge-4b463b0660ae080bd0f6f84a.md) — L2; documented
+    - [DESCRIPTION](notes/knowledge-dfe37bea648576cb94eeb5b7.md) — L3; documented
+    - [DEVICEMAP](notes/knowledge-28ef2eac08d604aee4c71a41.md) — L3; documented
+      - [VIDEO](notes/knowledge-b565920c9993486bd27c6f11.md) — L4; structural
+    - [RESOURCEMAP](notes/knowledge-66ad278123bec6ccfbabd6a8.md) — L3; documented
+  - [SAM](notes/knowledge-eb3143438864ab1e65d3b344.md) — L2; documented
+  - [SECURITY](notes/knowledge-1004d08a08b4b9a3372e545f.md) — L2; documented
+  - [Software](notes/knowledge-a84a70f48e5b3f471e5c2cc0.md) — L2; documented
+    - [Classes](notes/knowledge-d461b8948f927bcda0cb61f5.md) — L3; documented
+      - [&lt;FileExtension&gt;](notes/knowledge-b875a05336091f5dc911d726.md) — L4; documented
+      - [&lt;ProgID&gt;](notes/knowledge-53b893d3100e12c0aae8e38b.md) — L4; documented
+      - [AppID](notes/knowledge-d75d46deb29de6b668c32577.md) — L4; structural
+        - [&lt;AppID&#95;GUID&gt;](notes/knowledge-83629dfe2658e5b39e18f1fd.md) — L5; documented
+      - [CLSID](notes/knowledge-f389e1b5089624cbb0275d01.md) — L4; structural
+        - [&lt;CLSID&gt;](notes/knowledge-265a47625042ec0b6ff764f0.md) — L5; documented
+          - [InprocServer32](notes/knowledge-b141690fe30be117e6c98f72.md) — L6; documented
+          - [LocalServer32](notes/knowledge-3af0f1159494a70d5b4fc1eb.md) — L6; documented
+      - [Interface](notes/knowledge-0693ca455af0f9286cfc6510.md) — L4; structural
+        - [&lt;IID&gt;](notes/knowledge-2537b36c5d4b38f8dabf849a.md) — L5; documented
+    - [Microsoft](notes/knowledge-acd43835e6c7c037c564c959.md) — L3; structural
+      - [Cryptography](notes/knowledge-bb7957f37cc434cc4796df7d.md) — L4; structural
+        - [Services](notes/knowledge-71bd47e20b1c0d6281be9b56.md) — L5; structural
+          - [&lt;ServiceName&gt;](notes/knowledge-171ff28762bc174c62409a83.md) — L6; structural
+            - [SystemCertificates](notes/knowledge-6495fea73fd0786cd8164333.md) — L7; documented
+      - [SystemCertificates](notes/knowledge-1b96f1d311e346ba1fb4b0c9.md) — L4; documented
+      - [Windows](notes/knowledge-4c4a0a5b8a3c06a3572606b7.md) — L4; structural
+        - [CurrentVersion](notes/knowledge-6202b8718fe33a7616eb9084.md) — L5; structural
+          - [Policies](notes/knowledge-623ca3b4b145b4d7cffd200e.md) — L6; structural
+            - [Explorer](notes/knowledge-f07cdc68b92830b299c967c3.md) — L7; documented
+            - [System](notes/knowledge-da597a2f1a374e635b122f88.md) — L7; documented
+              - [Audit](notes/knowledge-cfe58fa3f58d656bd954fcc9.md) — L8; documented
+              - [Kerberos](notes/knowledge-f90cfc165ebfddf19229f879.md) — L8; documented
+                - [Parameters](notes/knowledge-5fcf00f56f556eab12895737.md) — L9; documented
+          - [Run](notes/knowledge-5bd6a6652394df13149f60eb.md) — L6; documented
+          - [RunOnce](notes/knowledge-23bc530a3409aae5c43a7bf5.md) — L6; documented
+          - [Uninstall](notes/knowledge-4493e53b7f5a42ffe5d1dd0d.md) — L6; documented
+            - [&lt;ProductCodeGUID&gt;](notes/knowledge-5b5b2f915897b9810c4df4e4.md) — L7; documented
+    - [Policies](notes/knowledge-0283d9882918cc7c4e5b6bca.md) — L3; structural
+      - [Microsoft](notes/knowledge-e80dc586f12d3ed46b0f8a25.md) — L4; structural
+        - [Netlogon](notes/knowledge-fee5bc5e4ba523ce4f2ebd39.md) — L5; structural
+          - [Parameters](notes/knowledge-c22f5e5cdc87969dd43ef30d.md) — L6; documented
+        - [System](notes/knowledge-f0c93ec19e8335644b0de0a8.md) — L5; structural
+          - [DNSClient](notes/knowledge-73129d1644b7f8f197a8c2fb.md) — L6; documented
+        - [SystemCertificates](notes/knowledge-57e9c1b0e2c559c40059e2e9.md) — L5; documented
+        - [W32Time](notes/knowledge-e5e8c792adda602b0d4e725d.md) — L5; structural
+          - [Config](notes/knowledge-75cc41a684ac7d7cabc9a294.md) — L6; documented
+          - [TimeProviders](notes/knowledge-f13a9092b1c4d449908498e2.md) — L6; structural
+            - [NtpClient](notes/knowledge-c23c0c8026b61a86fdbe6855.md) — L7; documented
+            - [NtpServer](notes/knowledge-bec7c2e85f533838168c42fc.md) — L7; documented
+        - [Windows](notes/knowledge-448d4b3e7d83a6ebe3c51a2d.md) — L5; structural
+          - [AppCompat](notes/knowledge-22de066f0506ed65c7a267c7.md) — L6; documented
+          - [CurrentVersion](notes/knowledge-4ae5e85830d0b0f0c277db29.md) — L6; structural
+            - [Internet Settings](notes/knowledge-e5d18eb0f5cab6ba527c5ab2.md) — L7; documented
+              - [Lockdown&#95;Zones](notes/knowledge-0038fc7f2000e3953c236541.md) — L8; structural
+                - [0](notes/knowledge-23cfb15a2eec0b2d77f9ea82.md) — L9; documented
+                - [1](notes/knowledge-a7d949e76387efd3c19bdad9.md) — L9; documented
+                - [2](notes/knowledge-9602f927295b8c46e4255401.md) — L9; documented
+                - [3](notes/knowledge-3c7e358bb8eef4ea3b2923ff.md) — L9; documented
+                - [4](notes/knowledge-3f27eaa4cede006bc61684b5.md) — L9; documented
+              - [Zones](notes/knowledge-7156d159a3d7537246fc2770.md) — L8; structural
+                - [0](notes/knowledge-35c927d6c6d347f47da9f1a1.md) — L9; documented
+                - [1](notes/knowledge-6ab6ed011cc1f7551c095b92.md) — L9; documented
+                - [2](notes/knowledge-b44efe1e55d98d2a462176b1.md) — L9; documented
+                - [3](notes/knowledge-7a28dc8f16b6f040a16bc923.md) — L9; documented
+                - [4](notes/knowledge-79a93576c70da6b3fb0c3079.md) — L9; documented
+          - [DeviceGuard](notes/knowledge-0ddda57208961b17aac636d3.md) — L6; documented
+          - [DeviceInstall](notes/knowledge-e7e8c5a04a32fbcd82807d8d.md) — L6; structural
+            - [Restrictions](notes/knowledge-f0c4d58f8c586c14ac4c7a0f.md) — L7; documented
+              - [DeniedPolicy](notes/knowledge-c69468c30833d73adaeed64e.md) — L8; documented
+            - [Settings](notes/knowledge-4e101125ec54c0606e86ce0a.md) — L7; documented
+          - [DriverInstall](notes/knowledge-02ff42145a16f3c7d42732eb.md) — L6; structural
+            - [Restrictions](notes/knowledge-9c67aeb16ee40ccc173cfa56.md) — L7; documented
+          - [EventLog](notes/knowledge-8570aba32433b35a4a83423b.md) — L6; structural
+            - [Application](notes/knowledge-d68f6f8882c9258690be94c9.md) — L7; documented
+            - [Security](notes/knowledge-f8703f687ac0bc949d59642e.md) — L7; documented
+            - [Setup](notes/knowledge-e9481a864285161d5068e810.md) — L7; documented
+            - [System](notes/knowledge-f018bde52bb5ae343dd0812f.md) — L7; documented
+          - [Explorer](notes/knowledge-23bdfbe40bd00f90050e6dc5.md) — L6; documented
+          - [Filesystems](notes/knowledge-d4cadc393bdafdf292d38702.md) — L6; structural
+            - [NTFS](notes/knowledge-5a0e50df8a76ec949c0d2710.md) — L7; documented
+          - [LanmanServer](notes/knowledge-f15f5e49111333b937961136.md) — L6; documented
+          - [LanmanWorkstation](notes/knowledge-8475e1dd7787d9b87b0adf46.md) — L6; documented
+          - [Network Connections](notes/knowledge-f7425a54e82fbb2abceaf8f1.md) — L6; documented
+          - [RemovableStorageDevices](notes/knowledge-e14554bd0424fbeb5b50b563.md) — L6; documented
+            - [Custom](notes/knowledge-ffef3dcf7890dd3e0c2c20c6.md) — L7; structural
+              - [Deny&#95;Read](notes/knowledge-b71b05661651cc83f6f68012.md) — L8; documented
+              - [Deny&#95;Write](notes/knowledge-75a48b044d3aa7c585926697.md) — L8; documented
+          - [System](notes/knowledge-5489fdffb503de87c7667245.md) — L6; documented
+          - [TCPIP](notes/knowledge-35950a0f066a3ad7fbbffa69.md) — L6; structural
+            - [v6Transition](notes/knowledge-bcca618a2ebe720c2fa40e72.md) — L7; documented
+          - [WinRM](notes/knowledge-89f201b64adc5b339389bdd7.md) — L6; structural
+            - [Client](notes/knowledge-d2343a9ac128221d53510a12.md) — L7; documented
+            - [Service](notes/knowledge-1c488ca7b6bc263a06dc1a5d.md) — L7; documented
+        - [Windows Defender](notes/knowledge-bce036ca2ffd77b92b30b75c.md) — L5; structural
+          - [MpEngine](notes/knowledge-f5f0202ed1957d374c51497d.md) — L6; documented
+        - [Windows NT](notes/knowledge-279dead16457daba15a15074.md) — L5; structural
+          - [CurrentVersion](notes/knowledge-be5a4d3eb6874a0e96ffbe30.md) — L6; structural
+            - [Winlogon](notes/knowledge-dda22a9916c9bde3354cfd6a.md) — L7; documented
+          - [DNSClient](notes/knowledge-d147cfaf2958552b80b46fbf.md) — L6; documented
+          - [Printers](notes/knowledge-3b4c71166c9c7fba64853b39.md) — L6; documented
+            - [PackagePointAndPrint](notes/knowledge-294cb40b081d15e04d353cb7.md) — L7; documented
+            - [Wizard](notes/knowledge-7a1ee15945034fbaf8ca8e95.md) — L7; documented
+          - [Terminal Services](notes/knowledge-2b49667c7ece4e1c60892843.md) — L6; documented
+            - [AllUserInstallAgent](notes/knowledge-48c245d9ff24004b1d3dd194.md) — L7; documented
+            - [Client](notes/knowledge-5db69f4c146cc17215cbadfa.md) — L7; documented
+  - [System](notes/knowledge-0c0cbf02701df6d652a5dc75.md) — L2; documented
+    - [CurrentControlSet](notes/knowledge-47075c2ddad8552fd6d1728a.md) — L3; documented
+      - [Control](notes/knowledge-cf70125942441319173f4965.md) — L4; documented
+        - [Class](notes/knowledge-e760864353a1e2b62d9b0831.md) — L5; documented
+          - [&lt;SetupClassGUID&gt;](notes/knowledge-842f2a415a70dfcc2c16e204.md) — L6; documented
+        - [CoDeviceInstallers](notes/knowledge-795b86a51979eda42b0a73a6.md) — L5; documented
+        - [DeviceClasses](notes/knowledge-13efa5aa46a334e718e3bb02.md) — L5; documented
+          - [&lt;InterfaceClassGUID&gt;](notes/knowledge-2f9f3274b1f463b66feb0ee8.md) — L6; documented
+        - [FileSystem](notes/knowledge-971c29595808f7a4b70fee7a.md) — L5; documented
+        - [Lsa](notes/knowledge-7fb2852e2f15ab5025f4dd0c.md) — L5; documented
+        - [NetworkProvider](notes/knowledge-c25d1e41d0885923e3abc8f3.md) — L5; structural
+          - [Notifyees](notes/knowledge-63b6c50bfa5609f2f986b106.md) — L6; documented
+          - [Order](notes/knowledge-836a38d0f6b9373d181f66ad.md) — L6; documented
+        - [Session Manager](notes/knowledge-7646fcec5941d5a9b6d3ef85.md) — L5; documented
+          - [Environment](notes/knowledge-67ee8ba9716dc0d7a0e5161f.md) — L6; documented
+      - [Enum](notes/knowledge-353bb9396036e898bd8afc17.md) — L4; documented
+      - [Hardware Profiles](notes/knowledge-b2df5226b360738770b77f05.md) — L4; structural
+        - [Current](notes/knowledge-833861c0e2e96ab3dcbe1d65.md) — L5; documented
+      - [Policies](notes/knowledge-f73910e4222cd16401fa264d.md) — L4; documented
+      - [Services](notes/knowledge-1b4dc8589a4514f201b7f19e.md) — L4; documented
+        - [&lt;ServiceName&gt;](notes/knowledge-8a99ec31e70ed76edb8f16ac.md) — L5; documented
+          - [NetworkProvider](notes/knowledge-25c987ad687d53225fd6004c.md) — L6; documented
+          - [Parameters](notes/knowledge-9e9f09121b2ed725ef565381.md) — L6; documented
+          - [Performance](notes/knowledge-f9dc477573ee0cec21fbb7f3.md) — L6; documented
+        - [EventLog](notes/knowledge-89e4e74b89345ca9e5655f84.md) — L5; documented
+          - [&lt;LogName&gt;](notes/knowledge-aa1115cb9c70eb10792fd35a.md) — L6; documented
+          - [Application](notes/knowledge-1d8c9832586ff5b325a2da88.md) — L6; documented
+          - [Security](notes/knowledge-0615018fbc0b36712d73738c.md) — L6; documented
+          - [Setup](notes/knowledge-fc0ca637ce1893723129adf3.md) — L6; documented
+          - [System](notes/knowledge-3ef5f1fd45140d6e0fdfd82c.md) — L6; documented
+        - [Tcpip6](notes/knowledge-7a23ffc0cf3da054741fc9ab.md) — L5; structural
+          - [Parameters](notes/knowledge-464f0f015878f5d492bac099.md) — L6; documented
+- [HKU](notes/knowledge-03d1e3aac977743d7870fabf.md) — L1; documented
+  - [.DEFAULT](notes/knowledge-c964826ca6b8eaef9932d78d.md) — L2; documented
+  - [&lt;UserHive&gt;](notes/knowledge-c7c879f8a0c5cbdfbd6f5a91.md) — L2; documented
+    - [Environment](notes/knowledge-c03c4329e2273c4634c1e2bb.md) — L3; documented
+    - [Software](notes/knowledge-9c1888fb225c292950b4d253.md) — L3; structural
+      - [Microsoft](notes/knowledge-939af1ce2ee8f202f9fc1162.md) — L4; structural
+        - [SystemCertificates](notes/knowledge-1601525fd6feca8afbd33b39.md) — L5; documented
+
+[Concept connections](CONCEPTS.md)
+
+Documented claims and structural inferences retain distinct status and evidence. A complete explanation does not establish an event outcome.

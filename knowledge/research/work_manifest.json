@@ -1,0 +1,61 @@
+{
+  "schema": "registry-research-work-1",
+  "scope": "All 197 existing inventory nodes; preserve 192 hierarchy edges and stable canonical IDs.",
+  "assignments": {
+    "core": {
+      "nodes": 74,
+      "model": "gpt-6-astra",
+      "reasoning_effort": "high",
+      "rationale": "Registry roots/views, COM, device classes, services and templates require careful conceptual distinctions."
+    },
+    "user_zones": {
+      "nodes": 63,
+      "model": "gpt-6.1-sol",
+      "reasoning_effort": "high",
+      "rationale": "Source-grounded user policies and contextual distinctions across zone IDs and scope variants."
+    },
+    "machine_policy": {
+      "nodes": 60,
+      "model": "gpt-6.1-sol",
+      "reasoning_effort": "high",
+      "rationale": "Structured policy mapping research with applicability and key/value verification."
+    }
+  },
+  "root_responsibilities": [
+    "Inspect and integrate all batches",
+    "Review source/meaning boundaries and resolve editorial issues",
+    "Implement evidence-aware graph, semantic crosslinks and model data",
+    "Run full correctness, reproducibility and preservation checks"
+  ],
+  "review_plan": [
+    "Exact assignment and source-review coverage gates",
+    "Independent peer review of each research batch",
+    "Root review of all node explanations and critical source claims",
+    "Graph/vault/model-export tests and final scope audit"
+  ],
+  "state": "complete",
+  "completed_on": "2026-10-21",
+  "completion_audit": "research_audit.json",
+  "historical_completion_audit": "root_completion_audit.json",
+  "result_metrics": {
+    "nodes": 197,
+    "hierarchy_edges": 192,
+    "semantic_edges": 46,
+    "status_counts": {
+      "documented": 145,
+      "structural": 52
+    },
+    "source_pages": 66,
+    "sft_examples": 394,
+    "evaluation_cases": 17,
+    "template_dependent_nodes": 22
+  },
+  "review_coverage": {
+    "core": "research_user_zones",
+    "user_zones": "research_core",
+    "machine_policy": "root",
+    "implementation": "research_core and research_machine_policy",
+    "evaluation": "research_machine_policy",
+    "delivery": "research_core and root"
+  }
+}

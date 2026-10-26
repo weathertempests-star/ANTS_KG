@@ -1,0 +1,1536 @@
+{
+  "schema": "registry-research-sources-1",
+  "batch_sha256": {
+    "core": "6ca67802e1b96ce1a2bfd05041ce32e4cc9356b8efb09a6b4f141233cc49030e",
+    "user_zones": "19120c4a217e5413001018dc3e5bca41099831b6a677ae726bd6469cc9954ad9",
+    "machine_policy": "a5574e788306c72a3c0e0fde6625ee5421afb6ea7c566f0eb3629c06292f8c62"
+  },
+  "sources": [
+    {
+      "url": "https://devblogs.microsoft.com/oldnewthing/20070302-00/?p=27783/",
+      "reviews": [
+        {
+          "batch": "core",
+          "url": "https://devblogs.microsoft.com/oldnewthing/20070302-00/?p=27783/",
+          "title": "The .Default user is not the default user",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the 2007 Microsoft developer explanation separating LocalSystem .DEFAULT from the new-user template. Historical XP template paths and customization procedures are not generalized."
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/nsacyber/Windows-Secure-Host-Baseline/blob/master/Windows/Group%20Policy%20Templates/RemovableStorage.admx",
+      "reviews": [
+        {
+          "batch": "user_zones",
+          "url": "https://github.com/nsacyber/Windows-Secure-Host-Baseline/blob/master/Windows/Group%20Policy%20Templates/RemovableStorage.admx",
+          "title": "Microsoft RemovableStorage.admx preserved in NSA Windows-Secure-Host-Baseline",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read Microsoft-copyrighted (2006) policyDefinitions revision 1.0/schemaVersion 1.0 XML in the official nsacyber repository, policies CustomClasses_DenyRead_Access_1/_2 and CustomClasses_DenyWrite_Access_1/_2. Each uses same-named enable value (1/0), additive List child, and supportedOn WindowsVista. This historical preserved template is not asserted to establish every current installed ADMX schema; modern operation/key/value meanings are separately verified in Microsoft Learn CSP."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://github.com/nsacyber/Windows-Secure-Host-Baseline/blob/master/Windows/Group%20Policy%20Templates/RemovableStorage.admx",
+          "title": "Microsoft-authored RemovableStorage.admx preserved by NSA Windows Secure Host Baseline",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read machine custom-class read/write policies, enable/disable values, List element keys, additive attribute, and historical supportedOn metadata; this is preserved template evidence rather than a current Microsoft Learn page."
+        }
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/defender-endpoint/enable-cloud-protection-microsoft-defender-antivirus",
+      "reviews": [
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/defender-endpoint/enable-cloud-protection-microsoft-defender-antivirus",
+          "title": "Enable cloud protection in Microsoft Defender Antivirus",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the Specify the cloud protection level with Group Policy description and registry mapping; applicability distinguished from installed machine state."
+        }
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/deployedge/edge-ie-mode",
+      "reviews": [
+        {
+          "batch": "user_zones",
+          "url": "https://learn.microsoft.com/en-us/deployedge/edge-ie-mode",
+          "title": "What is Internet Explorer (IE) mode?",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read engine distinction and supported Internet Explorer functionality, including security-zone and Protected Mode group policies. This supports retained zone consumers, not universal applicability to Chromium navigation."
+        }
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/dotnet/api/microsoft.win32.registry.localmachine",
+      "reviews": [
+        {
+          "batch": "core",
+          "url": "https://learn.microsoft.com/en-us/dotnet/api/microsoft.win32.registry.localmachine",
+          "title": "Registry.LocalMachine Field",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read Definition and Remarks. Remarks contain historical Windows 2000 wording; used for namespace purpose, not a modern exhaustive security architecture or OS support claim."
+        }
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/lifecycle/products/internet-explorer-11",
+      "reviews": [
+        {
+          "batch": "user_zones",
+          "url": "https://learn.microsoft.com/en-us/lifecycle/products/internet-explorer-11",
+          "title": "Internet Explorer 11 - Microsoft Lifecycle",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read IE11 desktop end-of-support scope for Windows 10 semi-annual channel and IE mode context; did not generalize retirement to all Windows URL-zone consumers."
+        }
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/previous-versions/troubleshoot/browsers/security-privacy/ie-security-zones-registry-entries",
+      "reviews": [
+        {
+          "batch": "user_zones",
+          "url": "https://learn.microsoft.com/en-us/previous-versions/troubleshoot/browsers/security-privacy/ie-security-zones-registry-entries",
+          "title": "Internet Explorer security zones registry entries for advanced users",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read Security Zone settings, ZoneMap, Zones, numeric IDs 0–4, action values, and Security_HKLM_only semantics. Article identifies original IE9/IE10 context and warns about IE11 desktop retirement. The attempted https://learn.microsoft.com/en-us/windows/win32/api/urlmon/ne-urlmon-urlzone endpoint was inaccessible; numeric IDs were verified here and against exact CSP mappings instead."
+        }
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/troubleshoot/windows-client/shell-experience/uwp-apps-fails-incorrect-registry-permissions",
+      "reviews": [
+        {
+          "batch": "core",
+          "url": "https://learn.microsoft.com/en-us/troubleshoot/windows-client/shell-experience/uwp-apps-fails-incorrect-registry-permissions",
+          "title": "Troubleshoot UWP apps failing to open due to incorrect registry permissions",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read substantive Microsoft documentation sections supporting the recorded claims; navigation and sign-in boilerplate did not prevent content access."
+        }
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/troubleshoot/windows-server/networking/configure-ipv6-in-windows",
+      "reviews": [
+        {
+          "batch": "core",
+          "url": "https://learn.microsoft.com/en-us/troubleshoot/windows-server/networking/configure-ipv6-in-windows",
+          "title": "Guidance for configuring IPv6 in Windows for advanced users",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read substantive Microsoft documentation sections supporting the recorded claims; navigation and sign-in boilerplate did not prevent content access."
+        }
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows-hardware/drivers/install/hklm-system-currentcontrolset-control-registry-tree",
+      "reviews": [
+        {
+          "batch": "core",
+          "url": "https://learn.microsoft.com/en-us/windows-hardware/drivers/install/hklm-system-currentcontrolset-control-registry-tree",
+          "title": "HKLM SYSTEM CurrentControlSet Control Registry Tree",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read substantive Microsoft documentation sections supporting the recorded claims; navigation and sign-in boilerplate did not prevent content access."
+        }
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows-hardware/drivers/install/hklm-system-currentcontrolset-enum-registry-tree",
+      "reviews": [
+        {
+          "batch": "core",
+          "url": "https://learn.microsoft.com/en-us/windows-hardware/drivers/install/hklm-system-currentcontrolset-enum-registry-tree",
+          "title": "HKLM SYSTEM CurrentControlSet Enum Registry Tree",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read substantive Microsoft documentation sections supporting the recorded claims; navigation and sign-in boilerplate did not prevent content access."
+        }
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows-hardware/drivers/install/hklm-system-currentcontrolset-hardwareprofiles-registry-tree",
+      "reviews": [
+        {
+          "batch": "core",
+          "url": "https://learn.microsoft.com/en-us/windows-hardware/drivers/install/hklm-system-currentcontrolset-hardwareprofiles-registry-tree",
+          "title": "HKLM SYSTEM CurrentControlSet HardwareProfiles Registry Tree",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Page omits the space in HardwareProfiles; exact spaced path independently verified in Predefined Keys and Plug and Play Registry Routines. Deprecation statement retained."
+        }
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows-hardware/drivers/install/hklm-system-currentcontrolset-services-registry-tree",
+      "reviews": [
+        {
+          "batch": "core",
+          "url": "https://learn.microsoft.com/en-us/windows-hardware/drivers/install/hklm-system-currentcontrolset-services-registry-tree",
+          "title": "HKLM SYSTEM CurrentControlSet Services Registry Tree",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read substantive Microsoft documentation sections supporting the recorded claims; navigation and sign-in boilerplate did not prevent content access."
+        }
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows-hardware/drivers/install/overview-of-device-interface-classes",
+      "reviews": [
+        {
+          "batch": "core",
+          "url": "https://learn.microsoft.com/en-us/windows-hardware/drivers/install/overview-of-device-interface-classes",
+          "title": "Overview of Device Interface Classes",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read substantive Microsoft documentation sections supporting the recorded claims; navigation and sign-in boilerplate did not prevent content access."
+        }
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows-hardware/drivers/install/overview-of-device-setup-classes",
+      "reviews": [
+        {
+          "batch": "core",
+          "url": "https://learn.microsoft.com/en-us/windows-hardware/drivers/install/overview-of-device-setup-classes",
+          "title": "Overview of Device Setup Classes",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read substantive Microsoft documentation sections supporting the recorded claims; navigation and sign-in boilerplate did not prevent content access."
+        }
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows-hardware/drivers/install/specific-requirements-for-device-property-page-providers--class-instal",
+      "reviews": [
+        {
+          "batch": "core",
+          "url": "https://learn.microsoft.com/en-us/windows-hardware/drivers/install/specific-requirements-for-device-property-page-providers--class-instal",
+          "title": "Requirements for Device Property Page Providers",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Root reread Note; class installers and co-installers deprecated."
+        }
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows-hardware/drivers/kernel/plug-and-play-registry-routines",
+      "reviews": [
+        {
+          "batch": "core",
+          "url": "https://learn.microsoft.com/en-us/windows-hardware/drivers/kernel/plug-and-play-registry-routines",
+          "title": "Plug and Play Registry Routines",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read substantive Microsoft documentation sections supporting the recorded claims; navigation and sign-in boilerplate did not prevent content access."
+        }
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-appcompat",
+      "reviews": [
+        {
+          "batch": "user_zones",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-appcompat",
+          "title": "Policy CSP - ADMX_AppCompat",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read AppCompatTurnOffProgramCompatibilityAssistant_1 and its explicit backward-compatibility-only/current-version invalidity warning, plus exact HKCU DisablePCA mapping."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-appcompat#appcompatturnoffengine",
+          "title": "Policy CSP - ADMX_appcompat",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the AppCompatTurnOffEngine description and registry mapping; applicability distinguished from installed machine state."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-appcompat#appcompatturnoffprogramcompatibilityassistant_2",
+          "title": "Policy CSP - ADMX_appcompat",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the AppCompatTurnOffProgramCompatibilityAssistant_2 description and registry mapping; applicability distinguished from installed machine state."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-appcompat#appcompatturnoffprograminventory",
+          "title": "Policy CSP - ADMX_appcompat",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the AppCompatTurnOffProgramInventory description and registry mapping; applicability distinguished from installed machine state."
+        }
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-auditsettings",
+      "reviews": [
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-auditsettings#includecmdline",
+          "title": "Policy CSP - ADMX_auditsettings",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the IncludeCmdLine description and registry mapping; applicability distinguished from installed machine state."
+        }
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-credentialproviders",
+      "reviews": [
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-credentialproviders#excludedcredentialproviders",
+          "title": "Policy CSP - ADMX_credentialproviders",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the ExcludedCredentialProviders description and registry mapping; applicability distinguished from installed machine state."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-credentialproviders#defaultcredentialprovider",
+          "title": "Policy CSP - ADMX_credentialproviders",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the DefaultCredentialProvider description and registry mapping; applicability distinguished from installed machine state."
+        }
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-deviceguard",
+      "reviews": [
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-deviceguard#configcipolicy",
+          "title": "Policy CSP - ADMX_deviceguard",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the ConfigCIPolicy description and registry mapping; applicability distinguished from installed machine state."
+        }
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-deviceinstallation",
+      "reviews": [
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-deviceinstallation#deviceinstall_allowadmininstall",
+          "title": "Policy CSP - ADMX_deviceinstallation",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the DeviceInstall_AllowAdminInstall description and registry mapping; applicability distinguished from installed machine state."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-deviceinstallation#deviceinstall_removable_deny",
+          "title": "Policy CSP - ADMX_deviceinstallation",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the DeviceInstall_Removable_Deny description and registry mapping; applicability distinguished from installed machine state."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-deviceinstallation#deviceinstall_installtimeout",
+          "title": "Policy CSP - ADMX_deviceinstallation",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the DeviceInstall_InstallTimeout description and registry mapping; applicability distinguished from installed machine state."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-deviceinstallation#deviceinstall_policy_reboottime",
+          "title": "Policy CSP - ADMX_deviceinstallation",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the DeviceInstall_Policy_RebootTime description and registry mapping; applicability distinguished from installed machine state."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-deviceinstallation#deviceinstall_deniedpolicy_detailtext",
+          "title": "Policy CSP - ADMX_deviceinstallation",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the DeviceInstall_DeniedPolicy_DetailText description and registry mapping; applicability distinguished from installed machine state."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-deviceinstallation#deviceinstall_deniedpolicy_simpletext",
+          "title": "Policy CSP - ADMX_deviceinstallation",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the DeviceInstall_DeniedPolicy_SimpleText description and registry mapping; applicability distinguished from installed machine state."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-deviceinstallation#deviceinstall_systemrestore",
+          "title": "Policy CSP - ADMX_deviceinstallation",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the DeviceInstall_SystemRestore description and registry mapping; applicability distinguished from installed machine state."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-deviceinstallation#driverinstall_classes_allowuser",
+          "title": "Policy CSP - ADMX_deviceinstallation",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the DriverInstall_Classes_AllowUser description and registry mapping; applicability distinguished from installed machine state."
+        }
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-dnsclient",
+      "reviews": [
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-dnsclient#dns_primarydnssuffix",
+          "title": "Policy CSP - ADMX_dnsclient",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the DNS_PrimaryDnsSuffix description and registry mapping; applicability distinguished from installed machine state."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-dnsclient#dns_nameserver",
+          "title": "Policy CSP - ADMX_dnsclient",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the DNS_NameServer description and registry mapping; applicability distinguished from installed machine state."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-dnsclient#dns_domain",
+          "title": "Policy CSP - ADMX_dnsclient",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the DNS_Domain description and registry mapping; applicability distinguished from installed machine state."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-dnsclient#dns_registeradaptername",
+          "title": "Policy CSP - ADMX_dnsclient",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the DNS_RegisterAdapterName description and registry mapping; applicability distinguished from installed machine state."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-dnsclient#turn_off_multicast",
+          "title": "Policy CSP - ADMX_dnsclient",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the Turn_Off_Multicast description and registry mapping; applicability distinguished from installed machine state."
+        }
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-eventlog",
+      "reviews": [
+        {
+          "batch": "core",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-eventlog",
+          "title": "Policy CSP - ADMX_EventLog",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read Channel_Log_FileLogAccess_5 through _8 mappings and behavior. Mapping tables do not specify a registry value name; none invented from CSP node names."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-eventlog#channel_log_filelogaccess_1",
+          "title": "Policy CSP - ADMX_eventlog",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the Channel_Log_FileLogAccess_1 description and registry mapping; applicability distinguished from installed machine state."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-eventlog#channel_logfilepath_3",
+          "title": "Policy CSP - ADMX_eventlog",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the Channel_LogFilePath_3 description and registry mapping; applicability distinguished from installed machine state."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-eventlog#channel_log_autobackup_1",
+          "title": "Policy CSP - ADMX_eventlog",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the Channel_Log_AutoBackup_1 description and registry mapping; applicability distinguished from installed machine state."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-eventlog#channel_logfilepath_1",
+          "title": "Policy CSP - ADMX_eventlog",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the Channel_LogFilePath_1 description and registry mapping; applicability distinguished from installed machine state."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-eventlog#channel_log_autobackup_2",
+          "title": "Policy CSP - ADMX_eventlog",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the Channel_Log_AutoBackup_2 description and registry mapping; applicability distinguished from installed machine state."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-eventlog#channel_log_filelogaccess_2",
+          "title": "Policy CSP - ADMX_eventlog",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the Channel_Log_FileLogAccess_2 description and registry mapping; applicability distinguished from installed machine state."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-eventlog#channel_log_retention_2",
+          "title": "Policy CSP - ADMX_eventlog",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the Channel_Log_Retention_2 description and registry mapping; applicability distinguished from installed machine state."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-eventlog#channel_logenabled",
+          "title": "Policy CSP - ADMX_eventlog",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the Channel_LogEnabled description and registry mapping; applicability distinguished from installed machine state."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-eventlog#channel_logmaxsize_3",
+          "title": "Policy CSP - ADMX_eventlog",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the Channel_LogMaxSize_3 description and registry mapping; applicability distinguished from installed machine state."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-eventlog#channel_log_retention_3",
+          "title": "Policy CSP - ADMX_eventlog",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the Channel_Log_Retention_3 description and registry mapping; applicability distinguished from installed machine state."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-eventlog#channel_log_autobackup_4",
+          "title": "Policy CSP - ADMX_eventlog",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the Channel_Log_AutoBackup_4 description and registry mapping; applicability distinguished from installed machine state."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-eventlog#channel_log_filelogaccess_4",
+          "title": "Policy CSP - ADMX_eventlog",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the Channel_Log_FileLogAccess_4 description and registry mapping; applicability distinguished from installed machine state."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-eventlog#channel_log_retention_4",
+          "title": "Policy CSP - ADMX_eventlog",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the Channel_Log_Retention_4 description and registry mapping; applicability distinguished from installed machine state."
+        }
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-filesys",
+      "reviews": [
+        {
+          "batch": "core",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-filesys",
+          "title": "Policy CSP - ADMX_FileSys",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read substantive Microsoft documentation sections supporting the recorded claims; navigation and sign-in boilerplate did not prevent content access."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-filesys#symlinkevaluation",
+          "title": "Policy CSP - ADMX_filesys",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the SymlinkEvaluation description and registry mapping; applicability distinguished from installed machine state."
+        }
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-kerberos",
+      "reviews": [
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-kerberos#hosttorealm",
+          "title": "Policy CSP - ADMX_kerberos",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the HostToRealm description and registry mapping; applicability distinguished from installed machine state."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-kerberos#kdcproxyserver",
+          "title": "Policy CSP - ADMX_kerberos",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the KdcProxyServer description and registry mapping; applicability distinguished from installed machine state."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-kerberos#alwayssendcompoundid",
+          "title": "Policy CSP - ADMX_kerberos",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the AlwaysSendCompoundId description and registry mapping; applicability distinguished from installed machine state."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-kerberos#devicepkinitenabled",
+          "title": "Policy CSP - ADMX_kerberos",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the DevicePKInitEnabled description and registry mapping; applicability distinguished from installed machine state."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-kerberos#kdcproxydisableserverrevocationcheck",
+          "title": "Policy CSP - ADMX_kerberos",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the KdcProxyDisableServerRevocationCheck description and registry mapping; applicability distinguished from installed machine state."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-kerberos#serveracceptscompound",
+          "title": "Policy CSP - ADMX_kerberos",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the ServerAcceptsCompound description and registry mapping; applicability distinguished from installed machine state."
+        }
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-lanmanserver",
+      "reviews": [
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-lanmanserver#pol_ciphersuiteorder",
+          "title": "Policy CSP - ADMX_lanmanserver",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the Pol_CipherSuiteOrder description and registry mapping; applicability distinguished from installed machine state."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-lanmanserver#pol_honorciphersuiteorder",
+          "title": "Policy CSP - ADMX_lanmanserver",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the Pol_HonorCipherSuiteOrder description and registry mapping; applicability distinguished from installed machine state."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-lanmanserver#pol_hashpublication",
+          "title": "Policy CSP - ADMX_lanmanserver",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the Pol_HashPublication description and registry mapping; applicability distinguished from installed machine state."
+        }
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-lanmanworkstation",
+      "reviews": [
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-lanmanworkstation#pol_ciphersuiteorder",
+          "title": "Policy CSP - ADMX_lanmanworkstation",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the Pol_CipherSuiteOrder description and registry mapping; applicability distinguished from installed machine state."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-lanmanworkstation#pol_enablehandlecachingforcafiles",
+          "title": "Policy CSP - ADMX_lanmanworkstation",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the Pol_EnableHandleCachingForCAFiles description and registry mapping; applicability distinguished from installed machine state."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-lanmanworkstation#pol_enableofflinefilesforcashares",
+          "title": "Policy CSP - ADMX_lanmanworkstation",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the Pol_EnableOfflineFilesforCAShares description and registry mapping; applicability distinguished from installed machine state."
+        }
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-logon",
+      "reviews": [
+        {
+          "batch": "user_zones",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-logon",
+          "title": "Policy CSP - ADMX_Logon",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read DisableExplorerRunLegacy_1 and DisableExplorerRunOnceLegacy_1 descriptions and mapping, including named user values and documented computer-policy precedence. Retained historical wording rather than treating the CSP applicability table as proof all legacy features are current."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-logon#disableexplorerrunlegacy_2",
+          "title": "Policy CSP - ADMX_logon",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the DisableExplorerRunLegacy_2 description and registry mapping; applicability distinguished from installed machine state."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-logon#disablestatusmessages",
+          "title": "Policy CSP - ADMX_logon",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the DisableStatusMessages description and registry mapping; applicability distinguished from installed machine state."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-logon#blockuserfromshowingaccountdetailsonsignin",
+          "title": "Policy CSP - ADMX_logon",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the BlockUserFromShowingAccountDetailsOnSignin description and registry mapping; applicability distinguished from installed machine state."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-logon#syncforegroundpolicy",
+          "title": "Policy CSP - ADMX_logon",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the SyncForegroundPolicy description and registry mapping; applicability distinguished from installed machine state."
+        }
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-netlogon",
+      "reviews": [
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-netlogon#netlogon_addresstypereturned",
+          "title": "Policy CSP - ADMX_netlogon",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the Netlogon_AddressTypeReturned description and registry mapping; applicability distinguished from installed machine state."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-netlogon#netlogon_autositecoverage",
+          "title": "Policy CSP - ADMX_netlogon",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the Netlogon_AutoSiteCoverage description and registry mapping; applicability distinguished from installed machine state."
+        }
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-networkconnections",
+      "reviews": [
+        {
+          "batch": "user_zones",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-networkconnections",
+          "title": "Policy CSP - ADMX_NetworkConnections",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read NC_AddRemoveComponents and NC_EnableAdminProhibits descriptions and mappings; checked privileges and administrator applicability dependencies."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-networkconnections#nc_donotshowlocalonlyicon",
+          "title": "Policy CSP - ADMX_networkconnections",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the NC_DoNotShowLocalOnlyIcon description and registry mapping; applicability distinguished from installed machine state."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-networkconnections#nc_stddomainusersetlocation",
+          "title": "Policy CSP - ADMX_networkconnections",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the NC_StdDomainUserSetLocation description and registry mapping; applicability distinguished from installed machine state."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-networkconnections#nc_personalfirewallconfig",
+          "title": "Policy CSP - ADMX_networkconnections",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the NC_PersonalFirewallConfig description and registry mapping; applicability distinguished from installed machine state."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-networkconnections#nc_forcetunneling",
+          "title": "Policy CSP - ADMX_networkconnections",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the NC_ForceTunneling description and registry mapping; applicability distinguished from installed machine state."
+        }
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-printing",
+      "reviews": [
+        {
+          "batch": "user_zones",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-printing",
+          "title": "Policy CSP - ADMX_Printing",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read LegacyDefaultPrinterMode, DownlevelBrowse, PackagePointAndPrintOnly, and PackagePointAndPrintServerList descriptions and mappings; checked wizard-only scope and non-package fallback caveats."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-printing#domainprinters",
+          "title": "Policy CSP - ADMX_printing",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the DomainPrinters description and registry mapping; applicability distinguished from installed machine state."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-printing#applicationdriverisolation",
+          "title": "Policy CSP - ADMX_printing",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the ApplicationDriverIsolation description and registry mapping; applicability distinguished from installed machine state."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-printing#printdriverisolationexecutionpolicy",
+          "title": "Policy CSP - ADMX_printing",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the PrintDriverIsolationExecutionPolicy description and registry mapping; applicability distinguished from installed machine state."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-printing#emfdespooling",
+          "title": "Policy CSP - ADMX_printing",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the EMFDespooling description and registry mapping; applicability distinguished from installed machine state."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-printing#packagepointandprintonly_win7",
+          "title": "Policy CSP - ADMX_printing",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the PackagePointAndPrintOnly_Win7 description and registry mapping; applicability distinguished from installed machine state."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-printing#packagepointandprintserverlist_win7",
+          "title": "Policy CSP - ADMX_printing",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the PackagePointAndPrintServerList_Win7 description and registry mapping; applicability distinguished from installed machine state."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-printing#nondomainprinters",
+          "title": "Policy CSP - ADMX_printing",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the NonDomainPrinters description and registry mapping; applicability distinguished from installed machine state."
+        }
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-removablestorage",
+      "reviews": [
+        {
+          "batch": "user_zones",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-removablestorage",
+          "title": "Policy CSP - ADMX_RemovableStorage",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read AccessRights_RebootTime_1, CustomClasses_DenyRead_Access_1, CustomClasses_DenyWrite_Access_1, and RemovableStorageClasses_DenyAll_Access_1. Verified same-named policy keys versus state values, restart caveat, and broad-denial precedence; CSP does not describe List child schema."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-removablestorage#removablestorageclasses_denyall_access_2",
+          "title": "Policy CSP - ADMX_removablestorage",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the RemovableStorageClasses_DenyAll_Access_2 description and registry mapping; applicability distinguished from installed machine state."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-removablestorage#removable_remote_allow_access",
+          "title": "Policy CSP - ADMX_removablestorage",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the Removable_Remote_Allow_Access description and registry mapping; applicability distinguished from installed machine state."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-removablestorage#accessrights_reboottime_2",
+          "title": "Policy CSP - ADMX_removablestorage",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the AccessRights_RebootTime_2 description and registry mapping; applicability distinguished from installed machine state."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-removablestorage#customclasses_denyread_access_2",
+          "title": "Policy CSP - ADMX_removablestorage",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the CustomClasses_DenyRead_Access_2 description and registry mapping; applicability distinguished from installed machine state."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-removablestorage#customclasses_denywrite_access_2",
+          "title": "Policy CSP - ADMX_removablestorage",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the CustomClasses_DenyWrite_Access_2 description and registry mapping; applicability distinguished from installed machine state."
+        }
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-shellcommandpromptregedittools",
+      "reviews": [
+        {
+          "batch": "user_zones",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-shellcommandpromptregedittools",
+          "title": "Policy CSP - ADMX_ShellCommandPromptRegEditTools",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read DisableCMD and DisableRegedit descriptions and their different user key mappings. The DisableCMD section describes command prompt and batch processing but omits an explicit registry value name, so none is invented in the note."
+        }
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-startmenu",
+      "reviews": [
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-startmenu#hidepoweroptions",
+          "title": "Policy CSP - ADMX_startmenu",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the HidePowerOptions description and registry mapping; applicability distinguished from installed machine state."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-startmenu#nouninstallfromstart",
+          "title": "Policy CSP - ADMX_startmenu",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the NoUninstallFromStart description and registry mapping; applicability distinguished from installed machine state."
+        }
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-terminalserver",
+      "reviews": [
+        {
+          "batch": "user_zones",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-terminalserver",
+          "title": "Policy CSP - ADMX_TerminalServer",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read TS_CLIENT_ALLOW_SIGNED_FILES_1, TS_CLIENT_DISABLE_PASSWORD_SAVING_1, TS_RADC_DefaultConnection, and TS_RemoteControl_1 mappings/descriptions. Distinguished Remote Desktop client controls, session policy, and feed configuration from actual remote sessions."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-terminalserver#ts_client_allow_signed_files_2",
+          "title": "Policy CSP - ADMX_terminalserver",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the TS_CLIENT_ALLOW_SIGNED_FILES_2 description and registry mapping; applicability distinguished from installed machine state."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-terminalserver#ts_user_authentication_policy",
+          "title": "Policy CSP - ADMX_terminalserver",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the TS_USER_AUTHENTICATION_POLICY description and registry mapping; applicability distinguished from installed machine state."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-terminalserver#ts_sessions_idle_limit_2",
+          "title": "Policy CSP - ADMX_terminalserver",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the TS_SESSIONS_Idle_Limit_2 description and registry mapping; applicability distinguished from installed machine state."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-terminalserver#ts_server_legacy_rfx",
+          "title": "Policy CSP - ADMX_terminalserver",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the TS_SERVER_LEGACY_RFX description and registry mapping; applicability distinguished from installed machine state."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-terminalserver#ts_rdsappx_waitforregistration",
+          "title": "Policy CSP - ADMX_terminalserver",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the TS_RDSAppX_WaitForRegistration description and registry mapping; applicability distinguished from installed machine state."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-terminalserver#ts_client_disable_hardware_mode",
+          "title": "Policy CSP - ADMX_terminalserver",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the TS_CLIENT_DISABLE_HARDWARE_MODE description and registry mapping; applicability distinguished from installed machine state."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-terminalserver#ts_client_turn_off_udp",
+          "title": "Policy CSP - ADMX_terminalserver",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the TS_CLIENT_TURN_OFF_UDP description and registry mapping; applicability distinguished from installed machine state."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-terminalserver#ts_usb_redirection_disable",
+          "title": "Policy CSP - ADMX_terminalserver",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the TS_USB_REDIRECTION_DISABLE description and registry mapping; applicability distinguished from installed machine state."
+        }
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-userprofiles",
+      "reviews": [
+        {
+          "batch": "user_zones",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-userprofiles",
+          "title": "Policy CSP - ADMX_UserProfiles",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read LimitSize description and EnableProfileQuota mapping, including local/roaming scope and Windows Vista-era changes to quota responses."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-userprofiles#dontforceunloadhive",
+          "title": "Policy CSP - ADMX_userprofiles",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the DontForceUnloadHive description and registry mapping; applicability distinguished from installed machine state."
+        }
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-w32time",
+      "reviews": [
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-w32time#w32time_policy_enable_ntpclient",
+          "title": "Policy CSP - ADMX_w32time",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the W32TIME_POLICY_ENABLE_NTPCLIENT description and registry mapping; applicability distinguished from installed machine state."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-w32time#w32time_policy_enable_ntpserver",
+          "title": "Policy CSP - ADMX_w32time",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the W32TIME_POLICY_ENABLE_NTPSERVER description and registry mapping; applicability distinguished from installed machine state."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-w32time#w32time_policy_config",
+          "title": "Policy CSP - ADMX_w32time",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the W32TIME_POLICY_CONFIG description and registry mapping; applicability distinguished from installed machine state."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-w32time#w32time_policy_configure_ntpclient",
+          "title": "Policy CSP - ADMX_w32time",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the W32TIME_POLICY_CONFIGURE_NTPCLIENT description and registry mapping; applicability distinguished from installed machine state."
+        }
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-windowsexplorer",
+      "reviews": [
+        {
+          "batch": "user_zones",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-windowsexplorer",
+          "title": "Policy CSP - ADMX_WindowsExplorer",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read actual descriptions and ADMX mappings for all 20 OpenSearch query/preview ordinary/locked-down zone sections; Restricted Sites differs in unconfigured defaults. Also read NoBackButton, NoFileMRU, NoPlacesBar, PlacesBar, NoEntireNetwork, DefaultLibrariesLocation, and DisableSearchBoxSuggestions. The attempted separate https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-comdlg32 endpoint was inaccessible; common-dialog policies were verified in this document instead."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-windowsexplorer#enableshellshortcuticonremotepath",
+          "title": "Policy CSP - ADMX_windowsexplorer",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the EnableShellShortcutIconRemotePath description and registry mapping; applicability distinguished from installed machine state."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-windowsexplorer#disablemotwoninsecurepathcopy",
+          "title": "Policy CSP - ADMX_windowsexplorer",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the DisableMotWOnInsecurePathCopy description and registry mapping; applicability distinguished from installed machine state."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-windowsexplorer#enablesmartscreen",
+          "title": "Policy CSP - ADMX_windowsexplorer",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the EnableSmartScreen description and registry mapping; applicability distinguished from installed machine state."
+        }
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-windowsremotemanagement",
+      "reviews": [
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-windowsremotemanagement#disallowkerberos_1",
+          "title": "Policy CSP - ADMX_windowsremotemanagement",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the DisallowKerberos_1 description and registry mapping; applicability distinguished from installed machine state."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-windowsremotemanagement#disallowkerberos_2",
+          "title": "Policy CSP - ADMX_windowsremotemanagement",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the DisallowKerberos_2 description and registry mapping; applicability distinguished from installed machine state."
+        }
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-wininit",
+      "reviews": [
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-wininit#hiberboot",
+          "title": "Policy CSP - ADMX_wininit",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the Hiberboot description and registry mapping; applicability distinguished from installed machine state."
+        }
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-winlogon",
+      "reviews": [
+        {
+          "batch": "user_zones",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-winlogon",
+          "title": "Policy CSP - ADMX_WinLogon",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read CustomShell description and exact user System key mapping, including default Explorer interface and replacement-interface behavior; no undocumented value name added."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-winlogon#displaylastlogoninfodescription",
+          "title": "Policy CSP - ADMX_winlogon",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the DisplayLastLogonInfoDescription description and registry mapping; applicability distinguished from installed machine state."
+        }
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-internetexplorer",
+      "reviews": [
+        {
+          "batch": "user_zones",
+          "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-internetexplorer",
+          "title": "Policy CSP - InternetExplorer",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read AllowLocalMachineZoneTemplate lockdown note: ordinary/locked-down equivalent comparison by Local Machine Zone Lockdown and Network Protocol Lockdown; do not infer feature enablement from key presence."
+        }
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-movefileexa",
+      "reviews": [
+        {
+          "batch": "core",
+          "url": "https://learn.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-movefileexa",
+          "title": "MoveFileExA function",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read substantive Microsoft documentation sections supporting the recorded claims; navigation and sign-in boilerplate did not prevent content access."
+        }
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-environment",
+      "reviews": [
+        {
+          "batch": "core",
+          "url": "https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-environment",
+          "title": "Win32_Environment class",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Intro spells Sessionmanager without a space; property MappingStrings verifies Session Manager spelling."
+        }
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/com/-file-extension--key",
+      "reviews": [
+        {
+          "batch": "core",
+          "url": "https://learn.microsoft.com/en-us/windows/win32/com/-file-extension--key",
+          "title": "File extension Key",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read substantive Microsoft documentation sections supporting the recorded claims; navigation and sign-in boilerplate did not prevent content access."
+        }
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/com/-progid--key",
+      "reviews": [
+        {
+          "batch": "core",
+          "url": "https://learn.microsoft.com/en-us/windows/win32/com/-progid--key",
+          "title": "ProgID Key",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read substantive Microsoft documentation sections supporting the recorded claims; navigation and sign-in boilerplate did not prevent content access."
+        }
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/com/appid-key",
+      "reviews": [
+        {
+          "batch": "core",
+          "url": "https://learn.microsoft.com/en-us/windows/win32/com/appid-key",
+          "title": "AppID Key",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read substantive Microsoft documentation sections supporting the recorded claims; navigation and sign-in boilerplate did not prevent content access."
+        }
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/com/clsid-key-hklm",
+      "reviews": [
+        {
+          "batch": "core",
+          "url": "https://learn.microsoft.com/en-us/windows/win32/com/clsid-key-hklm",
+          "title": "CLSID Key",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read substantive Microsoft documentation sections supporting the recorded claims; navigation and sign-in boilerplate did not prevent content access."
+        }
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/com/inprocserver32",
+      "reviews": [
+        {
+          "batch": "core",
+          "url": "https://learn.microsoft.com/en-us/windows/win32/com/inprocserver32",
+          "title": "InprocServer32",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read substantive Microsoft documentation sections supporting the recorded claims; navigation and sign-in boilerplate did not prevent content access."
+        }
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/com/interface-key",
+      "reviews": [
+        {
+          "batch": "core",
+          "url": "https://learn.microsoft.com/en-us/windows/win32/com/interface-key",
+          "title": "Interface Key",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Overview table labels entries as values, but not enough detail to resolve individual child layout; no representative child/value is invented."
+        }
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/com/localserver32",
+      "reviews": [
+        {
+          "batch": "core",
+          "url": "https://learn.microsoft.com/en-us/windows/win32/com/localserver32",
+          "title": "LocalServer32",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read substantive Microsoft documentation sections supporting the recorded claims; navigation and sign-in boilerplate did not prevent content access."
+        }
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/eventlog/eventlog-key",
+      "reviews": [
+        {
+          "batch": "core",
+          "url": "https://learn.microsoft.com/en-us/windows/win32/eventlog/eventlog-key",
+          "title": "Eventlog Key",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read substantive Microsoft documentation sections supporting the recorded claims; navigation and sign-in boilerplate did not prevent content access."
+        }
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation",
+      "reviews": [
+        {
+          "batch": "core",
+          "url": "https://learn.microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation",
+          "title": "Maximum Path Length Limitation",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read substantive Microsoft documentation sections supporting the recorded claims; navigation and sign-in boilerplate did not prevent content access."
+        }
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/msi/uninstall-registry-key",
+      "reviews": [
+        {
+          "batch": "core",
+          "url": "https://learn.microsoft.com/en-us/windows/win32/msi/uninstall-registry-key",
+          "title": "Windows Installer Properties for the Uninstall Registry Key",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read substantive Microsoft documentation sections supporting the recorded claims; navigation and sign-in boilerplate did not prevent content access."
+        }
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/secauthn/authentication-registry-keys",
+      "reviews": [
+        {
+          "batch": "core",
+          "url": "https://learn.microsoft.com/en-us/windows/win32/secauthn/authentication-registry-keys",
+          "title": "Authentication Registry Keys",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read substantive Microsoft documentation sections supporting the recorded claims; navigation and sign-in boilerplate did not prevent content access."
+        }
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/secauthn/registering-ssp-ap-dlls",
+      "reviews": [
+        {
+          "batch": "core",
+          "url": "https://learn.microsoft.com/en-us/windows/win32/secauthn/registering-ssp-ap-dlls",
+          "title": "Registering SSP/AP DLLs",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read substantive Microsoft documentation sections supporting the recorded claims; navigation and sign-in boilerplate did not prevent content access."
+        }
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/seccrypto/system-store-locations",
+      "reviews": [
+        {
+          "batch": "core",
+          "url": "https://learn.microsoft.com/en-us/windows/win32/seccrypto/system-store-locations",
+          "title": "System Store Locations",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read machine, service and users sections and Remarks. Parent namespace claims are explicitly structural; system stores are logical collections of physical stores."
+        },
+        {
+          "batch": "user_zones",
+          "url": "https://learn.microsoft.com/en-us/windows/win32/seccrypto/system-store-locations",
+          "title": "Windows Certificate System Store Locations and Registry Paths",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read CERT_SYSTEM_STORE_CURRENT_USER, CERT_SYSTEM_CURRENT_USER_GROUP_POLICY, physical-store collections, and Remarks describing Group Policy Template delivery and updates."
+        },
+        {
+          "batch": "machine_policy",
+          "url": "https://learn.microsoft.com/en-us/windows/win32/seccrypto/system-store-locations",
+          "title": "System Store Locations",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read the CERT_SYSTEM_LOCAL_MACHINE_GROUP_POLICY description and registry mapping; applicability distinguished from installed machine state."
+        }
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/services/service-entry-point",
+      "reviews": [
+        {
+          "batch": "core",
+          "url": "https://learn.microsoft.com/en-us/windows/win32/services/service-entry-point",
+          "title": "Service Entry Point",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Root reread Introduction; ImagePath can carry service launch arguments."
+        }
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/setupapi/run-and-runonce-registry-keys",
+      "reviews": [
+        {
+          "batch": "core",
+          "url": "https://learn.microsoft.com/en-us/windows/win32/setupapi/run-and-runonce-registry-keys",
+          "title": "Run and RunOnce Registry Keys",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read substantive Microsoft documentation sections supporting the recorded claims; navigation and sign-in boilerplate did not prevent content access."
+        },
+        {
+          "batch": "user_zones",
+          "url": "https://learn.microsoft.com/en-us/windows/win32/setupapi/run-and-runonce-registry-keys",
+          "title": "Run and RunOnce Registry Keys",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read exact HKCU paths, recurring versus one-time user-logon behavior, command entry format/limit, ordering, launch delay, deletion timing, special prefixes, and HKLM-specific administrator condition."
+        }
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/shell/fa-progids",
+      "reviews": [
+        {
+          "batch": "core",
+          "url": "https://learn.microsoft.com/en-us/windows/win32/shell/fa-progids",
+          "title": "Programmatic Identifiers",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read Shell ProgID purpose and registration-element discussion, separately from COM ProgID documentation; a Shell ProgID is not assumed to have a CLSID."
+        }
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/sysinfo/hkey-classes-root-key",
+      "reviews": [
+        {
+          "batch": "core",
+          "url": "https://learn.microsoft.com/en-us/windows/win32/sysinfo/hkey-classes-root-key",
+          "title": "HKEY_CLASSES_ROOT Key",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read substantive Microsoft documentation sections supporting the recorded claims; navigation and sign-in boilerplate did not prevent content access."
+        }
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/sysinfo/merged-view-of-hkey-classes-root",
+      "reviews": [
+        {
+          "batch": "user_zones",
+          "url": "https://learn.microsoft.com/en-us/windows/win32/sysinfo/merged-view-of-hkey-classes-root",
+          "title": "Merged View of HKEY_CLASSES_ROOT",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read merge rules for HKCU/HKLM Software\\Classes and the COM elevation/UAC caveat."
+        }
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/sysinfo/predefined-keys",
+      "reviews": [
+        {
+          "batch": "core",
+          "url": "https://learn.microsoft.com/en-us/windows/win32/sysinfo/predefined-keys",
+          "title": "Predefined Keys",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read handle table. HKEY_USERS wording about defaults is ambiguous; .DEFAULT is explained using the dedicated Microsoft developer article instead."
+        },
+        {
+          "batch": "user_zones",
+          "url": "https://learn.microsoft.com/en-us/windows/win32/sysinfo/predefined-keys",
+          "title": "Predefined Keys",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read HKEY_CURRENT_USER, Microsoft application subkey convention, user-hive context mapping, and the Classes roaming-profile exception."
+        }
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/sysinfo/registry-hives",
+      "reviews": [
+        {
+          "batch": "core",
+          "url": "https://learn.microsoft.com/en-us/windows/win32/sysinfo/registry-hives",
+          "title": "Registry Hives",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read substantive Microsoft documentation sections supporting the recorded claims; navigation and sign-in boilerplate did not prevent content access."
+        }
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/sysinfo/structure-of-the-registry",
+      "reviews": [
+        {
+          "batch": "core",
+          "url": "https://learn.microsoft.com/en-us/windows/win32/sysinfo/structure-of-the-registry",
+          "title": "Structure of the Registry",
+          "checked_on": "2026-10-21",
+          "verification": "read",
+          "notes": "Read substantive Microsoft documentation sections supporting the recorded claims; navigation and sign-in boilerplate did not prevent content access."
+        }
+      ]
+    }
+  ],
+  "audit": {
+    "valid": true,
+    "problems": [],
+    "nodes": 197,
+    "hierarchy_edges": 192,
+    "semantic_edges": 46,
+    "status_counts": {
+      "documented": 145,
+      "structural": 52
+    },
+    "note": "Schema/content checks only; factual correctness requires the separate source and editorial review."
+  }
+}

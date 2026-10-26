@@ -1,0 +1,196 @@
+{
+  "reviewer": "research_machine_policy",
+  "checked_on": "2026-10-21",
+  "scope": [
+    "standardizer_pkg/model_data.py",
+    "standardizer_pkg/knowledge.py:model_context",
+    "standardizer_pkg/zettelkasten.py:refresh protection"
+  ],
+  "reviewed_file_sha256": {
+    "standardizer_pkg/model_data.py": "b5b8a2908bcdd371f7c6d5605f2a200ecb0c050c453b667b3cead1fb33f64a64",
+    "standardizer_pkg/knowledge.py": "f2a927f61ea32327798de649a5d152a09b3f027bb0b2f4ac250b6ed798a7b0a5",
+    "standardizer_pkg/zettelkasten.py": "e8dcc4a41e54ed90067078951f30fff4daf822f03354411ba775ea59e416f4a7",
+    "tests/test_model_data.py": "840512a0a30ea6f6a26abfd48ff66a97373deba6ff89dab7ec99d9101837600e"
+  },
+  "result": "pass_no_blocking_findings_in_latest_version",
+  "findings": [],
+  "confirmed_fixes": [
+    {
+      "topic": "Empty graph export",
+      "location": "standardizer_pkg/model_data.py:84-114",
+      "result": "An empty KnowledgeBase produces audit.valid=false and raises ValueError before dataset files are written.",
+      "reproduction": "Construct KnowledgeBase([]); call audit_graph and export_model_data into a TemporaryDirectory.",
+      "actual": "model export needs complete research: learning data requires at least one researched Registry node"
+    },
+    {
+      "topic": "Unresearched knowledge export",
+      "location": "standardizer_pkg/model_data.py:90-114",
+      "result": "The legacy seed graph is rejected because every node lacks research.",
+      "reproduction": "Load tests/fixtures/registry_seed_v1.json using KnowledgeBase.load_catalog; call render_model_data.",
+      "actual_rejected": true
+    },
+    {
+      "topic": "Unnamed values remain distinct",
+      "location": "standardizer_pkg/knowledge.py:129-137,373-383",
+      "result": "Actual empty value name, a literally named (Default) value, and None are distinct; casefold matching is applied only to the actual supplied value name.",
+      "reproduction": "Create separate value_semantics records named empty string and (Default), query value_name=\"\", value_name=\"(Default)\", then value_name=None.",
+      "actual": {
+        "empty": [
+          {
+            "name": "",
+            "kind": "value",
+            "meaning": "Unnamed fixture value",
+            "source": "https://learn.microsoft.com/en-us/windows/win32/sysinfo/predefined-keys"
+          }
+        ],
+        "literal_default": [
+          {
+            "name": "(Default)",
+            "kind": "value",
+            "meaning": "Literally named fixture value",
+            "source": "https://learn.microsoft.com/en-us/windows/win32/sysinfo/predefined-keys"
+          }
+        ],
+        "none": []
+      }
+    },
+    {
+      "topic": "Semantic relation evidence exported",
+      "location": "standardizer_pkg/model_data.py:147-154",
+      "result": "graph/semantic-edges.jsonl preserves edge explanation and sources; compact indexes remain derived views.",
+      "reproduction": "Render tests/test_model_data.py graph() fixture and inspect the complete semantic edge record.",
+      "actual_complete": true
+    },
+    {
+      "topic": "Edited manifest cannot authorize deletion of personal files",
+      "location": "standardizer_pkg/model_data.py:195-207",
+      "result": "Adding personal.txt with its correct hash to the manifest is rejected before writes, leaving the file intact.",
+      "reproduction": "Export fixture; create personal.txt; add its SHA-256 to manifest.files; export again.",
+      "actual_error": "model manifest contains missing or unmanaged file paths",
+      "personal_preserved": true
+    },
+    {
+      "topic": "Canonical refresh detects managed-file edits despite matching changed hash",
+      "location": "standardizer_pkg/model_data.py:203-207",
+      "result": "An edited node-records.jsonl is rejected both before and after its manifest digest is updated, because the old snapshot is loaded and the dataset is re-rendered for validation.",
+      "reproduction": "Export fixture; append Manual annotation to node-records.jsonl; confirm rejection; update its manifest hash and retry; confirm rejection again.",
+      "actual_bare_edit_rejected": true,
+      "actual_hash_matched_edit_rejected": true
+    }
+  ],
+  "validated_claims": [
+    {
+      "topic": "External SLM source and applicability access",
+      "result": "model_context preserves complete research and explanation_sources for every matched prefix, including applicability, claim-level evidence, interpretation limits and value/subkey source records. Its semantic_edges also retain their sources and explanations. node-records.jsonl and graph/snapshot.json preserve the complete authored records.",
+      "actual_prefix_research_preserved": true,
+      "actual_node_records_complete": true,
+      "actual_semantic_sources_preserved": true
+    },
+    {
+      "topic": "Train/test leakage statement",
+      "result": "Families and each node’s prompt variants are deterministically kept together. train-edge-index contains only edges with two train endpoints. The export explicitly warns that related concepts, ancestors and documentation can overlap; full graph exports are transductive; this is a small pilot rather than independent real-log generalization. No contrary independent-generalization claim was found in this module.",
+      "actual_train_endpoints_only": true,
+      "actual_limitations": [
+        "Related concepts, ancestor knowledge and documentation may still overlap across families.",
+        "Full graph exports are transductive; train-edge-index excludes validation/test endpoints.",
+        "This split supports a small pilot, not a claim of independent real-log generalization."
+      ]
+    },
+    {
+      "topic": "Personal files and safe destination handling",
+      "result": "Ordinary and changed-graph refreshes preserve personal.txt; an initial node-records.jsonl collision is rejected without changing that file; a symlink output root is rejected without touching its target.",
+      "actual_personal_preserved": true,
+      "actual_changed_graph_refresh_valid": true,
+      "actual_changed_graph_personal_preserved": true,
+      "actual_collision_rejected": true,
+      "actual_collision_preserved": true,
+      "actual_symlink_rejected": true,
+      "actual_symlink_target_untouched": true
+    },
+    {
+      "topic": "Existing Vault preservation",
+      "result": "Focused tests cover schema2-to-schema3 Vault refresh, personal annotation preservation and rejection of a newly reserved CONCEPTS.md user-file collision. Existing Vault validation derives the generated file set from canonical graph content rather than granting deletion authority to arbitrary manifest entries."
+    }
+  ],
+  "limitations": [
+    "A factual source review is still required: these schema and projection tests do not verify that Windows claims are true.",
+    "Full node records, snapshot and model context carry full research. SFT messages are task-specific projections: explain_prefix includes applicability, while interpret_path_only carries log context and limits. Consumers wanting the entire research bundle should use node-records.jsonl or model_context, not just the SFT messages array.",
+    "related_nodes in compact model_context are ID/path references only; use another lookup or exported node records for a related node’s full applicability and evidence.",
+    "Family grouping is a heuristic. Some very small input graphs can have empty validation/test splits, so pilot users must inspect splits.json counts and cannot assume three populated partitions.",
+    "Refresh writes are atomic per file with the manifest last, not a whole-directory transaction. Concurrent readers should validate after refresh; interruption recovery and hostile concurrent filesystem mutation are outside these deterministic probes.",
+    "Integrity checks detect inconsistent edits, not authenticity: a coordinated rewrite of the canonical snapshot and every derived artifact is a new internally consistent dataset rather than a cryptographically authenticated source."
+  ],
+  "verification": {
+    "focused_tests": "python -m unittest discover -s tests -p test_model_data.py",
+    "focused_test_result": "11 tests passed",
+    "independent_probe": "/tmp/model_data_peer_probe.py",
+    "probe_results": {
+      "empty_graph_audit": {
+        "valid": false,
+        "problems": [
+          "learning data requires at least one researched Registry node"
+        ],
+        "nodes": 0,
+        "hierarchy_edges": 0,
+        "semantic_edges": 0,
+        "status_counts": {},
+        "note": "Schema/content checks only; factual correctness requires the separate source and editorial review."
+      },
+      "empty_graph_rejected": true,
+      "empty_graph_error": "model export needs complete research: learning data requires at least one researched Registry node",
+      "unresearched_rejected": true,
+      "unresearched_error": "model export needs complete research: knowledge:23067446c79f6f808ec9de07: missing researched Registry knowledge; knowledge:0c0cbf02701df6d652a5dc75: missing researched Registry knowledge; knowledge:47075c2ddad8552fd6d1728a: missing researched Registry knowledge; knowledge:cf70125942441319173f4965: missing researched Registry knowledge; knowledge:7646fcec5941d5a9b6d3ef85: missing researched Registry knowledge; knowledge:67ee8ba9716dc0d7a0e5161f: missing researched Registry knowledge; knowledge:1b4dc8589a4514f201b7f19e: missing researched Registry knowledge",
+      "context_has_all_prefix_research": true,
+      "context_semantic_edges_keep_sources": true,
+      "related_node_fields": [
+        [
+          "id",
+          "path"
+        ]
+      ],
+      "node_records_have_applicability_and_evidence": true,
+      "complete_semantic_export": true,
+      "unnamed_separate": {
+        "empty": [
+          {
+            "name": "",
+            "kind": "value",
+            "meaning": "Unnamed fixture value",
+            "source": "https://learn.microsoft.com/en-us/windows/win32/sysinfo/predefined-keys"
+          }
+        ],
+        "literal_default": [
+          {
+            "name": "(Default)",
+            "kind": "value",
+            "meaning": "Literally named fixture value",
+            "source": "https://learn.microsoft.com/en-us/windows/win32/sysinfo/predefined-keys"
+          }
+        ],
+        "none": []
+      },
+      "personal_survives_regular_refresh": true,
+      "unmanaged_manifest_entry_rejected": true,
+      "unmanaged_manifest_error": "model manifest contains missing or unmanaged file paths",
+      "personal_survives_manifest_rejection": true,
+      "edited_managed_file_rejected": true,
+      "edited_file_and_matching_manifest_rejected": true,
+      "train_edge_endpoints_train": true,
+      "split_limitations": [
+        "Related concepts, ancestor knowledge and documentation may still overlap across families.",
+        "Full graph exports are transductive; train-edge-index excludes validation/test endpoints.",
+        "This split supports a small pilot, not a claim of independent real-log generalization."
+      ],
+      "fixture_split_counts": {
+        "train": 4
+      },
+      "initial_unmanaged_collision_rejected": true,
+      "initial_unmanaged_file_preserved": true,
+      "symlink_root_rejected": true,
+      "symlink_target_untouched": true,
+      "changed_graph_refresh_valid": true,
+      "changed_graph_keeps_personal": true
+    },
+    "changes_made": "Only this review JSON was added in the repository; runtime code, tests, catalog and Vault were not changed by this reviewer."
+  }
+}

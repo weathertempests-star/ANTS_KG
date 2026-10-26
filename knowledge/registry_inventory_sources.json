@@ -1,0 +1,493 @@
+{
+  "retrieved_on": "2026-10-16",
+  "sources": [
+    {
+      "id": "admx-logon",
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-logon",
+      "total_lines": 744,
+      "observed_line_count": 740,
+      "status": "retrieved",
+      "collection": "Microsoft Learn ADMX Policy CSP"
+    },
+    {
+      "id": "admx-filesys",
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-filesys",
+      "total_lines": 382,
+      "observed_line_count": 378,
+      "status": "retrieved",
+      "collection": "Microsoft Learn ADMX Policy CSP"
+    },
+    {
+      "id": "admx-windowsremotemanagement",
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-windowsremotemanagement",
+      "total_lines": 152,
+      "observed_line_count": 148,
+      "status": "retrieved",
+      "collection": "Microsoft Learn ADMX Policy CSP"
+    },
+    {
+      "id": "admx-commandprompt",
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-commandprompt",
+      "total_lines": 1,
+      "observed_line_count": 1,
+      "status": "unavailable",
+      "collection": "Microsoft Learn ADMX Policy CSP"
+    },
+    {
+      "id": "admx-powershell",
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-powershell",
+      "total_lines": 1,
+      "observed_line_count": 1,
+      "status": "unavailable",
+      "collection": "Microsoft Learn ADMX Policy CSP"
+    },
+    {
+      "id": "admx-eventlog",
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-eventlog",
+      "total_lines": 924,
+      "observed_line_count": 920,
+      "status": "retrieved",
+      "collection": "Microsoft Learn ADMX Policy CSP"
+    },
+    {
+      "id": "admx-auditsettings",
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-auditsettings",
+      "total_lines": 120,
+      "observed_line_count": 116,
+      "status": "retrieved",
+      "collection": "Microsoft Learn ADMX Policy CSP"
+    },
+    {
+      "id": "admx-dnsclient",
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-dnsclient",
+      "total_lines": 1058,
+      "observed_line_count": 1053,
+      "status": "retrieved",
+      "collection": "Microsoft Learn ADMX Policy CSP"
+    },
+    {
+      "id": "admx-networkconnections",
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-networkconnections",
+      "total_lines": 1399,
+      "observed_line_count": 1395,
+      "status": "retrieved",
+      "collection": "Microsoft Learn ADMX Policy CSP"
+    },
+    {
+      "id": "admx-userprofiles",
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-userprofiles",
+      "total_lines": 423,
+      "observed_line_count": 419,
+      "status": "retrieved",
+      "collection": "Microsoft Learn ADMX Policy CSP"
+    },
+    {
+      "id": "admx-credentialproviders",
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-credentialproviders",
+      "total_lines": 199,
+      "observed_line_count": 195,
+      "status": "retrieved",
+      "collection": "Microsoft Learn ADMX Policy CSP"
+    },
+    {
+      "id": "admx-deviceinstallation",
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-deviceinstallation",
+      "total_lines": 391,
+      "observed_line_count": 387,
+      "status": "retrieved",
+      "collection": "Microsoft Learn ADMX Policy CSP"
+    },
+    {
+      "id": "admx-terminalserver",
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-terminalserver",
+      "total_lines": 3866,
+      "observed_line_count": 3836,
+      "status": "retrieved",
+      "collection": "Microsoft Learn ADMX Policy CSP"
+    },
+    {
+      "id": "admx-lanmanserver",
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-lanmanserver",
+      "total_lines": 279,
+      "observed_line_count": 275,
+      "status": "retrieved",
+      "collection": "Microsoft Learn ADMX Policy CSP"
+    },
+    {
+      "id": "admx-lanmanworkstation",
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-lanmanworkstation",
+      "total_lines": 221,
+      "observed_line_count": 217,
+      "status": "retrieved",
+      "collection": "Microsoft Learn ADMX Policy CSP"
+    },
+    {
+      "id": "admx-printing",
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-printing",
+      "total_lines": 1192,
+      "observed_line_count": 1188,
+      "status": "retrieved",
+      "collection": "Microsoft Learn ADMX Policy CSP"
+    },
+    {
+      "id": "admx-windowsexplorer",
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-windowsexplorer",
+      "total_lines": 3167,
+      "observed_line_count": 3163,
+      "status": "retrieved",
+      "collection": "Microsoft Learn ADMX Policy CSP"
+    },
+    {
+      "id": "admx-startmenu",
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-startmenu",
+      "total_lines": 2872,
+      "observed_line_count": 2868,
+      "status": "retrieved",
+      "collection": "Microsoft Learn ADMX Policy CSP"
+    },
+    {
+      "id": "admx-shellcommandpromptregedittools",
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-shellcommandpromptregedittools",
+      "total_lines": 252,
+      "observed_line_count": 248,
+      "status": "retrieved",
+      "collection": "Microsoft Learn ADMX Policy CSP"
+    },
+    {
+      "id": "admx-windowspowershell",
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-windowspowershell",
+      "total_lines": 1,
+      "observed_line_count": 1,
+      "status": "unavailable",
+      "collection": "Microsoft Learn ADMX Policy CSP"
+    },
+    {
+      "id": "admx-windowsupdate",
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-windowsupdate",
+      "total_lines": 1,
+      "observed_line_count": 1,
+      "status": "unavailable",
+      "collection": "Microsoft Learn ADMX Policy CSP"
+    },
+    {
+      "id": "admx-windowsdefender",
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-windowsdefender",
+      "total_lines": 1,
+      "observed_line_count": 1,
+      "status": "unavailable",
+      "collection": "Microsoft Learn ADMX Policy CSP"
+    },
+    {
+      "id": "admx-windowsinstaller",
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-windowsinstaller",
+      "total_lines": 1,
+      "observed_line_count": 1,
+      "status": "unavailable",
+      "collection": "Microsoft Learn ADMX Policy CSP"
+    },
+    {
+      "id": "admx-winlogon",
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-winlogon",
+      "total_lines": 334,
+      "observed_line_count": 330,
+      "status": "retrieved",
+      "collection": "Microsoft Learn ADMX Policy CSP"
+    },
+    {
+      "id": "admx-inetres",
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-inetres",
+      "total_lines": 1,
+      "observed_line_count": 1,
+      "status": "unavailable",
+      "collection": "Microsoft Learn ADMX Policy CSP"
+    },
+    {
+      "id": "admx-kerberos",
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-kerberos",
+      "total_lines": 414,
+      "observed_line_count": 410,
+      "status": "retrieved",
+      "collection": "Microsoft Learn ADMX Policy CSP"
+    },
+    {
+      "id": "admx-w32time",
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-w32time",
+      "total_lines": 339,
+      "observed_line_count": 334,
+      "status": "retrieved",
+      "collection": "Microsoft Learn ADMX Policy CSP"
+    },
+    {
+      "id": "admx-netlogon",
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-netlogon",
+      "total_lines": 1541,
+      "observed_line_count": 1536,
+      "status": "retrieved",
+      "collection": "Microsoft Learn ADMX Policy CSP"
+    },
+    {
+      "id": "admx-lsa",
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-lsa",
+      "total_lines": 1,
+      "observed_line_count": 1,
+      "status": "unavailable",
+      "collection": "Microsoft Learn ADMX Policy CSP"
+    },
+    {
+      "id": "admx-scriptexecution",
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-scriptexecution",
+      "total_lines": 1,
+      "observed_line_count": 1,
+      "status": "unavailable",
+      "collection": "Microsoft Learn ADMX Policy CSP"
+    },
+    {
+      "id": "admx-removableStorage",
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-removablestorage",
+      "total_lines": 1337,
+      "observed_line_count": 1249,
+      "status": "retrieved",
+      "collection": "Microsoft Learn ADMX Policy CSP"
+    },
+    {
+      "id": "admx-wininit",
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-wininit",
+      "total_lines": 191,
+      "observed_line_count": 187,
+      "status": "retrieved",
+      "collection": "Microsoft Learn ADMX Policy CSP"
+    },
+    {
+      "id": "admx-appcompat",
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-appcompat",
+      "total_lines": 450,
+      "observed_line_count": 446,
+      "status": "retrieved",
+      "collection": "Microsoft Learn ADMX Policy CSP"
+    },
+    {
+      "id": "admx-autoplay",
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-autoplay",
+      "total_lines": 1,
+      "observed_line_count": 1,
+      "status": "unavailable",
+      "collection": "Microsoft Learn ADMX Policy CSP"
+    },
+    {
+      "id": "admx-networkprovider",
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-networkprovider",
+      "total_lines": 1,
+      "observed_line_count": 1,
+      "status": "unavailable",
+      "collection": "Microsoft Learn ADMX Policy CSP"
+    },
+    {
+      "id": "admx-bitlocker",
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-bitlocker",
+      "total_lines": 1,
+      "observed_line_count": 1,
+      "status": "unavailable",
+      "collection": "Microsoft Learn ADMX Policy CSP"
+    },
+    {
+      "id": "admx-deviceguard",
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-deviceguard",
+      "total_lines": 122,
+      "observed_line_count": 118,
+      "status": "retrieved",
+      "collection": "Microsoft Learn ADMX Policy CSP"
+    },
+    {
+      "id": "roots",
+      "url": "https://learn.microsoft.com/en-us/windows/win32/sysinfo/predefined-keys",
+      "status": "retrieved",
+      "collection": "Microsoft Learn Windows API/driver/system documentation"
+    },
+    {
+      "id": "structure",
+      "url": "https://learn.microsoft.com/en-us/windows/win32/sysinfo/structure-of-the-registry",
+      "status": "retrieved",
+      "collection": "Microsoft Learn Windows API/driver/system documentation"
+    },
+    {
+      "id": "hives",
+      "url": "https://learn.microsoft.com/en-us/windows/win32/sysinfo/registry-hives",
+      "status": "retrieved",
+      "collection": "Microsoft Learn Windows API/driver/system documentation"
+    },
+    {
+      "id": "control",
+      "url": "https://learn.microsoft.com/en-us/windows-hardware/drivers/install/hklm-system-currentcontrolset-control-registry-tree",
+      "status": "retrieved",
+      "collection": "Microsoft Learn Windows API/driver/system documentation"
+    },
+    {
+      "id": "services",
+      "url": "https://learn.microsoft.com/en-us/windows-hardware/drivers/install/hklm-system-currentcontrolset-services-registry-tree",
+      "status": "retrieved",
+      "collection": "Microsoft Learn Windows API/driver/system documentation"
+    },
+    {
+      "id": "enum",
+      "url": "https://learn.microsoft.com/en-us/windows-hardware/drivers/install/hklm-system-currentcontrolset-enum-registry-tree",
+      "status": "retrieved",
+      "collection": "Microsoft Learn Windows API/driver/system documentation"
+    },
+    {
+      "id": "run",
+      "url": "https://learn.microsoft.com/en-us/windows/win32/setupapi/run-and-runonce-registry-keys",
+      "status": "retrieved",
+      "collection": "Microsoft Learn Windows API/driver/system documentation"
+    },
+    {
+      "id": "com",
+      "url": "https://learn.microsoft.com/en-us/windows/win32/com/com-registry-keys",
+      "status": "retrieved",
+      "collection": "Microsoft Learn Windows API/driver/system documentation"
+    },
+    {
+      "id": "clsid",
+      "url": "https://learn.microsoft.com/en-us/windows/win32/com/clsid-key-hklm",
+      "status": "retrieved",
+      "collection": "Microsoft Learn Windows API/driver/system documentation"
+    },
+    {
+      "id": "appid",
+      "url": "https://learn.microsoft.com/en-us/windows/win32/com/appid-key",
+      "status": "retrieved",
+      "collection": "Microsoft Learn Windows API/driver/system documentation"
+    },
+    {
+      "id": "profile",
+      "url": "https://learn.microsoft.com/en-us/windows/win32/shell/knownfolderid",
+      "status": "retrieved",
+      "collection": "Microsoft Learn Windows API/driver/system documentation"
+    },
+    {
+      "id": "tcpip",
+      "url": "https://learn.microsoft.com/en-us/troubleshoot/windows-client/networking/tcpip-and-nbt-configuration-parameters",
+      "status": "retrieved",
+      "collection": "Microsoft Learn Windows API/driver/system documentation"
+    },
+    {
+      "id": "environment",
+      "url": "https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-environment",
+      "status": "retrieved",
+      "collection": "Microsoft Learn Windows API/driver/system documentation"
+    },
+    {
+      "id": "session",
+      "url": "https://learn.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-movefileexa",
+      "status": "retrieved",
+      "collection": "Microsoft Learn Windows API/driver/system documentation"
+    },
+    {
+      "id": "uninstall",
+      "url": "https://learn.microsoft.com/en-us/windows/win32/msi/uninstall-registry-key",
+      "status": "retrieved",
+      "collection": "Microsoft Learn Windows API/driver/system documentation"
+    },
+    {
+      "id": "winlogon",
+      "url": "https://learn.microsoft.com/en-us/windows/win32/secauthn/authentication-registry-keys",
+      "status": "retrieved",
+      "collection": "Microsoft Learn Windows API/driver/system documentation"
+    },
+    {
+      "id": "lsa",
+      "url": "https://learn.microsoft.com/en-us/windows/win32/secauthn/registering-ssp-ap-dlls",
+      "status": "retrieved",
+      "collection": "Microsoft Learn Windows API/driver/system documentation"
+    },
+    {
+      "id": "defender",
+      "url": "https://learn.microsoft.com/en-us/defender-endpoint/enable-cloud-protection-microsoft-defender-antivirus",
+      "status": "retrieved",
+      "collection": "Microsoft Learn Windows API/driver/system documentation"
+    },
+    {
+      "id": "powershell",
+      "url": "https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_group_policy_settings",
+      "status": "retrieved",
+      "collection": "Microsoft Learn Windows API/driver/system documentation"
+    },
+    {
+      "id": "certificates",
+      "url": "https://learn.microsoft.com/en-us/windows/win32/seccrypto/system-store-locations",
+      "status": "retrieved",
+      "collection": "Microsoft Learn Windows API/driver/system documentation"
+    },
+    {
+      "id": "networklist",
+      "url": "https://learn.microsoft.com/en-us/windows/win32/api/netlistmgr/ne-netlistmgr-nlm_network_category",
+      "status": "retrieved",
+      "collection": "Microsoft Learn Windows API/driver/system documentation"
+    },
+    {
+      "id": "currentuser",
+      "url": "https://learn.microsoft.com/en-us/dotnet/api/microsoft.win32.registry.currentuser",
+      "status": "retrieved",
+      "collection": "Microsoft Learn Windows API/driver/system documentation"
+    },
+    {
+      "id": "ipv6",
+      "url": "https://learn.microsoft.com/en-us/troubleshoot/windows-server/networking/configure-ipv6-in-windows",
+      "status": "retrieved",
+      "collection": "Microsoft Learn Windows API/driver/system documentation"
+    },
+    {
+      "id": "interface",
+      "url": "https://learn.microsoft.com/en-us/windows/win32/com/interface-key",
+      "status": "retrieved",
+      "collection": "Microsoft Learn Windows API/driver/system documentation"
+    },
+    {
+      "id": "ole",
+      "url": "https://learn.microsoft.com/en-us/windows/win32/com/ole-key",
+      "status": "unavailable",
+      "collection": "Microsoft Learn Windows API/driver/system documentation"
+    },
+    {
+      "id": "progid",
+      "url": "https://learn.microsoft.com/en-us/windows/win32/com/-progid--key",
+      "status": "retrieved",
+      "collection": "Microsoft Learn Windows API/driver/system documentation"
+    },
+    {
+      "id": "fileext",
+      "url": "https://learn.microsoft.com/en-us/windows/win32/com/-file-extension--key",
+      "status": "retrieved",
+      "collection": "Microsoft Learn Windows API/driver/system documentation"
+    },
+    {
+      "id": "inproc",
+      "url": "https://learn.microsoft.com/en-us/windows/win32/com/inprocserver32",
+      "status": "retrieved",
+      "collection": "Microsoft Learn Windows API/driver/system documentation"
+    },
+    {
+      "id": "localserver",
+      "url": "https://learn.microsoft.com/en-us/windows/win32/com/localserver32",
+      "status": "retrieved",
+      "collection": "Microsoft Learn Windows API/driver/system documentation"
+    },
+    {
+      "id": "profilelist",
+      "url": "https://learn.microsoft.com/en-us/windows/win32/shell/manage-user-profiles",
+      "status": "unavailable",
+      "collection": "Microsoft Learn Windows API/driver/system documentation"
+    },
+    {
+      "id": "winlogs",
+      "url": "https://learn.microsoft.com/en-us/windows/win32/eventlog/eventlog-key",
+      "status": "retrieved",
+      "collection": "Microsoft Learn Windows API/driver/system documentation"
+    },
+    {
+      "id": "deviceinstance",
+      "url": "https://learn.microsoft.com/en-us/windows-hardware/drivers/install/device-instance-ids",
+      "status": "retrieved",
+      "collection": "Microsoft Learn Windows API/driver/system documentation"
+    }
+  ]
+}

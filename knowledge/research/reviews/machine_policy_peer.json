@@ -1,0 +1,121 @@
+{
+  "reviewer": "root",
+  "checked_on": "2026-10-21",
+  "batch_sha256": "a5574e788306c72a3c0e0fde6625ee5421afb6ea7c566f0eb3629c06292f8c62",
+  "scope": "Independent editorial review of every assigned explanation, log context and relation; applicability and evidence inspection, with primary-source spot checks. This is not a claim that the root independently reread every cited source.",
+  "reviewed_paths": [
+    "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies",
+    "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer",
+    "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System",
+    "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\\Audit",
+    "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\\Kerberos",
+    "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\\Kerberos\\Parameters",
+    "HKLM\\Software\\Policies",
+    "HKLM\\Software\\Policies\\Microsoft",
+    "HKLM\\Software\\Policies\\Microsoft\\Netlogon",
+    "HKLM\\Software\\Policies\\Microsoft\\Netlogon\\Parameters",
+    "HKLM\\Software\\Policies\\Microsoft\\System",
+    "HKLM\\Software\\Policies\\Microsoft\\System\\DNSClient",
+    "HKLM\\Software\\Policies\\Microsoft\\SystemCertificates",
+    "HKLM\\Software\\Policies\\Microsoft\\W32Time",
+    "HKLM\\Software\\Policies\\Microsoft\\W32Time\\Config",
+    "HKLM\\Software\\Policies\\Microsoft\\W32time\\TimeProviders",
+    "HKLM\\Software\\Policies\\Microsoft\\W32time\\TimeProviders\\NtpClient",
+    "HKLM\\Software\\Policies\\Microsoft\\W32Time\\TimeProviders\\NtpServer",
+    "HKLM\\Software\\Policies\\Microsoft\\Windows",
+    "HKLM\\Software\\Policies\\Microsoft\\Windows\\AppCompat",
+    "HKLM\\SOFTWARE\\Policies\\Microsoft\\Windows\\DeviceGuard",
+    "HKLM\\Software\\Policies\\Microsoft\\Windows\\DeviceInstall",
+    "HKLM\\Software\\Policies\\Microsoft\\Windows\\DeviceInstall\\Restrictions",
+    "HKLM\\Software\\Policies\\Microsoft\\Windows\\DeviceInstall\\Restrictions\\DeniedPolicy",
+    "HKLM\\Software\\Policies\\Microsoft\\Windows\\DeviceInstall\\Settings",
+    "HKLM\\Software\\Policies\\Microsoft\\Windows\\DriverInstall",
+    "HKLM\\Software\\Policies\\Microsoft\\Windows\\DriverInstall\\Restrictions",
+    "HKLM\\Software\\Policies\\Microsoft\\Windows\\EventLog",
+    "HKLM\\Software\\Policies\\Microsoft\\Windows\\EventLog\\Application",
+    "HKLM\\Software\\Policies\\Microsoft\\Windows\\EventLog\\Security",
+    "HKLM\\Software\\Policies\\Microsoft\\Windows\\EventLog\\Setup",
+    "HKLM\\Software\\Policies\\Microsoft\\Windows\\EventLog\\System",
+    "HKLM\\Software\\Policies\\Microsoft\\Windows\\Explorer",
+    "HKLM\\Software\\Policies\\Microsoft\\Windows\\Filesystems",
+    "HKLM\\Software\\Policies\\Microsoft\\Windows\\Filesystems\\NTFS",
+    "HKLM\\Software\\Policies\\Microsoft\\Windows\\LanmanServer",
+    "HKLM\\Software\\Policies\\Microsoft\\Windows\\LanmanWorkstation",
+    "HKLM\\Software\\Policies\\Microsoft\\Windows\\Network Connections",
+    "HKLM\\Software\\Policies\\Microsoft\\Windows\\RemovableStorageDevices",
+    "HKLM\\Software\\Policies\\Microsoft\\Windows\\RemovableStorageDevices\\Custom",
+    "HKLM\\Software\\Policies\\Microsoft\\Windows\\RemovableStorageDevices\\Custom\\Deny_Read",
+    "HKLM\\Software\\Policies\\Microsoft\\Windows\\RemovableStorageDevices\\Custom\\Deny_Write",
+    "HKLM\\Software\\Policies\\Microsoft\\Windows\\System",
+    "HKLM\\Software\\Policies\\Microsoft\\Windows\\TCPIP",
+    "HKLM\\Software\\Policies\\Microsoft\\Windows\\TCPIP\\v6Transition",
+    "HKLM\\Software\\Policies\\Microsoft\\Windows\\WinRM",
+    "HKLM\\Software\\Policies\\Microsoft\\Windows\\WinRM\\Client",
+    "HKLM\\Software\\Policies\\Microsoft\\Windows\\WinRM\\Service",
+    "HKLM\\SOFTWARE\\Policies\\Microsoft\\Windows Defender",
+    "HKLM\\SOFTWARE\\Policies\\Microsoft\\Windows Defender\\MpEngine",
+    "HKLM\\Software\\Policies\\Microsoft\\Windows NT",
+    "HKLM\\Software\\Policies\\Microsoft\\Windows NT\\CurrentVersion",
+    "HKLM\\Software\\Policies\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon",
+    "HKLM\\Software\\Policies\\Microsoft\\Windows NT\\DNSClient",
+    "HKLM\\Software\\Policies\\Microsoft\\Windows NT\\Printers",
+    "HKLM\\Software\\Policies\\Microsoft\\Windows NT\\Printers\\PackagePointAndPrint",
+    "HKLM\\Software\\Policies\\Microsoft\\Windows NT\\Printers\\Wizard",
+    "HKLM\\SOFTWARE\\Policies\\Microsoft\\Windows NT\\Terminal Services",
+    "HKLM\\SOFTWARE\\Policies\\Microsoft\\Windows NT\\Terminal Services\\AllUserInstallAgent",
+    "HKLM\\SOFTWARE\\Policies\\Microsoft\\Windows NT\\Terminal Services\\Client"
+  ],
+  "reviewed_relations": 15,
+  "sources_checked": [
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-w32time",
+      "sections": [
+        "W32TIME_POLICY_CONFIG",
+        "NTP client/server mappings"
+      ],
+      "result": "Clock discipline and provider roles agree; CSP delivery baseline is distinguished from original key introduction."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-deviceguard",
+      "sections": [
+        "ConfigCIPolicy",
+        "Group Policy single-policy-format warning"
+      ],
+      "result": "Specific deployment role and single-policy applicability are accurately bounded."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-lanmanworkstation",
+      "sections": [
+        "Pol_CipherSuiteOrder",
+        "Pol_EnableHandleCachingForCAFiles"
+      ],
+      "result": "Client role, older AES_256 limitation and Scale-out File Server exclusion agree."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/defender-endpoint/cloud-protection-configure",
+      "sections": [
+        "Specify the cloud protection level",
+        "Specify the cloud protection level with Group Policy"
+      ],
+      "result": "MpEngine location, enabled-cloud prerequisite and RSOP zero-value caveat agree."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-removablestorage",
+      "sections": [
+        "CustomClasses_DenyRead_1",
+        "CustomClasses_DenyRead_2",
+        "CustomClasses_DenyWrite_1",
+        "CustomClasses_DenyWrite_2"
+      ],
+      "result": "Same-name key and value distinction agrees; historical List evidence is independently labeled."
+    }
+  ],
+  "findings": [],
+  "editorial_assessment": [
+    "All 60 roles retain complete prefix context rather than assigning universal meaning to the final name.",
+    "All 15 semantic relations express scoped connections with explanations, not event outcomes.",
+    "Policies are described as configuration; logs must supply actual operation/result and component state.",
+    "Structural ancestors explicitly infer grouping from child mappings, preserving evidence status."
+  ],
+  "result": "No blocking factual/editorial issue identified in this review; source author reviews and source-specific applicability remain part of the evidence."
+}

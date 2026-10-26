@@ -1,0 +1,287 @@
+{
+  "reviewer": "research_machine_policy",
+  "checked_on": "2026-10-21",
+  "scope": [
+    "evaluation/registry_cases.jsonl",
+    "evaluation/rubric.json",
+    "docs/REGISTRY_LEARNING_DATA.md"
+  ],
+  "reviewed_file_sha256": {
+    "evaluation/registry_cases.jsonl": "f71f4fbfbb104b93e306adb49b645f4f57d359a81aa33df1ceaa1e2f83e00b52",
+    "evaluation/rubric.json": "2fe1fc441d88ce021ebdc0d0a6017849a3895a16580af0513c5081a9956aaca3",
+    "docs/REGISTRY_LEARNING_DATA.md": "96f7de5f7f4388b4bf32e7b22808d49f2879cc81908a7d4dd7ef095af201523f"
+  },
+  "result": "pass_no_open_material_findings_after_root_corrections",
+  "case_review": [
+    {
+      "id": "path_only_run",
+      "result": "pass",
+      "reason": "Correctly identifies current-user recurring logon registration and leaves operation, execution and intent unestablished."
+    },
+    {
+      "id": "handle_request",
+      "result": "pass",
+      "reason": "Correctly affirms the supplied successful handle/access request rather than treating its outcome as unknown; requested later modification and deferred execution remain unproved. Native-path adaptation is a repository requirement."
+    },
+    {
+      "id": "audited_value_change",
+      "result": "pass",
+      "reason": "Correctly affirms the supplied existing named-value modification and preserves the key/value and user-SID distinctions. A modified Run value is not execution evidence."
+    },
+    {
+      "id": "sysmon_create",
+      "result": "pass_with_provider_fidelity_note",
+      "reason": "Given the explicit CreateKey subtype, key creation is the supported operation and setting a command is not. Microsoft’s documented Sysmon root abbreviations list HKU for HKEY_USERS; using HKCU as raw TargetObject should preferably be marked as normalized adapter input rather than implied to be a literal native Sysmon sample."
+    },
+    {
+      "id": "sysmon_set",
+      "result": "pass",
+      "reason": "The explicit SetValue subtype and DWORD Details support setting LongPathsEnabled to 1. The required application opt-in is correctly retained. Current process caching/restart and Windows 10 1607+ are useful optional limits, not contradictions to the expected answer."
+    },
+    {
+      "id": "sysmon_rename",
+      "result": "pass",
+      "reason": "The RenameValue subtype supports renaming; old_name/new_name are names, not new value data or a process launch. NewName wording in the expectation refers to provider semantics rather than an extra supplied data field."
+    },
+    {
+      "id": "unmatched_service",
+      "result": "pass",
+      "reason": "Direct lookup confirms known prefixes end at Services; ExampleSvc and Parameters are unknown with path_complete=false. Template knowledge may only be discussed as a pattern."
+    },
+    {
+      "id": "default_profile",
+      "result": "pass",
+      "reason": "The Microsoft-authored .Default article directly identifies the LocalSystem branch and distinguishes the new-user template."
+    },
+    {
+      "id": "unnamed_com_value",
+      "result": "pass",
+      "reason": "RegQueryValueEx documents the empty-name contract; LocalServer32 documents executable path/optional arguments and explicitly supports any bitness or architecture. The expected content is documented semantics, not a claim about supplied value data."
+    },
+    {
+      "id": "user_pca_obsolete",
+      "result": "pass_with_version_note",
+      "reason": "The current CSP user-policy description explicitly says backward compatibility only and invalid for the documented Windows version; the machine policy is the applicable separate setting. State this against the source’s supported Windows baseline, rather than universally for every historic Windows release."
+    },
+    {
+      "id": "trusted_zone_scope",
+      "result": "pass",
+      "reason": "Current WindowsExplorer mappings directly name Trusted Sites Zone at Zones\\2 with both computer/user locations. A user-scoped policy location is not navigation history or a benign-content verdict."
+    },
+    {
+      "id": "lockdown_presence",
+      "result": "pass",
+      "reason": "The mapping directly names Locked-Down Internet Zone at Lockdown_Zones\\3. A path alone supplies neither the action value nor proof that its consuming feature is active."
+    },
+    {
+      "id": "key_value_same_name",
+      "result": "pass_after_source_fix",
+      "reason": "Correct key/enable-value/List-child distinction is now supported by both modern CSP and preserved Microsoft-authored historical ADMX, with version scope supplied explicitly."
+    },
+    {
+      "id": "winrm_negotiate",
+      "result": "pass",
+      "reason": "DisallowKerberos_2 explicitly prevents direct client Kerberos while permitting Kerberos selected through Negotiate. No actual-session mechanism is supplied."
+    },
+    {
+      "id": "audit_configuration",
+      "result": "pass",
+      "reason": "IncludeCmdLine is audit configuration dependent on Audit Process Creation, with actual command facts supplied by event 4688 records; the registry value name alone does not prove enablement or process creation."
+    },
+    {
+      "id": "missing_events",
+      "result": "pass_after_rubric_fix",
+      "reason": "Coverage/absence boundary is correct. The case now scores only event calibration and evidence/applicability; target-focused dimensions are explicitly N/A."
+    }
+  ],
+  "documentation_review": {
+    "event_facts_boundary": "Correct: the guide explicitly requires positive conclusions for event-supported changes and distinguishes 4656 request success from 4657 modification. No blanket refusal is taught for the supplied positive events.",
+    "training_evaluation_boundary": "Correct: 394 examples are deterministic projections of 197 units, evaluation probes share knowledge/sources, no actual telemetry/model training/measured improvement is claimed, and separate real logs are required before operational-generalization claims.",
+    "leakage_boundary": "Correct: full graph/node exports include held-out text and are identified as transductive; inductive use requires selected training nodes, train-only edges and fitting transforms only on permitted training material.",
+    "source_and_applicability": "Complete research remains available in model_context/node-records/snapshot. The guide appropriately describes SFT messages as derived tasks and tells users to retrieve complete research for claim checking.",
+    "low_priority_precision_notes": [
+      "Replace stable exported row-index wording with deterministic row-index mapping for this export; stable node IDs. Sorted row indexes may shift when nodes are added, while IDs remain stable.",
+      "For raw-input versus KG conditions, give both conditions the same fixed repository-contract instructions for alias adaptation and unimplemented template binding; hide case-specific expected propositions and knowledge_paths from the raw model. Otherwise repository-specific behavior can confound the comparison.",
+      "Synthetic provider probes need not be complete raw event XML. Keep normalized adapter fields explicitly distinguished from native provider fields, particularly HKCU in sysmon_create."
+    ]
+  },
+  "primary_source_reviews": [
+    {
+      "url": "https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4656",
+      "section": "4656 Event Description; Object fields",
+      "verification": "read",
+      "checked_on": "2026-10-21",
+      "notes": "Freshly read: requested access and request outcome do not establish later operation."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4657",
+      "section": "4657 Event Description; Object and Change Information",
+      "verification": "read",
+      "checked_on": "2026-10-21",
+      "notes": "Freshly read: named value modification versus key, native hive/SID fields and existing-value-modified operation."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon",
+      "section": "Event IDs 12, 13, 14; Event Filtering",
+      "verification": "read",
+      "checked_on": "2026-10-21",
+      "notes": "Freshly read: create/delete, value set with DWORD/QWORD data, key/value rename names, documented abbreviations and filters."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation",
+      "section": "Enable long paths in Windows 10 version 1607 and later",
+      "verification": "read",
+      "checked_on": "2026-10-21",
+      "notes": "Freshly read: registry=1 plus longPathAware; per-process caching and affected-API limits."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/security/threat-protection/auditing/audit-registry",
+      "section": "Audit Registry overview",
+      "verification": "read",
+      "checked_on": "2026-10-21",
+      "notes": "Freshly read after redirect: audit policy and matching SACL determine captured accesses."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/setupapi/run-and-runonce-registry-keys",
+      "section": "Run and RunOnce Registry Keys",
+      "verification": "read",
+      "checked_on": "2026-10-21",
+      "notes": "Freshly read: user/machine lists, recurring logon versus once, named entries are commands."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/com/localserver32",
+      "section": "Introduction; Registry entry; Remarks",
+      "verification": "read",
+      "checked_on": "2026-10-21",
+      "notes": "Freshly read: any bitness/architecture, executable path and optional arguments, unnamed/default semantics."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/api/winreg/nf-winreg-regqueryvalueexa",
+      "section": "Parameters: lpValueName",
+      "verification": "read",
+      "checked_on": "2026-10-21",
+      "notes": "Freshly read: NULL or empty selects unnamed/default value; keys need not have one."
+    },
+    {
+      "url": "https://devblogs.microsoft.com/oldnewthing/20070302-00/?p=27783",
+      "section": "The .Default user is not the default user",
+      "verification": "read",
+      "checked_on": "2026-10-21",
+      "notes": "Freshly read Microsoft-authored primary account: LocalSystem alias differs from new-user template."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-appcompat",
+      "section": "AppCompatTurnOffProgramCompatibilityAssistant_1 and _2",
+      "verification": "read",
+      "checked_on": "2026-10-21",
+      "notes": "Freshly read: user backward-compatibility-only description and separate computer mapping."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-windowsexplorer",
+      "section": "IZ_Policy_OpenSearchPreview_Trusted; IZ_Policy_OpenSearchPreview_InternetLockdown; related Query mappings",
+      "verification": "read",
+      "checked_on": "2026-10-21",
+      "notes": "Freshly read exact Friendly Name, computer/user location and registry mappings for Zones\\2 and Lockdown_Zones\\3."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-windowsremotemanagement",
+      "section": "DisallowKerberos_2",
+      "verification": "read",
+      "checked_on": "2026-10-21",
+      "notes": "Reused direct read from this agent’s machine_policy research earlier in the same session/date: direct Kerberos disallow still permits Negotiate selection."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-auditsettings",
+      "section": "IncludeCmdLine",
+      "verification": "read",
+      "checked_on": "2026-10-21",
+      "notes": "Reused direct read from this agent’s machine_policy research earlier in the same session/date: Audit Process Creation prerequisite and event 4688 destination."
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-removablestorage",
+      "section": "CustomClasses_DenyRead_Access_2",
+      "verification": "read",
+      "checked_on": "2026-10-21",
+      "notes": "Reused direct read earlier in same session/date: exact key plus same-named enable value, no List-child details in this page."
+    },
+    {
+      "url": "https://github.com/nsacyber/Windows-Secure-Host-Baseline/blob/master/Windows/Group%20Policy%20Templates/RemovableStorage.admx",
+      "section": "CustomClasses_DenyRead_Access_2",
+      "verification": "read",
+      "checked_on": "2026-10-21",
+      "notes": "Reused direct XML read earlier in same session/date: Microsoft-authored template preserved by NSA; historical revision/schema1.0, WindowsVista support and additive List child."
+    }
+  ],
+  "verification": {
+    "cases": 16,
+    "unique_case_ids": 16,
+    "all_knowledge_paths_in_graph": true,
+    "live_graph_nodes": 197,
+    "live_graph_pending": 0,
+    "unmatched_service_lookup": [
+      [
+        "HKLM",
+        "known"
+      ],
+      [
+        "SYSTEM",
+        "known"
+      ],
+      [
+        "CurrentControlSet",
+        "known"
+      ],
+      [
+        "Services",
+        "known"
+      ],
+      [
+        "ExampleSvc",
+        "unknown"
+      ],
+      [
+        "Parameters",
+        "unknown"
+      ]
+    ],
+    "exact_eval_question_in_generated_sft_user_prompts": false,
+    "changes_made": "Only this review JSON added; reviewed evaluation files and documentation were not modified.",
+    "applicable_dimensions_verified_for_all_16": true,
+    "missing_events_available_points": 4,
+    "missing_events_required_points_at_87_5_percent": 3.5,
+    "missing_events_integer_score_pass_requires": 4,
+    "final_review_utc": "2026-10-21T08:32:39.601652+00:00"
+  },
+  "resolved_findings": [
+    {
+      "severity": "medium",
+      "file": "evaluation/registry_cases.jsonl",
+      "case_id": "key_value_same_name",
+      "issue": "An expected proposition requires historical ADMX List-child knowledge, but the case cites only the modern ADMX_RemovableStorage CSP page. The cited page maps the Custom\\Deny_Read key and Deny_Read enable value but does not document the separate List child or its historical template metadata. The proposition is correct against separately reviewed historical evidence; the case source list is incomplete.",
+      "reproduction": "Read CustomClasses_DenyRead_Access_2 on the sole cited CSP page and compare it with the second expected proposition. Then inspect the preserved Microsoft-authored XML policy, whose list element key ends in Custom\\Deny_Read\\List and has additive=true.",
+      "suggested_fix": "Add the already-reviewed historical ADMX URL to this case, explicitly describing it as Microsoft-authored revision/schema 1.0 material preserved by NSA, and keep the version qualification. Alternatively remove the historical List requirement from this case.",
+      "supporting_sources": [
+        "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-admx-removablestorage#customclasses_denyread_access_2",
+        "https://github.com/nsacyber/Windows-Secure-Host-Baseline/blob/master/Windows/Group%20Policy%20Templates/RemovableStorage.admx"
+      ],
+      "historical_section": "CustomClasses_DenyRead_Access_2; policyDefinitions revision=1.0/schemaVersion=1.0; supportedOn windows:SUPPORTED_WindowsVista",
+      "resolution": "Verified on current files: historical ADMX source and version scope added.",
+      "status": "resolved"
+    },
+    {
+      "severity": "medium",
+      "file": "evaluation/rubric.json",
+      "case_id": "missing_events",
+      "issue": "The rubric applies target_identity and functional_meaning plus a fixed 7/8 pass threshold to every case. missing_events provides no key, prefix, value or knowledge_paths, so these two target-focused dimensions are not applicable. The rubric has no N/A or case-specific dimension rule, leaving correct coverage-only answers vulnerable to arbitrary scoring or a mathematically unreachable pass if non-applicable dimensions receive zero.",
+      "reproduction": "Score the correct answer: Coverage is unknown because audit policy, matching SACL and Sysmon filters are unknown; an empty collection cannot prove there were no writes. It satisfies every expected proposition and avoids every prohibition, but there is no full prefix or target role to score in target_identity/functional_meaning.",
+      "suggested_fix": "Define applicable dimensions per case, or define N/A scoring with an adjusted denominator/pass rule. Keep all expected propositions and prohibited-inference gating mandatory.",
+      "supporting_sources": [
+        "evaluation/registry_cases.jsonl:missing_events",
+        "evaluation/rubric.json:dimensions,recommended_pass"
+      ],
+      "resolution": "Verified on current files: every case declares applicable_dimensions; non-applicable dimensions are N/A and excluded; pass threshold is 87.5% of available points.",
+      "status": "resolved"
+    }
+  ],
+  "findings": []
+}

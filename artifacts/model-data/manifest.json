@@ -1,0 +1,20 @@
+{
+  "files": {
+    "audit.json": "7f265019afbdbbc72e7caf1d0eb1109e03b2574084d3b5bd942e77ddd8326f02",
+    "graph/edge-index.json": "4f8dd10adf30d98734396cb910ce9120ceca24b4af46830bb7af6172cee4a808",
+    "graph/edges.csv": "24902c374149ae4db08d81f38c2b4ca1b5dfb7dbc34ffc5839575aad8bde497e",
+    "graph/node-index.json": "279ed66d8922f8b662961549c6199b0d842f3fc0b8d03c5f2306b0551abf781c",
+    "graph/semantic-edges.jsonl": "aced6a2f52d84fcb7ab172302c6b2340b5140bedd0bf0ddbcea7ecb2fb4367f8",
+    "graph/snapshot.json": "13c8e66ff3b85e44404ff71416bd59915596c19a02c5971b88bcf8e2bf8aef99",
+    "graph/train-edge-index.json": "aeaa2e68847f7a1dcf28493fd9def59a348fb8287f1caa8b64c212d80a47520b",
+    "node-records.jsonl": "d783e0066ec4ca7a731fbce62ee4c2c403fc0a6890e6ac0fec0865699dbdb6e6",
+    "sft/test.jsonl": "a8746f4ef1c6ef2bfda818d7a74ba3393f0440f386cf658c12254100db78344e",
+    "sft/train.jsonl": "1bcc2f3e43a55b8230af757dd6bfd8d7b76849d3a90fd7de90b8760fc973cb90",
+    "sft/validation.jsonl": "abbcb1eb165ae696cd82defc8b8ed18c2b30b44446a816ba85b89820823485e5",
+    "splits.json": "596a2e5c316c5386086ee67a2f273e85a8a69ad4985edc96fc9f72a02488f87a"
+  },
+  "graph_sha256": "13c8e66ff3b85e44404ff71416bd59915596c19a02c5971b88bcf8e2bf8aef99",
+  "nodes": 197,
+  "schema": "registry-learning-data-1",
+  "sft_examples": 394
+}

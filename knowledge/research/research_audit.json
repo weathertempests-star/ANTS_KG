@@ -1,0 +1,79 @@
+{
+  "schema": "registry-research-audit-1",
+  "as_of": "2026-10-25",
+  "result": "valid_for_declared_research_scope",
+  "metrics": {
+    "nodes": 197,
+    "hierarchy_edges": 192,
+    "semantic_edges": 46,
+    "status_counts": {
+      "documented": 145,
+      "structural": 52
+    },
+    "scopes": {
+      "logical_view": 3,
+      "user": 55,
+      "machine": 138,
+      "mixed": 1
+    },
+    "template_dependent_nodes": 22,
+    "placeholder_nodes": 12,
+    "reviewed_source_pages": 66,
+    "provider_source_pages": 7,
+    "max_source_review_age_days": 4,
+    "peer_reviewed_nodes": {
+      "core": 74,
+      "user_zones": 63,
+      "machine_policy": 60
+    },
+    "model_records": 197,
+    "sft_examples": 394,
+    "evaluation_cases": 17
+  },
+  "checks": {
+    "assembly_matches": true,
+    "vault": {
+      "valid": true,
+      "nodes": 197,
+      "edges": 192,
+      "graph_sha256": "13c8e66ff3b85e44404ff71416bd59915596c19a02c5971b88bcf8e2bf8aef99",
+      "managed_files": 202
+    },
+    "model_data": {
+      "valid": true,
+      "files": 13,
+      "graph_sha256": "13c8e66ff3b85e44404ff71416bd59915596c19a02c5971b88bcf8e2bf8aef99"
+    },
+    "evaluation": {
+      "valid": true,
+      "cases": 17,
+      "files": 3
+    },
+    "all_nodes_researched": true,
+    "all_citations_reviewed": true,
+    "peer_review_exact_coverage": true,
+    "family_split_isolation": true,
+    "train_edges_have_train_endpoints": true,
+    "no_event_instances_or_unreviewed_tags": true
+  },
+  "artifact_sha256": {
+    "knowledge/windows_registry.json": "ba4ec876302337b9ecf236897acb6691700b2824170b36c24611b75be60b26c5",
+    "artifacts/registry-inventory/inventory.json": "93c8ed2336d7d7ff4587feb899c4b36336ea6b334e05a5bfc23d79e42aa5717d",
+    "artifacts/knowledge-vault/kg.json": "13c8e66ff3b85e44404ff71416bd59915596c19a02c5971b88bcf8e2bf8aef99",
+    "artifacts/knowledge-vault/manifest.json": "7f3f6789aca570ed99067edb16361ffa6ee1e0368ea579f54c6ac2424cf02153",
+    "artifacts/model-data/manifest.json": "206a9e1793a47668766c55d260f29d79b4cca1c580a82af4aab10ee59cd4c639",
+    "evaluation/evaluation-manifest.json": "59d43c5c36e62b2475005a58f2c10b1584bd8ebec46f9176f9816402517bf703",
+    "evaluation/rubric.json": "31f2ce3b38851193269e9f3bc0d72f0e8cef380ab1f6ac9a2292fcbd4343baf8",
+    "knowledge/registry_log_semantics.json": "2755c7c169cf701ac548a3c38755ba6bf77e8938786d594a6d6e0c08eaf54341"
+  },
+  "research_limits": [
+    "The inventory is a cross-version documentation sample, not a complete Windows baseline or live-host snapshot.",
+    "Structural nodes are explicit inferences from documented descendants.",
+    "Template matches are candidate schema matches and do not prove a concrete key exists.",
+    "The NT-native adapter maps documented roots only and never guesses HKCU, value boundaries or Registry views.",
+    "Family splits reduce direct concept leakage but remain a small transductive pilot with shared ancestors and sources.",
+    "The authored evaluation is synthetic and not an independent real-log benchmark.",
+    "The synthesis is AI-authored and agent-reviewed, not independent human annotation or measured model performance."
+  ],
+  "refresh_policy": "Re-run source review when max_source_review_age_days exceeds the study's protocol or before a time-sensitive release."
+}

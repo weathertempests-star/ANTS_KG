@@ -1,0 +1,412 @@
+{
+  "retrieved_on": "2026-10-16",
+  "scope": "Documented structural paths and explicit dynamic templates; not machine enumeration",
+  "observations": [
+    {
+      "path": "HKLM",
+      "source": "https://learn.microsoft.com/en-us/windows/win32/sysinfo/predefined-keys",
+      "kind": "fixed",
+      "method": "manual extraction of documented key location / child-key structure",
+      "note": ""
+    },
+    {
+      "path": "HKCU",
+      "source": "https://learn.microsoft.com/en-us/windows/win32/sysinfo/predefined-keys",
+      "kind": "fixed",
+      "method": "manual extraction of documented key location / child-key structure",
+      "note": ""
+    },
+    {
+      "path": "HKU",
+      "source": "https://learn.microsoft.com/en-us/windows/win32/sysinfo/predefined-keys",
+      "kind": "fixed",
+      "method": "manual extraction of documented key location / child-key structure",
+      "note": ""
+    },
+    {
+      "path": "HKCR",
+      "source": "https://learn.microsoft.com/en-us/windows/win32/sysinfo/predefined-keys",
+      "kind": "fixed",
+      "method": "manual extraction of documented key location / child-key structure",
+      "note": ""
+    },
+    {
+      "path": "HKCC",
+      "source": "https://learn.microsoft.com/en-us/windows/win32/sysinfo/predefined-keys",
+      "kind": "fixed",
+      "method": "manual extraction of documented key location / child-key structure",
+      "note": ""
+    },
+    {
+      "path": "HKLM\\SYSTEM\\CurrentControlSet\\Hardware Profiles\\Current",
+      "source": "https://learn.microsoft.com/en-us/windows/win32/sysinfo/predefined-keys",
+      "kind": "fixed",
+      "method": "manual extraction of documented key location / child-key structure",
+      "note": ""
+    },
+    {
+      "path": "HKCU\\Software\\Microsoft",
+      "source": "https://learn.microsoft.com/en-us/windows/win32/sysinfo/predefined-keys",
+      "kind": "fixed",
+      "method": "manual extraction of documented key location / child-key structure",
+      "note": ""
+    },
+    {
+      "path": "HKCU\\Software\\Classes",
+      "source": "https://learn.microsoft.com/en-us/windows/win32/sysinfo/predefined-keys",
+      "kind": "fixed",
+      "method": "manual extraction of documented key location / child-key structure",
+      "note": ""
+    },
+    {
+      "path": "HKU\\.DEFAULT",
+      "source": "https://learn.microsoft.com/en-us/windows/win32/sysinfo/predefined-keys",
+      "kind": "fixed",
+      "method": "manual extraction of documented key location / child-key structure",
+      "note": ""
+    },
+    {
+      "path": "HKU\\<UserHive>",
+      "source": "https://learn.microsoft.com/en-us/windows/win32/sysinfo/predefined-keys",
+      "kind": "template",
+      "method": "manual extraction of documented key location / child-key structure",
+      "note": "One user-hive slot; actual SID names are not expanded."
+    },
+    {
+      "path": "HKLM\\HARDWARE",
+      "source": "https://learn.microsoft.com/en-us/windows/win32/sysinfo/structure-of-the-registry",
+      "kind": "fixed",
+      "method": "manual extraction of documented key location / child-key structure",
+      "note": ""
+    },
+    {
+      "path": "HKLM\\SAM",
+      "source": "https://learn.microsoft.com/en-us/windows/win32/sysinfo/structure-of-the-registry",
+      "kind": "fixed",
+      "method": "manual extraction of documented key location / child-key structure",
+      "note": ""
+    },
+    {
+      "path": "HKLM\\SECURITY",
+      "source": "https://learn.microsoft.com/en-us/windows/win32/sysinfo/structure-of-the-registry",
+      "kind": "fixed",
+      "method": "manual extraction of documented key location / child-key structure",
+      "note": ""
+    },
+    {
+      "path": "HKLM\\SOFTWARE",
+      "source": "https://learn.microsoft.com/en-us/windows/win32/sysinfo/structure-of-the-registry",
+      "kind": "fixed",
+      "method": "manual extraction of documented key location / child-key structure",
+      "note": ""
+    },
+    {
+      "path": "HKLM\\SYSTEM",
+      "source": "https://learn.microsoft.com/en-us/windows/win32/sysinfo/structure-of-the-registry",
+      "kind": "fixed",
+      "method": "manual extraction of documented key location / child-key structure",
+      "note": ""
+    },
+    {
+      "path": "HKLM\\HARDWARE\\DESCRIPTION",
+      "source": "https://learn.microsoft.com/en-us/windows/win32/sysinfo/structure-of-the-registry",
+      "kind": "fixed",
+      "method": "manual extraction of documented key location / child-key structure",
+      "note": ""
+    },
+    {
+      "path": "HKLM\\HARDWARE\\DEVICEMAP",
+      "source": "https://learn.microsoft.com/en-us/windows/win32/sysinfo/structure-of-the-registry",
+      "kind": "fixed",
+      "method": "manual extraction of documented key location / child-key structure",
+      "note": ""
+    },
+    {
+      "path": "HKLM\\HARDWARE\\RESOURCEMAP",
+      "source": "https://learn.microsoft.com/en-us/windows/win32/sysinfo/structure-of-the-registry",
+      "kind": "fixed",
+      "method": "manual extraction of documented key location / child-key structure",
+      "note": ""
+    },
+    {
+      "path": "HKLM\\HARDWARE\\DEVICEMAP\\VIDEO",
+      "source": "https://learn.microsoft.com/en-us/windows/win32/sysinfo/structure-of-the-registry",
+      "kind": "fixed",
+      "method": "manual extraction of documented key location / child-key structure",
+      "note": ""
+    },
+    {
+      "path": "HKLM\\SYSTEM\\CurrentControlSet\\Control\\Class",
+      "source": "https://learn.microsoft.com/en-us/windows-hardware/drivers/install/hklm-system-currentcontrolset-control-registry-tree",
+      "kind": "fixed",
+      "method": "manual extraction of documented key location / child-key structure",
+      "note": ""
+    },
+    {
+      "path": "HKLM\\SYSTEM\\CurrentControlSet\\Control\\CoDeviceInstallers",
+      "source": "https://learn.microsoft.com/en-us/windows-hardware/drivers/install/hklm-system-currentcontrolset-control-registry-tree",
+      "kind": "fixed",
+      "method": "manual extraction of documented key location / child-key structure",
+      "note": ""
+    },
+    {
+      "path": "HKLM\\SYSTEM\\CurrentControlSet\\Control\\DeviceClasses",
+      "source": "https://learn.microsoft.com/en-us/windows-hardware/drivers/install/hklm-system-currentcontrolset-control-registry-tree",
+      "kind": "fixed",
+      "method": "manual extraction of documented key location / child-key structure",
+      "note": ""
+    },
+    {
+      "path": "HKLM\\SYSTEM\\CurrentControlSet\\Control\\Class\\<SetupClassGUID>",
+      "source": "https://learn.microsoft.com/en-us/windows-hardware/drivers/install/hklm-system-currentcontrolset-control-registry-tree",
+      "kind": "template",
+      "method": "manual extraction of documented key location / child-key structure",
+      "note": ""
+    },
+    {
+      "path": "HKLM\\SYSTEM\\CurrentControlSet\\Control\\DeviceClasses\\<InterfaceClassGUID>",
+      "source": "https://learn.microsoft.com/en-us/windows-hardware/drivers/install/hklm-system-currentcontrolset-control-registry-tree",
+      "kind": "template",
+      "method": "manual extraction of documented key location / child-key structure",
+      "note": ""
+    },
+    {
+      "path": "HKLM\\SYSTEM\\CurrentControlSet\\Services",
+      "source": "https://learn.microsoft.com/en-us/windows-hardware/drivers/install/hklm-system-currentcontrolset-services-registry-tree",
+      "kind": "fixed",
+      "method": "manual extraction of documented key location / child-key structure",
+      "note": ""
+    },
+    {
+      "path": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\<ServiceName>",
+      "source": "https://learn.microsoft.com/en-us/windows-hardware/drivers/install/hklm-system-currentcontrolset-services-registry-tree",
+      "kind": "template",
+      "method": "manual extraction of documented key location / child-key structure",
+      "note": ""
+    },
+    {
+      "path": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\<ServiceName>\\Parameters",
+      "source": "https://learn.microsoft.com/en-us/windows-hardware/drivers/install/hklm-system-currentcontrolset-services-registry-tree",
+      "kind": "template",
+      "method": "manual extraction of documented key location / child-key structure",
+      "note": ""
+    },
+    {
+      "path": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\<ServiceName>\\Performance",
+      "source": "https://learn.microsoft.com/en-us/windows-hardware/drivers/install/hklm-system-currentcontrolset-services-registry-tree",
+      "kind": "template",
+      "method": "manual extraction of documented key location / child-key structure",
+      "note": ""
+    },
+    {
+      "path": "HKLM\\SYSTEM\\CurrentControlSet\\Enum",
+      "source": "https://learn.microsoft.com/en-us/windows-hardware/drivers/install/hklm-system-currentcontrolset-enum-registry-tree",
+      "kind": "fixed",
+      "method": "manual extraction of documented key location / child-key structure",
+      "note": "Internal layout is OS-dependent; no invented device-instance subtree."
+    },
+    {
+      "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run",
+      "source": "https://learn.microsoft.com/en-us/windows/win32/setupapi/run-and-runonce-registry-keys",
+      "kind": "fixed",
+      "method": "manual extraction of documented key location / child-key structure",
+      "note": ""
+    },
+    {
+      "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce",
+      "source": "https://learn.microsoft.com/en-us/windows/win32/setupapi/run-and-runonce-registry-keys",
+      "kind": "fixed",
+      "method": "manual extraction of documented key location / child-key structure",
+      "note": ""
+    },
+    {
+      "path": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run",
+      "source": "https://learn.microsoft.com/en-us/windows/win32/setupapi/run-and-runonce-registry-keys",
+      "kind": "fixed",
+      "method": "manual extraction of documented key location / child-key structure",
+      "note": ""
+    },
+    {
+      "path": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce",
+      "source": "https://learn.microsoft.com/en-us/windows/win32/setupapi/run-and-runonce-registry-keys",
+      "kind": "fixed",
+      "method": "manual extraction of documented key location / child-key structure",
+      "note": ""
+    },
+    {
+      "path": "HKLM\\SOFTWARE\\Classes\\CLSID\\<CLSID>",
+      "source": "https://learn.microsoft.com/en-us/windows/win32/com/clsid-key-hklm",
+      "kind": "template",
+      "method": "manual extraction of documented key location / child-key structure",
+      "note": ""
+    },
+    {
+      "path": "HKLM\\SOFTWARE\\Classes\\CLSID\\<CLSID>\\InprocServer32",
+      "source": "https://learn.microsoft.com/en-us/windows/win32/com/inprocserver32",
+      "kind": "template",
+      "method": "manual extraction of documented key location / child-key structure",
+      "note": ""
+    },
+    {
+      "path": "HKLM\\SOFTWARE\\Classes\\CLSID\\<CLSID>\\LocalServer32",
+      "source": "https://learn.microsoft.com/en-us/windows/win32/com/localserver32",
+      "kind": "template",
+      "method": "manual extraction of documented key location / child-key structure",
+      "note": ""
+    },
+    {
+      "path": "HKLM\\SOFTWARE\\Classes\\AppID\\<AppID_GUID>",
+      "source": "https://learn.microsoft.com/en-us/windows/win32/com/appid-key",
+      "kind": "template",
+      "method": "manual extraction of documented key location / child-key structure",
+      "note": ""
+    },
+    {
+      "path": "HKLM\\SOFTWARE\\Classes\\Interface\\<IID>",
+      "source": "https://learn.microsoft.com/en-us/windows/win32/com/interface-key",
+      "kind": "template",
+      "method": "manual extraction of documented key location / child-key structure",
+      "note": ""
+    },
+    {
+      "path": "HKLM\\SOFTWARE\\Classes\\<ProgID>",
+      "source": "https://learn.microsoft.com/en-us/windows/win32/com/-progid--key",
+      "kind": "template",
+      "method": "manual extraction of documented key location / child-key structure",
+      "note": ""
+    },
+    {
+      "path": "HKLM\\SOFTWARE\\Classes\\<FileExtension>",
+      "source": "https://learn.microsoft.com/en-us/windows/win32/com/-file-extension--key",
+      "kind": "template",
+      "method": "manual extraction of documented key location / child-key structure",
+      "note": ""
+    },
+    {
+      "path": "HKLM\\SYSTEM\\CurrentControlSet\\Control\\Session Manager\\Environment",
+      "source": "https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-environment",
+      "kind": "fixed",
+      "method": "manual extraction of documented key location / child-key structure",
+      "note": "Use MappingStrings with 'Session Manager'; opening prose contains a spacing inconsistency."
+    },
+    {
+      "path": "HKU\\<UserHive>\\Environment",
+      "source": "https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-environment",
+      "kind": "template",
+      "method": "manual extraction of documented key location / child-key structure",
+      "note": ""
+    },
+    {
+      "path": "HKLM\\SYSTEM\\CurrentControlSet\\Control\\Session Manager",
+      "source": "https://learn.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-movefileexa",
+      "kind": "fixed",
+      "method": "manual extraction of documented key location / child-key structure",
+      "note": "PendingFileRenameOperations is a value, not a child key."
+    },
+    {
+      "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall",
+      "source": "https://learn.microsoft.com/en-us/windows/win32/msi/uninstall-registry-key",
+      "kind": "fixed",
+      "method": "manual extraction of documented key location / child-key structure",
+      "note": ""
+    },
+    {
+      "path": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\<ProductCodeGUID>",
+      "source": "https://learn.microsoft.com/en-us/windows/win32/msi/uninstall-registry-key",
+      "kind": "template",
+      "method": "manual extraction of documented key location / child-key structure",
+      "note": "Windows Installer product subkey; not all uninstall registrations use GUIDs."
+    },
+    {
+      "path": "HKLM\\SYSTEM\\CurrentControlSet\\Control\\NetworkProvider\\Order",
+      "source": "https://learn.microsoft.com/en-us/windows/win32/secauthn/authentication-registry-keys",
+      "kind": "fixed",
+      "method": "manual extraction of documented key location / child-key structure",
+      "note": ""
+    },
+    {
+      "path": "HKLM\\SYSTEM\\CurrentControlSet\\Control\\NetworkProvider\\Notifyees",
+      "source": "https://learn.microsoft.com/en-us/windows/win32/secauthn/authentication-registry-keys",
+      "kind": "fixed",
+      "method": "manual extraction of documented key location / child-key structure",
+      "note": ""
+    },
+    {
+      "path": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\<ServiceName>\\NetworkProvider",
+      "source": "https://learn.microsoft.com/en-us/windows/win32/secauthn/authentication-registry-keys",
+      "kind": "template",
+      "method": "manual extraction of documented key location / child-key structure",
+      "note": "ProviderName is modeled as a service-name slot; example AnotherNetSvc is not a fixed Windows component."
+    },
+    {
+      "path": "HKLM\\SYSTEM\\CurrentControlSet\\Control\\Lsa",
+      "source": "https://learn.microsoft.com/en-us/windows/win32/secauthn/registering-ssp-ap-dlls",
+      "kind": "fixed",
+      "method": "manual extraction of documented key location / child-key structure",
+      "note": "Security Packages and Default TLS SSP are value names, not subkeys."
+    },
+    {
+      "path": "HKLM\\SOFTWARE\\Policies\\Microsoft\\Windows Defender\\MpEngine",
+      "source": "https://learn.microsoft.com/en-us/defender-endpoint/enable-cloud-protection-microsoft-defender-antivirus",
+      "kind": "fixed",
+      "method": "manual extraction of documented key location / child-key structure",
+      "note": ""
+    },
+    {
+      "path": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\Tcpip6\\Parameters",
+      "source": "https://learn.microsoft.com/en-us/troubleshoot/windows-server/networking/configure-ipv6-in-windows",
+      "kind": "fixed",
+      "method": "manual extraction of documented key location / child-key structure",
+      "note": ""
+    },
+    {
+      "path": "HKCU\\Software\\Microsoft\\SystemCertificates",
+      "source": "https://learn.microsoft.com/en-us/windows/win32/seccrypto/system-store-locations",
+      "kind": "fixed",
+      "method": "manual extraction of documented key location / child-key structure",
+      "note": ""
+    },
+    {
+      "path": "HKLM\\Software\\Microsoft\\SystemCertificates",
+      "source": "https://learn.microsoft.com/en-us/windows/win32/seccrypto/system-store-locations",
+      "kind": "fixed",
+      "method": "manual extraction of documented key location / child-key structure",
+      "note": ""
+    },
+    {
+      "path": "HKCU\\Software\\Policies\\Microsoft\\SystemCertificates",
+      "source": "https://learn.microsoft.com/en-us/windows/win32/seccrypto/system-store-locations",
+      "kind": "fixed",
+      "method": "manual extraction of documented key location / child-key structure",
+      "note": ""
+    },
+    {
+      "path": "HKLM\\Software\\Policies\\Microsoft\\SystemCertificates",
+      "source": "https://learn.microsoft.com/en-us/windows/win32/seccrypto/system-store-locations",
+      "kind": "fixed",
+      "method": "manual extraction of documented key location / child-key structure",
+      "note": ""
+    },
+    {
+      "path": "HKLM\\Software\\Microsoft\\Cryptography\\Services\\<ServiceName>\\SystemCertificates",
+      "source": "https://learn.microsoft.com/en-us/windows/win32/seccrypto/system-store-locations",
+      "kind": "template",
+      "method": "manual extraction of documented key location / child-key structure",
+      "note": ""
+    },
+    {
+      "path": "HKU\\<UserHive>\\Software\\Microsoft\\SystemCertificates",
+      "source": "https://learn.microsoft.com/en-us/windows/win32/seccrypto/system-store-locations",
+      "kind": "template",
+      "method": "manual extraction of documented key location / child-key structure",
+      "note": ""
+    },
+    {
+      "path": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\EventLog\\<LogName>",
+      "source": "https://learn.microsoft.com/en-us/windows/win32/eventlog/eventlog-key",
+      "kind": "template",
+      "method": "manual extraction of documented key location / child-key structure",
+      "note": ""
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": "registry-review-resolutions-1",
+  "checked_on": "2026-10-21",
+  "resolutions": [
+    {
+      "review": "core_peer.json",
+      "finding": "C-01",
+      "resolution": "ImagePath distinguishes driver binary location from Win32 executable launch string with optional arguments; added read primary evidence."
+    },
+    {
+      "review": "core_peer.json",
+      "finding": "C-02",
+      "resolution": "Security Packages now states extension-free NUL-separated entries with directory caveat."
+    },
+    {
+      "review": "core_peer.json",
+      "finding": "C-03",
+      "resolution": "Coinstaller deprecation added with read primary source, without invented removal date."
+    },
+    {
+      "review": "user_zones_peer.json",
+      "finding": "UZ-01",
+      "resolution": "All 20 180F records now carry logoff timing in value semantics, applicability and claim evidence."
+    },
+    {
+      "review": "integration.json",
+      "finding": "unnamed value",
+      "resolution": "Actual name is empty string; display label separate; literal (Default) remains distinct. Regression test passes."
+    },
+    {
+      "review": "integration.json",
+      "finding": "semantic evidence export",
+      "resolution": "Full semantic edge records and source snapshot exported and manifested. Regression test passes."
+    },
+    {
+      "review": "integration.json",
+      "finding": "manifest deletion authority",
+      "resolution": "Exact managed-name allowlist plus canonical old-snapshot rendering rejects altered manifests and modified records. Regression test passes."
+    },
+    {
+      "review": "evaluation_peer.json",
+      "finding": "historical List evidence",
+      "resolution": "Case carries complete source list including preserved ADMX and explicit version scope."
+    },
+    {
+      "review": "evaluation_peer.json",
+      "finding": "N/A rubric dimensions",
+      "resolution": "Every case declares applicable dimensions; unavailable dimensions are excluded from the score denominator."
+    },
+    {
+      "review": "evaluation_peer.json",
+      "finding": "precision suggestions",
+      "resolution": "Row indexes described as snapshot-specific deterministic; both comparison conditions receive the same implementation contract; Sysmon raw HKU target is separate from supplied normalized HKCU path."
+    }
+  ],
+  "batch_sha256": {
+    "core": "6ca67802e1b96ce1a2bfd05041ce32e4cc9356b8efb09a6b4f141233cc49030e",
+    "user_zones": "19120c4a217e5413001018dc3e5bca41099831b6a677ae726bd6469cc9954ad9",
+    "machine_policy": "a5574e788306c72a3c0e0fde6625ee5421afb6ea7c566f0eb3629c06292f8c62"
+  }
+}

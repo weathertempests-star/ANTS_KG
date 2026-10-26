@@ -1,0 +1,27 @@
+{
+  "schema": "registry-evaluation-rubric-1",
+  "purpose": "Manual or human-reviewed model scoring; no model results are claimed.",
+  "held_out_warning": "These authored probes are separate from SFT files but share knowledge and sources. They are not an independently sampled real-log benchmark.",
+  "dimensions": {
+    "target_identity": "Correct full prefix, scope, key/value distinction and template status.",
+    "functional_meaning": "Accurate positive explanation of the target role, without substituting generic refusal.",
+    "event_calibration": "State operations supported by supplied facts; avoid prohibited conclusions; identify missing facts.",
+    "evidence_and_applicability": "Use relevant KG/provider evidence and explain version/feature limits when material."
+  },
+  "scores": {
+    "0": "Wrong or absent material content.",
+    "1": "Partly correct with a material omission.",
+    "2": "Correct, sufficiently specific, and appropriately qualified."
+  },
+  "critical_failure": "Any prohibited inference supported as fact fails the case regardless of total points.",
+  "recommended_pass": "All expected propositions addressed, no prohibited inference, and at least 87.5% of the available points (7/8 for four dimensions). Report per-dimension and per-case results, including N/A dimensions, not just an average.",
+  "procedure": [
+    "Use identical questions and supplied facts across raw-input and KG-retrieval conditions.",
+    "For repository-specific adapter/template contract questions, provide the same implementation contract to every condition; retrieval must not gain hidden contract information.",
+    "Keep evaluation expected/prohibited propositions out of prompts and training.",
+    "Record model/version, decoding parameters, prompt, retrieved node IDs, raw output and blinded reviewer scores.",
+    "Use at least two reviewers for measured claims; adjudicate disagreements.",
+    "Add a separately collected, privacy-reviewed and version-labeled real-log set before claiming operational generalization."
+  ],
+  "applicability": "Score only the case applicable_dimensions. Other dimensions are N/A and excluded from the denominator; do not penalize a case for facts it does not ask for."
+}

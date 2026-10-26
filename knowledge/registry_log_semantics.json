@@ -1,0 +1,184 @@
+{
+  "schema": "registry-log-semantics-1",
+  "checked_on": "2026-10-25",
+  "purpose": "Shared interpretation constraints for using path knowledge alongside system-level logs; not event instances or detections.",
+  "principles": [
+    {
+      "id": "key_value_boundary",
+      "statement": "A registry key is a named container; a value has its own name, type and data. Keep the event key path and value name separate. Do not automatically turn a terminal value name into another key node.",
+      "sources": [
+        "https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4657",
+        "https://learn.microsoft.com/en-us/windows/win32/sysinfo/registry-value-types"
+      ]
+    },
+    {
+      "id": "request_outcome_boundary",
+      "statement": "Security event 4656 reports a requested object handle and the access-request outcome. It does not establish that the requested operation was performed.",
+      "sources": [
+        "https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4656"
+      ]
+    },
+    {
+      "id": "coverage_boundary",
+      "statement": "Registry auditing depends on audit policy and matching object SACL entries. Missing events are not proof of absent access. Sysmon filtering also limits what is collected.",
+      "sources": [
+        "https://learn.microsoft.com/en-us/windows/security/threat-protection/auditing/audit-registry",
+        "https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon"
+      ]
+    },
+    {
+      "id": "view_boundary",
+      "statement": "WOW64 gives selected registry areas separate logical views and shares others. Preserve explicit Wow6432Node components and architecture/view metadata; do not collapse all views or assume every Software key is redirected.",
+      "sources": [
+        "https://learn.microsoft.com/en-us/windows/win32/winprog64/registry-redirector"
+      ]
+    },
+    {
+      "id": "native_namespace_boundary",
+      "statement": "Kernel-mode Registry paths use the native namespace: \\Registry\\Machine corresponds to HKEY_LOCAL_MACHINE and \\Registry\\User corresponds to HKEY_USERS. HKEY_CURRENT_USER has no simple kernel-mode equivalent, so adapters must retain an observed user SID rather than silently converting it to HKCU.",
+      "sources": [
+        "https://learn.microsoft.com/en-us/windows-hardware/drivers/kernel/registry-key-object-routines"
+      ]
+    },
+    {
+      "id": "function_event_boundary",
+      "statement": "A documented configuration role identifies what a target is for. A separate log record is needed to establish what happened; effective behavior may additionally depend on values, precedence, platform support and consumers.",
+      "sources": [],
+      "support": "reasoning_boundary"
+    }
+  ],
+  "providers": [
+    {
+      "provider": "Microsoft-Windows-Sysmon",
+      "event_ids": [
+        12
+      ],
+      "meaning": "Registry object creation or deletion; inspect event subtype to distinguish the operation and object kind.",
+      "required_context": [
+        "EventType",
+        "TargetObject",
+        "ProcessGuid or ProcessId",
+        "Image",
+        "UtcTime"
+      ],
+      "source": "https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon"
+    },
+    {
+      "provider": "Microsoft-Windows-Sysmon",
+      "event_ids": [
+        13
+      ],
+      "meaning": "Registry value modification. The documentation specifies captured written data for DWORD and QWORD types; do not assume every data type is completely represented.",
+      "required_context": [
+        "TargetObject",
+        "Details",
+        "ProcessGuid or ProcessId",
+        "Image",
+        "UtcTime"
+      ],
+      "source": "https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon"
+    },
+    {
+      "provider": "Microsoft-Windows-Sysmon",
+      "event_ids": [
+        14
+      ],
+      "meaning": "Registry key or value rename, including its new name. A rename is not a value-setting operation.",
+      "required_context": [
+        "EventType",
+        "TargetObject",
+        "NewName",
+        "ProcessGuid or ProcessId",
+        "UtcTime"
+      ],
+      "source": "https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon"
+    },
+    {
+      "provider": "Microsoft-Windows-Security-Auditing",
+      "event_ids": [
+        4657
+      ],
+      "meaning": "An audited registry value was modified; the event distinguishes the key ObjectName from ObjectValueName and includes operation and old/new value fields. It is not a general record of key modifications.",
+      "required_context": [
+        "ObjectName",
+        "ObjectValueName",
+        "OperationType",
+        "OldValueType",
+        "OldValue",
+        "NewValueType",
+        "NewValue",
+        "ProcessId",
+        "SubjectUserSid"
+      ],
+      "source": "https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4657"
+    },
+    {
+      "provider": "Microsoft-Windows-Security-Auditing",
+      "event_ids": [
+        4656
+      ],
+      "meaning": "An object handle was requested. Check object type, requested rights and audit outcome; handle access does not prove execution of a later operation.",
+      "required_context": [
+        "ObjectType",
+        "ObjectName",
+        "AccessMask",
+        "HandleId",
+        "ProcessId",
+        "SubjectUserSid",
+        "audit outcome"
+      ],
+      "source": "https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4656"
+    }
+  ],
+  "integration_contract": {
+    "key_path": "Pass the key path separately to KnowledgeBase.model_context. Use path_format=nt_native only for documented \\Registry\\Machine and \\Registry\\User roots; the adapter preserves the raw input and SID. Enable template_candidates explicitly for constrained pattern retrieval.",
+    "value_name": "Pass separately when the provider identifies a value. This repository does not guess the key/value boundary from an ambiguous compound target string.",
+    "unmatched_suffix": "Retain unknown concrete names. Optional template matching is typed and reports pattern_complete separately from exact path_complete; it supplies candidate schema knowledge, not evidence that a concrete key exists.",
+    "event_metadata": "Keep provider/version, operation, result, timestamp, actor/process, raw target, registry view and value data alongside the knowledge response, not as new knowledge nodes.",
+    "label_policy": "No malicious/benign, ATT&CK or automatic legacy-rule labels are inferred from path knowledge."
+  },
+  "source_reviews": [
+    {
+      "url": "https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon",
+      "checked_on": "2026-10-21",
+      "verification": "read",
+      "section": "Events 12–14 and Event filtering"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/security/threat-protection/auditing/audit-registry",
+      "checked_on": "2026-10-21",
+      "verification": "read",
+      "section": "Audit Registry overview"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4657",
+      "checked_on": "2026-10-21",
+      "verification": "read",
+      "section": "Event Description; Object and Process Information"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/auditing/event-4656",
+      "checked_on": "2026-10-21",
+      "verification": "read",
+      "section": "Event Description"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/winprog64/registry-redirector",
+      "checked_on": "2026-10-21",
+      "verification": "read",
+      "section": "Registry Redirector overview"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/sysinfo/registry-value-types",
+      "checked_on": "2026-10-21",
+      "verification": "read",
+      "section": "Registry value types table"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows-hardware/drivers/kernel/registry-key-object-routines",
+      "checked_on": "2026-10-25",
+      "verification": "read",
+      "section": "Registry key handles and kernel-mode root mappings"
+    }
+  ]
+}

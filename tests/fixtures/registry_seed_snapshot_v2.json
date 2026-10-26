@@ -1,0 +1,217 @@
+{
+  "schema": "prefix-knowledge-2",
+  "provenance": {
+    "catalog_sha256": "06735fba88d60df0dd6a184df3c48611158f0bc7d127d11008cd659b13fe8461"
+  },
+  "nodes": [
+    {
+      "id": "knowledge:23067446c79f6f808ec9de07",
+      "domain": "registry",
+      "path": "HKLM",
+      "role": "machine_configuration_root",
+      "explanation": "HKEY_LOCAL_MACHINE (HKLM) is the predefined root for configuration associated with the local computer. Its subtrees separate operating-system configuration, software settings, hardware information, and security-related configuration. This layer establishes machine scope; it does not select a particular user profile or identify the operation performed on a descendant key.",
+      "status": "documented",
+      "explanation_sources": [
+        "https://learn.microsoft.com/en-us/dotnet/api/microsoft.win32.registry.localmachine",
+        "https://learn.microsoft.com/en-us/windows/win32/sysinfo/structure-of-the-registry"
+      ],
+      "path_sources": [],
+      "explicitly_listed": false,
+      "candidate_tags": [],
+      "label": "HKLM",
+      "canonical_components": [
+        "hkey_local_machine"
+      ],
+      "depth": 1,
+      "is_placeholder": false,
+      "template_dependent": false,
+      "parent_id": null
+    },
+    {
+      "id": "knowledge:0c0cbf02701df6d652a5dc75",
+      "domain": "registry",
+      "path": "HKLM\\SYSTEM",
+      "role": "system_configuration_hive",
+      "explanation": "The SYSTEM subtree holds operating-system configuration used for startup, device-driver loading, services, and other system behavior. It contains control-set configuration beneath the machine-wide root. At this layer, SYSTEM identifies the configuration area; individual service settings and startup parameters are represented by descendant keys and their values.",
+      "status": "documented",
+      "explanation_sources": [
+        "https://learn.microsoft.com/en-us/dotnet/api/microsoft.win32.registry.localmachine",
+        "https://learn.microsoft.com/en-us/windows-hardware/drivers/install/hklm-system-currentcontrolset-services-registry-tree"
+      ],
+      "path_sources": [],
+      "explicitly_listed": false,
+      "candidate_tags": [],
+      "label": "SYSTEM",
+      "canonical_components": [
+        "hkey_local_machine",
+        "system"
+      ],
+      "depth": 2,
+      "is_placeholder": false,
+      "template_dependent": false,
+      "parent_id": "knowledge:23067446c79f6f808ec9de07"
+    },
+    {
+      "id": "knowledge:47075c2ddad8552fd6d1728a",
+      "domain": "registry",
+      "path": "HKLM\\SYSTEM\\CurrentControlSet",
+      "role": "active_system_control_set",
+      "explanation": "CurrentControlSet exposes the currently active set of system configuration settings. Its descendants organize configuration relevant to system startup, device drivers, and system services: Control groups system-control settings, while Services contains configuration for individual services and drivers. This layer selects the active configuration context rather than a specific service or setting. The key path alone does not disclose the actual configuration values stored below it.",
+      "status": "documented",
+      "explanation_sources": [
+        "https://learn.microsoft.com/en-us/windows-hardware/drivers/install/hklm-system-currentcontrolset-control-registry-tree",
+        "https://learn.microsoft.com/en-us/windows-hardware/drivers/install/hklm-system-currentcontrolset-services-registry-tree"
+      ],
+      "path_sources": [],
+      "explicitly_listed": false,
+      "candidate_tags": [],
+      "label": "CurrentControlSet",
+      "canonical_components": [
+        "hkey_local_machine",
+        "system",
+        "currentcontrolset"
+      ],
+      "depth": 3,
+      "is_placeholder": false,
+      "template_dependent": false,
+      "parent_id": "knowledge:0c0cbf02701df6d652a5dc75"
+    },
+    {
+      "id": "knowledge:cf70125942441319173f4965",
+      "domain": "registry",
+      "path": "HKLM\\SYSTEM\\CurrentControlSet\\Control",
+      "role": "system_control_configuration",
+      "explanation": "Control groups settings that govern system startup and aspects of device configuration within the active control set. Its subkeys organize particular system facilities, including device setup classes and session-manager configuration. This is a configuration namespace, not an instruction to start or stop a service; individual settings must be interpreted under their specific child keys and value names.",
+      "status": "documented",
+      "explanation_sources": [
+        "https://learn.microsoft.com/en-us/windows-hardware/drivers/install/hklm-system-currentcontrolset-control-registry-tree",
+        "https://learn.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-movefileexa"
+      ],
+      "path_sources": [],
+      "explicitly_listed": false,
+      "candidate_tags": [],
+      "label": "Control",
+      "canonical_components": [
+        "hkey_local_machine",
+        "system",
+        "currentcontrolset",
+        "control"
+      ],
+      "depth": 4,
+      "is_placeholder": false,
+      "template_dependent": false,
+      "parent_id": "knowledge:47075c2ddad8552fd6d1728a"
+    },
+    {
+      "id": "knowledge:7646fcec5941d5a9b6d3ef85",
+      "domain": "registry",
+      "path": "HKLM\\SYSTEM\\CurrentControlSet\\Control\\Session Manager",
+      "role": "session_manager_configuration",
+      "explanation": "Session Manager is the configuration namespace for Windows session-manager-related system initialization settings. Its contents include the Environment subkey for system environment variables and the PendingFileRenameOperations value used to record file rename or deletion work deferred until restart. The node identifies the containing key; those subkeys and named values are distinct objects with their own semantics. Reading this path alone does not reveal their configured data or establish that any deferred work occurred.",
+      "status": "documented",
+      "explanation_sources": [
+        "https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-environment",
+        "https://learn.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-movefileexa"
+      ],
+      "path_sources": [],
+      "explicitly_listed": false,
+      "candidate_tags": [],
+      "label": "Session Manager",
+      "canonical_components": [
+        "hkey_local_machine",
+        "system",
+        "currentcontrolset",
+        "control",
+        "session manager"
+      ],
+      "depth": 5,
+      "is_placeholder": false,
+      "template_dependent": false,
+      "parent_id": "knowledge:cf70125942441319173f4965"
+    },
+    {
+      "id": "knowledge:67ee8ba9716dc0d7a0e5161f",
+      "domain": "registry",
+      "path": "HKLM\\SYSTEM\\CurrentControlSet\\Control\\Session Manager\\Environment",
+      "role": "system_environment_configuration",
+      "explanation": "Environment stores system-level environment-variable definitions under the active system configuration. Individual named values represent variables and their configured data. This key identifies the machine-level environment configuration namespace; it is distinct from a particular process environment, which may include inherited, expanded, or process-local values.",
+      "status": "documented",
+      "explanation_sources": [
+        "https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-environment"
+      ],
+      "path_sources": [],
+      "explicitly_listed": false,
+      "candidate_tags": [],
+      "label": "Environment",
+      "canonical_components": [
+        "hkey_local_machine",
+        "system",
+        "currentcontrolset",
+        "control",
+        "session manager",
+        "environment"
+      ],
+      "depth": 6,
+      "is_placeholder": false,
+      "template_dependent": false,
+      "parent_id": "knowledge:7646fcec5941d5a9b6d3ef85"
+    },
+    {
+      "id": "knowledge:1b4dc8589a4514f201b7f19e",
+      "domain": "registry",
+      "path": "HKLM\\SYSTEM\\CurrentControlSet\\Services",
+      "role": "service_and_driver_configuration",
+      "explanation": "Services organizes configuration for individual system services and drivers. Each service or driver has its own child key; values beneath that key can specify startup behavior and other component-specific parameters. A driver can also store its own configuration beneath a Parameters subkey. This parent node describes the namespace shared by those definitions, not the runtime state of any particular service.",
+      "status": "documented",
+      "explanation_sources": [
+        "https://learn.microsoft.com/en-us/windows-hardware/drivers/install/hklm-system-currentcontrolset-services-registry-tree"
+      ],
+      "path_sources": [],
+      "explicitly_listed": false,
+      "candidate_tags": [],
+      "label": "Services",
+      "canonical_components": [
+        "hkey_local_machine",
+        "system",
+        "currentcontrolset",
+        "services"
+      ],
+      "depth": 4,
+      "is_placeholder": false,
+      "template_dependent": false,
+      "parent_id": "knowledge:47075c2ddad8552fd6d1728a"
+    }
+  ],
+  "edges": [
+    {
+      "source": "knowledge:23067446c79f6f808ec9de07",
+      "target": "knowledge:0c0cbf02701df6d652a5dc75",
+      "type": "HAS_CHILD"
+    },
+    {
+      "source": "knowledge:0c0cbf02701df6d652a5dc75",
+      "target": "knowledge:47075c2ddad8552fd6d1728a",
+      "type": "HAS_CHILD"
+    },
+    {
+      "source": "knowledge:47075c2ddad8552fd6d1728a",
+      "target": "knowledge:cf70125942441319173f4965",
+      "type": "HAS_CHILD"
+    },
+    {
+      "source": "knowledge:cf70125942441319173f4965",
+      "target": "knowledge:7646fcec5941d5a9b6d3ef85",
+      "type": "HAS_CHILD"
+    },
+    {
+      "source": "knowledge:7646fcec5941d5a9b6d3ef85",
+      "target": "knowledge:67ee8ba9716dc0d7a0e5161f",
+      "type": "HAS_CHILD"
+    },
+    {
+      "source": "knowledge:47075c2ddad8552fd6d1728a",
+      "target": "knowledge:1b4dc8589a4514f201b7f19e",
+      "type": "HAS_CHILD"
+    }
+  ]
+}

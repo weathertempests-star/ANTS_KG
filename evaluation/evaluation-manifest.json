@@ -1,0 +1,13 @@
+{
+  "cases": 17,
+  "files": {
+    "answer-key.jsonl": "24e108d2b6cdef124dfab2fd8bcb14e80bc13581e0f321266822fe63c23738e3",
+    "prompts.jsonl": "dc746e7a3168fa2c2b77cefad449bd0a81ff6d5a696e38fe2a11e814d817816c"
+  },
+  "schema": "registry-evaluation-package-1",
+  "separation": "prompts.jsonl contains no expected propositions, prohibited inferences, knowledge paths, or sources.",
+  "source_sha256": {
+    "registry_cases.jsonl": "4fc25edf739bf6f891c30457467f07cfb441b687e15ba758efe24a8ca6a2af5e",
+    "rubric.json": "31f2ce3b38851193269e9f3bc0d72f0e8cef380ab1f6ac9a2292fcbd4343baf8"
+  }
+}

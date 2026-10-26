@@ -1,0 +1,1094 @@
+[
+  {
+    "kind": "hierarchy",
+    "source": 164,
+    "target": 116,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 116,
+    "target": 120,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 116,
+    "target": 97,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 97,
+    "target": 129,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 97,
+    "target": 45,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 45,
+    "target": 114,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 114,
+    "target": 10,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 10,
+    "target": 26,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 26,
+    "target": 8,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 10,
+    "target": 93,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 10,
+    "target": 23,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 97,
+    "target": 131,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 131,
+    "target": 20,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 20,
+    "target": 186,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 116,
+    "target": 171,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 171,
+    "target": 110,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 110,
+    "target": 172,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 110,
+    "target": 59,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 59,
+    "target": 143,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 59,
+    "target": 62,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 62,
+    "target": 124,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 124,
+    "target": 5,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 5,
+    "target": 64,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 5,
+    "target": 9,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 5,
+    "target": 112,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 5,
+    "target": 88,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 5,
+    "target": 148,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 124,
+    "target": 17,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 17,
+    "target": 113,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 17,
+    "target": 141,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 17,
+    "target": 100,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 17,
+    "target": 32,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 17,
+    "target": 125,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 59,
+    "target": 89,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 59,
+    "target": 44,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 110,
+    "target": 3,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 3,
+    "target": 21,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 21,
+    "target": 29,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 21,
+    "target": 58,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 3,
+    "target": 136,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 110,
+    "target": 14,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 31,
+    "target": 68,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 68,
+    "target": 169,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 68,
+    "target": 40,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 40,
+    "target": 140,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 68,
+    "target": 85,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 31,
+    "target": 179,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 31,
+    "target": 13,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 31,
+    "target": 133,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 133,
+    "target": 162,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 162,
+    "target": 144,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 162,
+    "target": 72,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 162,
+    "target": 166,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 166,
+    "target": 106,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 162,
+    "target": 187,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 187,
+    "target": 38,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 38,
+    "target": 137,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 38,
+    "target": 51,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 162,
+    "target": 7,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 7,
+    "target": 36,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 133,
+    "target": 135,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 135,
+    "target": 145,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 145,
+    "target": 91,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 91,
+    "target": 19,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 19,
+    "target": 84,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 135,
+    "target": 25,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 135,
+    "target": 69,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 69,
+    "target": 81,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 81,
+    "target": 82,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 82,
+    "target": 181,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 82,
+    "target": 167,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 167,
+    "target": 192,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 192,
+    "target": 79,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 81,
+    "target": 61,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 61,
+    "target": 76,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 133,
+    "target": 1,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 1,
+    "target": 177,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 177,
+    "target": 195,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 195,
+    "target": 152,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 177,
+    "target": 183,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 183,
+    "target": 92,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 177,
+    "target": 74,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 177,
+    "target": 174,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 174,
+    "target": 95,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 174,
+    "target": 184,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 184,
+    "target": 153,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 184,
+    "target": 150,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 177,
+    "target": 60,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 60,
+    "target": 30,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 60,
+    "target": 67,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 67,
+    "target": 173,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 173,
+    "target": 0,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 0,
+    "target": 35,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 0,
+    "target": 132,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 0,
+    "target": 122,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 0,
+    "target": 54,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 0,
+    "target": 56,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 173,
+    "target": 90,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 90,
+    "target": 50,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 90,
+    "target": 87,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 90,
+    "target": 139,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 90,
+    "target": 103,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 90,
+    "target": 99,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 60,
+    "target": 34,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 60,
+    "target": 163,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 163,
+    "target": 75,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 60,
+    "target": 185,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 60,
+    "target": 109,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 60,
+    "target": 73,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 60,
+    "target": 118,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 118,
+    "target": 161,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 118,
+    "target": 27,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 177,
+    "target": 39,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 39,
+    "target": 149,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 149,
+    "target": 168,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 39,
+    "target": 160,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 39,
+    "target": 53,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 53,
+    "target": 42,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 53,
+    "target": 101,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 39,
+    "target": 43,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 43,
+    "target": 66,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 43,
+    "target": 78,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 31,
+    "target": 11,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 11,
+    "target": 65,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 65,
+    "target": 158,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 158,
+    "target": 123,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 158,
+    "target": 104,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 158,
+    "target": 154,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 154,
+    "target": 83,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 154,
+    "target": 107,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 158,
+    "target": 96,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 96,
+    "target": 86,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 65,
+    "target": 138,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 138,
+    "target": 105,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 65,
+    "target": 189,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 65,
+    "target": 24,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 24,
+    "target": 119,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 119,
+    "target": 37,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 119,
+    "target": 128,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 119,
+    "target": 193,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 4,
+    "target": 157,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 4,
+    "target": 156,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 156,
+    "target": 151,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 156,
+    "target": 126,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 126,
+    "target": 121,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "hierarchy",
+    "source": 121,
+    "target": 18,
+    "type": "HAS_CHILD"
+  },
+  {
+    "kind": "semantic",
+    "source": 115,
+    "target": 162,
+    "type": "MERGES_MACHINE_REGISTRATION_FROM"
+  },
+  {
+    "kind": "semantic",
+    "source": 22,
+    "target": 105,
+    "type": "ALIASES"
+  },
+  {
+    "kind": "semantic",
+    "source": 164,
+    "target": 156,
+    "type": "RESOLVES_USER_CONTEXT_TO"
+  },
+  {
+    "kind": "semantic",
+    "source": 120,
+    "target": 115,
+    "type": "CONTRIBUTES_TO_MERGED_VIEW"
+  },
+  {
+    "kind": "semantic",
+    "source": 64,
+    "target": 113,
+    "type": "LOCKDOWN_COUNTERPART_OF"
+  },
+  {
+    "kind": "semantic",
+    "source": 64,
+    "target": 35,
+    "type": "SCOPE_COUNTERPART_OF"
+  },
+  {
+    "kind": "semantic",
+    "source": 9,
+    "target": 141,
+    "type": "LOCKDOWN_COUNTERPART_OF"
+  },
+  {
+    "kind": "semantic",
+    "source": 9,
+    "target": 132,
+    "type": "SCOPE_COUNTERPART_OF"
+  },
+  {
+    "kind": "semantic",
+    "source": 112,
+    "target": 100,
+    "type": "LOCKDOWN_COUNTERPART_OF"
+  },
+  {
+    "kind": "semantic",
+    "source": 112,
+    "target": 122,
+    "type": "SCOPE_COUNTERPART_OF"
+  },
+  {
+    "kind": "semantic",
+    "source": 88,
+    "target": 32,
+    "type": "LOCKDOWN_COUNTERPART_OF"
+  },
+  {
+    "kind": "semantic",
+    "source": 88,
+    "target": 54,
+    "type": "SCOPE_COUNTERPART_OF"
+  },
+  {
+    "kind": "semantic",
+    "source": 148,
+    "target": 125,
+    "type": "LOCKDOWN_COUNTERPART_OF"
+  },
+  {
+    "kind": "semantic",
+    "source": 148,
+    "target": 56,
+    "type": "SCOPE_COUNTERPART_OF"
+  },
+  {
+    "kind": "semantic",
+    "source": 113,
+    "target": 50,
+    "type": "SCOPE_COUNTERPART_OF"
+  },
+  {
+    "kind": "semantic",
+    "source": 141,
+    "target": 87,
+    "type": "SCOPE_COUNTERPART_OF"
+  },
+  {
+    "kind": "semantic",
+    "source": 100,
+    "target": 139,
+    "type": "SCOPE_COUNTERPART_OF"
+  },
+  {
+    "kind": "semantic",
+    "source": 32,
+    "target": 103,
+    "type": "SCOPE_COUNTERPART_OF"
+  },
+  {
+    "kind": "semantic",
+    "source": 125,
+    "target": 99,
+    "type": "SCOPE_COUNTERPART_OF"
+  },
+  {
+    "kind": "semantic",
+    "source": 144,
+    "target": 72,
+    "type": "ASSOCIATES_EXTENSION_WITH"
+  },
+  {
+    "kind": "semantic",
+    "source": 72,
+    "target": 38,
+    "type": "MAPS_PROGRAMMATIC_NAME_TO_CLASS"
+  },
+  {
+    "kind": "semantic",
+    "source": 38,
+    "target": 106,
+    "type": "ASSOCIATES_WITH_APPLICATION_CONFIGURATION"
+  },
+  {
+    "kind": "semantic",
+    "source": 181,
+    "target": 93,
+    "type": "HAS_USER_POLICY_COUNTERPART"
+  },
+  {
+    "kind": "semantic",
+    "source": 92,
+    "target": 160,
+    "type": "COMPLEMENTARY_DNS_POLICY_LOCATION"
+  },
+  {
+    "kind": "semantic",
+    "source": 74,
+    "target": 25,
+    "type": "SUPPLIES_POLICY_CERTIFICATE_STORE"
+  },
+  {
+    "kind": "semantic",
+    "source": 153,
+    "target": 150,
+    "type": "COMPLEMENTARY_PROVIDER_ROLE"
+  },
+  {
+    "kind": "semantic",
+    "source": 35,
+    "target": 50,
+    "type": "LOCKDOWN_COUNTERPART_OF"
+  },
+  {
+    "kind": "semantic",
+    "source": 132,
+    "target": 87,
+    "type": "LOCKDOWN_COUNTERPART_OF"
+  },
+  {
+    "kind": "semantic",
+    "source": 122,
+    "target": 139,
+    "type": "LOCKDOWN_COUNTERPART_OF"
+  },
+  {
+    "kind": "semantic",
+    "source": 54,
+    "target": 103,
+    "type": "LOCKDOWN_COUNTERPART_OF"
+  },
+  {
+    "kind": "semantic",
+    "source": 56,
+    "target": 99,
+    "type": "LOCKDOWN_COUNTERPART_OF"
+  },
+  {
+    "kind": "semantic",
+    "source": 185,
+    "target": 109,
+    "type": "COMPLEMENTARY_SMB_ROLE"
+  },
+  {
+    "kind": "semantic",
+    "source": 161,
+    "target": 27,
+    "type": "COMPLEMENTARY_AUTHENTICATION_ROLE"
+  },
+  {
+    "kind": "semantic",
+    "source": 43,
+    "target": 136,
+    "type": "HAS_USER_POLICY_COUNTERPART"
+  },
+  {
+    "kind": "semantic",
+    "source": 107,
+    "target": 37,
+    "type": "ORDERS_REGISTERED_PROVIDERS"
+  },
+  {
+    "kind": "semantic",
+    "source": 86,
+    "target": 151,
+    "type": "CONTRASTS_MACHINE_AND_USER_SCOPE"
+  }
+]
