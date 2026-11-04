@@ -1,0 +1,26 @@
+{
+  "schema": "ants-run-config-1",
+  "condition": "agent",
+  "history_k": 0,
+  "dynamic_history": false,
+  "template_candidates": false,
+  "include_value_data": false,
+  "orchestrator": "native",
+  "engineering_limit": 200,
+  "limits": {"max_input": 4096, "max_output": 512, "max_calls": 4, "max_total": 18432},
+  "model": {
+    "backend": "vllm",
+    "base_url": "http://192.168.50.10:8000",
+    "served_model": "registry-slm",
+    "repo": "Qwen/Qwen3.5-27B",
+    "revision": "REPLACE_WITH_ACTUAL_40_HEX_MODEL_COMMIT",
+    "tokenizer_revision": "REPLACE_WITH_ACTUAL_40_HEX_TOKENIZER_COMMIT",
+    "image_digest": "REPLACE_WITH_ACTUAL_IMAGE_AT_SHA256_DIGEST",
+    "precision": "BF16",
+    "temperature": 0.7,
+    "top_p": 0.8,
+    "top_k": 20,
+    "seed": 20261026,
+    "timeout": 300
+  }
+}

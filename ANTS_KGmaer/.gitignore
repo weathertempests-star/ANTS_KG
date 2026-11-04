@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+build/
+dist/
+runs/
+workspaces/
+*.secrets.env
+api.key
+!ants_kgmaer/data/
+!ants_kgmaer/data/*.py

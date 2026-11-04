@@ -1,0 +1,8 @@
+{
+  "schema": "ants-run-config-1",
+  "condition": "graph",
+  "history_k": 0,
+  "template_candidates": false,
+  "include_value_data": false,
+  "model": {"backend": "mock"}
+}

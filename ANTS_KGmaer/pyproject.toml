@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ants-kgmaer"
+version = "0.1.0"
+description = "Reproducible Registry knowledge-assisted event experiments"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+agent = ["langgraph>=1,<2"]
+tokenizer = ["transformers>=4.51,<6"]
+
+[project.scripts]
+ants-kgmaer = "ants_kgmaer.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["ants_kgmaer*"]
+
+[tool.setuptools.package-data]
+ants_kgmaer = ["resources/*.json"]

@@ -1,0 +1,104 @@
+{
+  "schema": "ants-sources-1",
+  "recordings": [
+    {
+      "id": "CHT-0431311b5f024d6e66b90d59491f2563",
+      "cohort": "CHT",
+      "path": "CHT_selected/0431311b5f024d6e66b90d59491f2563.json",
+      "format": "json_array",
+      "sha256": "dd8e264fbd576bacf9bb2cefe485dc486367dab1779228b81c633a96bc279cf4",
+      "expected_records": 37489,
+      "dependency_group": "CHT-0431311b5f024d6e66b90d59491f2563"
+    },
+    {
+      "id": "CHT-2b294b3499d1cce794badffc959b7618",
+      "cohort": "CHT",
+      "path": "CHT_selected/2b294b3499d1cce794badffc959b7618.json",
+      "format": "json_array",
+      "sha256": "41e81c4de70c669e9f712c0bb4c0f5fbaa14d3954115008ca8c0ce9bbc639209",
+      "expected_records": 34797,
+      "dependency_group": "CHT-2b294b3499d1cce794badffc959b7618"
+    },
+    {
+      "id": "CHT-42c704e4aa50d009678d3f882d275799",
+      "cohort": "CHT",
+      "path": "CHT_selected/42c704e4aa50d009678d3f882d275799.json",
+      "format": "json_array",
+      "sha256": "259d1ff2329902e2d9c921ecdcbe0c425f4843827e45070cae4fce929beaea82",
+      "expected_records": 2378,
+      "dependency_group": "CHT-42c704e4aa50d009678d3f882d275799"
+    },
+    {
+      "id": "CHT-51fe1c84cdb77f8619022abef17d3319",
+      "cohort": "CHT",
+      "path": "CHT_selected/51fe1c84cdb77f8619022abef17d3319.json",
+      "format": "json_array",
+      "sha256": "24aa2f056da23cbf91953f772b12ec8b1daced8630b38d9487aee7bb4e2749f3",
+      "expected_records": 188549,
+      "dependency_group": "CHT-51fe1c84cdb77f8619022abef17d3319"
+    },
+    {
+      "id": "CHT-5dda2d7df79832b07048d380e08fb15d",
+      "cohort": "CHT",
+      "path": "CHT_selected/5dda2d7df79832b07048d380e08fb15d.json",
+      "format": "json_array",
+      "sha256": "a2db61bbefa9f9f0b8db2385c3c009c8e0c5b391a7c79c1036f9ceca023c898a",
+      "expected_records": 26717,
+      "dependency_group": "CHT-5dda2d7df79832b07048d380e08fb15d"
+    },
+    {
+      "id": "CHT-8a07ed19b3bff50300ba18caf87ba233",
+      "cohort": "CHT",
+      "path": "CHT_selected/8a07ed19b3bff50300ba18caf87ba233.json",
+      "format": "json_array",
+      "sha256": "460f713466d1bff8913a613add25ffe83ac7213c8fa88b74140ede177dcdda97",
+      "expected_records": 25050,
+      "dependency_group": "CHT-8a07ed19b3bff50300ba18caf87ba233"
+    },
+    {
+      "id": "APT-APT28",
+      "cohort": "APT",
+      "path": "Apt/APT28/events.json",
+      "format": "jsonl",
+      "sha256": "e8c3e28f660630ccf43b74fca90f452f828b0743b0d165e5aeedbf62fca4e92b",
+      "expected_records": 1209895,
+      "dependency_group": "APT-APT28"
+    },
+    {
+      "id": "APT-CobaltGroup",
+      "cohort": "APT",
+      "path": "Apt/CobaltGroup/events.json",
+      "format": "jsonl",
+      "sha256": "8e0a4155f9e7a958152d74495a370763531d74176836c03641a8f611875a5888",
+      "expected_records": 969542,
+      "dependency_group": "APT-shared-background"
+    },
+    {
+      "id": "APT-Gamaredon",
+      "cohort": "APT",
+      "path": "Apt/Gamaredon/events.json",
+      "format": "jsonl",
+      "sha256": "bb7234249c4ba5a8eb811847a891edc7a21e76219e11c2c730bd297a3ba0b01f",
+      "expected_records": 453915,
+      "dependency_group": "APT-shared-background"
+    },
+    {
+      "id": "APT-Higaisa",
+      "cohort": "APT",
+      "path": "Apt/Higaisa/events.json",
+      "format": "jsonl",
+      "sha256": "242ee30a7fac38522f85e7881029dbf9bc5d79bd6ca3439aab448848353c73a5",
+      "expected_records": 609394,
+      "dependency_group": "APT-shared-background"
+    },
+    {
+      "id": "APT-Patchwork",
+      "cohort": "APT",
+      "path": "Apt/Patchwork/events.json",
+      "format": "jsonl",
+      "sha256": "6cc476a37be09323f5eb15b1cebf5a53cb150e9bbe21349dfe29d5710b9364f5",
+      "expected_records": 163487,
+      "dependency_group": "APT-Patchwork"
+    }
+  ]
+}

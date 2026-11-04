@@ -1,0 +1,74 @@
+{
+  "schema": "ants-verification-receipt-1",
+  "scope": "Recorded local implementation verification; not a complete-goal or model-quality claim",
+  "new_package_tests": {
+    "executed": 60,
+    "passed": 58,
+    "skipped": 2,
+    "skip_reason": "Loopback socket creation denied by environment"
+  },
+  "installed_wheel_tests": {
+    "executed": 60,
+    "passed": 58,
+    "skipped": 2
+  },
+  "retained_original_tests": {
+    "executed": 74,
+    "passed": 74
+  },
+  "package_source_sha256": "7f79181c56948c9e1cad4d2348cd46fb8e297d53f39c77a00675dd410142bd9c",
+  "wheel_sha256": "2c54a36b629c15c54bdc3a0a4757a7229656d1d8923f13c0109fec18eccb3a5d",
+  "installed_snapshot_nodes": 197,
+  "installed_semantic_edges": 46,
+  "population_coverage": {
+    "schema": "ants-population-summary-1",
+    "registry_events": 2892462,
+    "truth_counts": {
+      "0": 2891734,
+      "1": 728
+    },
+    "match_counts": {
+      "ancestor": 1599620,
+      "boundary_unresolved": 1116072,
+      "exact": 156610,
+      "unknown": 20160
+    },
+    "match_by_truth": {
+      "0": {
+        "ancestor": 1599599,
+        "boundary_unresolved": 1115367,
+        "exact": 156608,
+        "unknown": 20160
+      },
+      "1": {
+        "ancestor": 21,
+        "boundary_unresolved": 705,
+        "exact": 2
+      }
+    },
+    "scope": "All Registry events, including quarantined annotations; no sampling and no model inference"
+  },
+  "verified_bundles": {
+    "workspaces/population-coverage-v1": {
+      "manifest_sha256": "82b0a5278d88e1bd282afb7cbccfd9ac54cfa959637d1ce80a85afa37e5b0918",
+      "checksummed_files": 5
+    },
+    "runs/mock-engineering-200-v1": {
+      "manifest_sha256": "9a42cc5d293b31ca7c84be3e31495adca7180ded03a01b57335d2c63da319b24",
+      "checksummed_files": 11
+    },
+    "runs/mock-engineering-200-v1-evaluation": {
+      "manifest_sha256": "7310bdfce7d1c37829105e334c4006bc879138c5290e8acbe7407f17c7f9d007",
+      "checksummed_files": 6
+    },
+    "runs/mock-engineering-200-v1-report": {
+      "manifest_sha256": "81cd0a61fc0d43e5fcd15fb4eb5ec9fae4a62039849927987e5c04ebe36e77a4",
+      "checksummed_files": 3
+    }
+  },
+  "unverified": [
+    "Real loopback HTTP integration in a socket-enabled environment",
+    "LangGraph optional runtime",
+    "Real DGX Spark deployment identity, compatibility, latency and prediction quality"
+  ]
+}

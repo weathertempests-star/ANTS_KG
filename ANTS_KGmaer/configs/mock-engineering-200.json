@@ -1,0 +1,8 @@
+{
+  "schema": "ants-run-config-1",
+  "condition": "agent",
+  "history_k": 0,
+  "engineering_limit": 200,
+  "orchestrator": "native",
+  "model": {"backend": "mock"}
+}

@@ -1,0 +1,27 @@
+{
+  "schema": "ants-verification-receipt-1",
+  "scope": "Latest local and installed-package checks; external runtime acceptance remains blocked",
+  "package_source_sha256": "2000d3864c28fafcd33c22b6f30b381dc65dfc6e3dda3e86755dada5b71f7349",
+  "wheel_sha256": "d3e4dcfd489bac6ca692cc10520e0b4ac42b03f9a3c004dc3ae5fc2fd600ae22",
+  "installed_tests": {
+    "executed": 63,
+    "passed": 58,
+    "skipped": 5
+  },
+  "skips": {
+    "loopback_http": 2,
+    "langgraph_runtime": 3
+  },
+  "changes_since_prior_receipt": [
+    "Restore LangGraph entry routing from checkpoint rounds/finalize state",
+    "Add actual optional-backend parity tests",
+    "Isolate test credentials from user environment"
+  ],
+  "unverified": [
+    "Loopback HTTP: socket creation denied",
+    "LangGraph: dependency absent and installation unavailable in restricted environment",
+    "Spark: actual endpoint and deployment identity not supplied"
+  ],
+  "prior_evidence": "VERIFICATION_RECEIPT.json",
+  "handoff": "INTEGRATION_ACCEPTANCE.md"
+}

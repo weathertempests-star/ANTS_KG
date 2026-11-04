@@ -1,0 +1,8 @@
+{
+  "note": "Original algorithms split into focused modules; source snapshot copied without changes.",
+  "sha256": {
+    "standardizer_pkg/knowledge.py": "60eb19cd31c68abe84c1923d9e4d36ce65635f6471c4b132f4adba0299389b6a",
+    "standardizer_pkg/command_parser.py": "0bee2188773e9bd3d539f88b7acadc2a0a7ff3391818a7bebde4c00b56092b74",
+    "artifacts/knowledge-vault/kg.json": "13c8e66ff3b85e44404ff71416bd59915596c19a02c5971b88bcf8e2bf8aef99"
+  }
+}
