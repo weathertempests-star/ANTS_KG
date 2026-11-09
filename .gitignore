@@ -1,11 +1,74 @@
+# Python environments, build output and caches (at any depth)
 __pycache__/
 *.py[cod]
 .venv/
+venv/
+env/
+.conda/
 *.egg-info/
 build/
 dist/
-data/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
 
-# Agent used
+# Local datasets. Anchor data/ so Python packages named data remain tracked.
+/data/
+data_external/
+datasets/
+/ANTS_KGmaer/data/
+/ANTS_KGraphier/data/
+raw_data/
+
+# Local experiment output, downloaded dependencies and model weights
+runs/
+workspaces/
+checkpoints/
+weights/
+vendor/
+/ANTS_KGmaer/artifacts/
+/ANTS_KGraphier/artifacts/
+# Detailed machine reports may contain event traces; keep Markdown summaries.
+/ANTS_KGraphier/reports/*.json
+/artifacts/model-data/
+/artifacts/registry-inventory/
+/artifacts/experiment-planning/data_profile.json
+*.sqlite
+*.sqlite-*
+*.db
+*.db-*
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.gguf
+*.npy
+*.npz
+*.parquet
+*.arrow
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+*.gz
+*.log
+
+# Machine-specific settings and credentials; retain shareable templates
+.env
+.env.*
+!.env.example
+!.env.template
+*.secrets.env
+api.key
+*.pem
+*.key
+.aws/
+.codex/
+.agents/
+.DS_Store
+
+# Local agent instructions
 AGENTS.md
-docs/
