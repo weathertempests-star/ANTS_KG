@@ -1,0 +1,82 @@
+{
+  "schema": "ants-relations-1",
+  "status": "value_encoding_unconfirmed",
+  "relations": {
+    "RegCloseKey": {
+      "operation": "close_key",
+      "encoding": "key_path",
+      "evidence": "Key-target operation; outcome and provider-specific success semantics are not recorded."
+    },
+    "RegCreateKey": {
+      "operation": "create_key",
+      "encoding": "key_path",
+      "evidence": "Key-target operation; outcome and provider-specific success semantics are not recorded."
+    },
+    "RegDeleteKey": {
+      "operation": "delete_key",
+      "encoding": "key_path",
+      "evidence": "Key-target operation; outcome and provider-specific success semantics are not recorded."
+    },
+    "RegEnumKey": {
+      "operation": "enumerate_subkeys",
+      "encoding": "key_path",
+      "evidence": "Key-target operation; outcome and provider-specific success semantics are not recorded."
+    },
+    "RegEnumValue": {
+      "operation": "enumerate_values",
+      "encoding": "key_path",
+      "evidence": "Key-target operation; outcome and provider-specific success semantics are not recorded."
+    },
+    "RegLoadKey": {
+      "operation": "load_key",
+      "encoding": "key_path",
+      "evidence": "Key-target operation; outcome and provider-specific success semantics are not recorded."
+    },
+    "RegOpenKey": {
+      "operation": "open_key",
+      "encoding": "key_path",
+      "evidence": "Key-target operation; outcome and provider-specific success semantics are not recorded."
+    },
+    "RegQueryKey": {
+      "operation": "query_key",
+      "encoding": "key_path",
+      "evidence": "Key-target operation; outcome and provider-specific success semantics are not recorded."
+    },
+    "RegQueryKeySecurity": {
+      "operation": "query_security",
+      "encoding": "key_path",
+      "evidence": "Key-target operation; outcome and provider-specific success semantics are not recorded."
+    },
+    "RegSetInfoKey": {
+      "operation": "set_key_information",
+      "encoding": "key_path",
+      "evidence": "Key-target operation; outcome and provider-specific success semantics are not recorded."
+    },
+    "RegSetKeySecurity": {
+      "operation": "set_security",
+      "encoding": "key_path",
+      "evidence": "Key-target operation; outcome and provider-specific success semantics are not recorded."
+    },
+    "RegQueryValue": {
+      "operation": "query_value",
+      "encoding": "unresolved",
+      "evidence": null
+    },
+    "RegSetValue": {
+      "operation": "set_value",
+      "encoding": "unresolved",
+      "evidence": null
+    },
+    "RegDeleteValue": {
+      "operation": "delete_value",
+      "encoding": "unresolved",
+      "evidence": null
+    },
+    "RegQueryMultipleValueKey": {
+      "operation": "query_multiple_values",
+      "encoding": "unresolved",
+      "evidence": null
+    }
+  },
+  "recording_overrides": {}
+}

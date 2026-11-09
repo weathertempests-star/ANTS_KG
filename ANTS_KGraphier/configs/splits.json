@@ -1,0 +1,11 @@
+{
+  "CHT-0431311b5f024d6e66b90d59491f2563": "train",
+  "CHT-2b294b3499d1cce794badffc959b7618": "train",
+  "CHT-42c704e4aa50d009678d3f882d275799": "test",
+  "CHT-51fe1c84cdb77f8619022abef17d3319": "test",
+  "CHT-5dda2d7df79832b07048d380e08fb15d": "train",
+  "CHT-8a07ed19b3bff50300ba18caf87ba233": "test",
+  "APT-APT28": "test",
+  "APT-shared-background": "train",
+  "APT-Patchwork": "test"
+}

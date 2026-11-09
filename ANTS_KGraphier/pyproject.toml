@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ants-kgraphier"
+version = "0.1.0"
+description = "Traceable Registry event subgraphs and ProvG-Searcher retrieval"
+requires-python = ">=3.10"
+dependencies = ["numpy==1.26.4", "torch-geometric==2.6.1", "ijson==3.3.0", "networkx==3.4.2"]
+
+[project.scripts]
+ants-kgraphier = "ants_kgraphier.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["ants_kgraphier*"]
